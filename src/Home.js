@@ -26,7 +26,7 @@ class Home extends Component {
                         <div className={classes.AboutContent}>
                             <h1 className={classes.AboutTitle}>About</h1>
                             <hr/>
-                            <p className={classes.AboutText}>Inspired by the true life story of NFL Superbowl Champion, Spencer Paysinger, All American is an inspiring, ensemble family drama about a young, high school football phenom, Spencer James and the two families whose homes he shares after transferring from Crenshaw to Beverly High - his mother and brother in South Inspired by the true life story of NFL Superbowl Champion, Spencer Paysinger, All American is an inspiring, ensemble family drama about a young, high school football phenom, Spencer James and the two families whose homes he shares after transferring from Crenshaw to Beverly High - his mother and brother in South ...</p>
+                            <p className={classes.AboutText}>The Bentley Consulting Group is the foremost consulting club on the Bentley University campus and provides its members with a community that works together to help each other achieve their goals. The BCG was recently relaunched in 2019 after a falling out of the executive board and since then has grown to over two hundred members and has been involved with dozens of real world business projects in partnership with Probono Consulting as well as RSM. If you are interested in consulting, just learning about what consulting is, or are preparing for a career in the field, this is the organization for you.</p>
                         </div>
                     </div>
                     <div className={classes.SectionTitleBlock}>
@@ -40,28 +40,28 @@ class Home extends Component {
                         <div className={classes.BlockImageCourses}/>
                         <div className={classes.BlockContent}>
                             <h2 className={classes.BlockTitle}>Courses</h2>
-                            <p className={classes.BlockText}>The BCG regularly partners with local businesses and employers for projects.</p>
+                            <p className={classes.BlockText}>The BCG hosts several courses throughout each semester on topics from project management to data visualization with tableau.</p>
                         </div>
                     </div>
                     <div className={classes.Block}>
                         <div className={classes.BlockImageCases}/>
                         <div className={classes.BlockContent}>
                             <h2 className={classes.BlockTitle}>Cases</h2>
-                            <p className={classes.BlockText}>The BCG regularly partners with local businesses and employers for projects.</p>
+                            <p className={classes.BlockText}>Each semester the BCG hosts several case workshops where consulting cases often used in interviews are studied and reviewed.</p>
                         </div>
                     </div>
                     <div className={classes.Block}>
                         <div className={classes.BlockImageProjects}/>
                         <div className={classes.BlockContent}>
                             <h2 className={classes.BlockTitle}>Projects</h2>
-                            <p className={classes.BlockText}>The BCG regularly partners with local businesses and employers for projects.</p>
+                            <p className={classes.BlockText}>The BCG regularly partners with all kinds of business from local shops to multi billion dollar organizations to help solve their business problems.</p>
                         </div>
                     </div>
                     <div className={classes.SectionTitleBlock}>
                         <h1 className={classes.SectionTitle}>Our Partnerships</h1>
                     </div>
                     <div className={classes.SectionSubTitle}>
-                        <h1>Network with Employers</h1>
+                        <h1>Network With Employers</h1>
                         <p>Employers that have worked with the BCG or regularly recruit from us.</p>
                     </div>
                     <div className={classes.LogoBlockEY}/>
@@ -69,6 +69,15 @@ class Home extends Component {
                     <div className={classes.LogoBlockDeloitte}/>
                     <div className={classes.LogoBlockPWC}/>
                     <div className={classes.LogoBlockMassaro}/>
+                    <div className={classes.SectionSubTitle}>
+                        <h1>Learn In Demand Technologies</h1>
+                        <p>Technologies that consultants can learn through the BCG.</p>
+                    </div>
+                    <div className={classes.LogoBlockTableau}/>
+                    <div className={classes.LogoBlockSalesForce}/>
+                    <div className={classes.LogoBlockSlack}/>
+                    <div className={classes.LogoBlockClickup}/>
+                    <div className={classes.LogoBlockAirtable}/>
                     <div className={classes.SectionTitleBlock}>
                         <h1 className={classes.SectionTitle}>Learn More</h1>
                     </div>

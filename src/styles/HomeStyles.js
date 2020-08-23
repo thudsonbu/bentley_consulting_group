@@ -12,6 +12,11 @@ import events from "../images/events.jpg";
 import team from "../images/team.jpg";
 import contact from "../images/contact.jpg";
 import join from "../images/join.jpg";
+import tableau from "../images/tableau.jpg";
+import slack from "../images/slack.png";
+import salesforce from "../images/salesforce.jpg";
+import clickup from "../images/clickup.png";
+import airtable from "../images/airtable.png";
 
 export default {
     Home: {
@@ -85,7 +90,7 @@ export default {
     },
     Block: {
         width: "300px",
-        height: "400px",
+        height: "450px",
         margin: "60px",
         transition: "box-shadow .25s",
         "&:hover": {
@@ -130,7 +135,7 @@ export default {
     },
     BlockContent: {
         width: "100%",
-        height: "150px",
+        height: "200px",
         marginTop: "-19px",
         color: "#ffffff",
         backgroundColor: "#064cd5",
@@ -200,6 +205,58 @@ export default {
         height: "150px",
         width: "150px",
         backgroundImage: `url(${PWC})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        },
+    },
+    LogoBlockTableau: {
+        margin: "50px",
+        height: "200px",
+        width: "400px",
+        backgroundImage: `url(${tableau})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        },
+    },
+    LogoBlockSalesForce: {
+        margin: "50px",
+        height: "150px",
+        width: "150px",
+        backgroundImage: `url(${salesforce})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        },
+    },
+    LogoBlockClickup: {
+        margin: "50px",
+        height: "200px",
+        width: "220px",
+        backgroundImage: `url(${clickup})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        },
+    },
+    LogoBlockAirtable: {
+        margin: "50px",
+        height: "200px",
+        width: "220px",
+        backgroundImage: `url(${airtable})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         borderRadius: "50%",

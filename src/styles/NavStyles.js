@@ -15,6 +15,10 @@ export default {
     },
     NavLeft: {
         marginRight: "auto",
+        display: "flex",
+        [sizes.down("md")]: {
+            width: "100%",
+        }
     },
     miniLogo: {
         color: "black",
@@ -25,38 +29,28 @@ export default {
         backgroundImage: `url(${logo})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        [sizes.down("sm")]: {
-            display: "none",
+        [sizes.down("lg")]: {
+            marginLeft: "auto",
         }
     },
     menuButton: {
         marginRight: "auto",
         // border: "1px solid white",
-        [sizes.up("sm")]: {
+        [sizes.up("md")]: {
             display: "none",
         },
     },
     NavRight: {
         color: "black",
         marginLeft: "auto",
-        width: "50%",
+        width: "60%",
         height: "50%",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-around",
         alignItems: "center",
-    },
-    miniLogoRight: {
-        color: "black",
-        marginLeft: "20px",
-        paddingLeft: "30px",
-        width: "50px",
-        height: "50px",
-        backgroundImage: `url(${logo})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        [sizes.up("sm")]: {
-            display: "none",
+        [sizes.down("md")]: {
+            display: "none"
         }
     },
     Icon: {
