@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Nav from './Nav';
+import Jumbotron from "./Jumbotron";
 
 class Home extends Component {
     constructor(props){
@@ -11,6 +12,7 @@ class Home extends Component {
         return (
             <div className={Home}>
                 <Nav/>
+                <Jumbotron/>
             </div>
         )
     }

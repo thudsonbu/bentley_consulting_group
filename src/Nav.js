@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import styles from './styles/NavStyles';
 
+import { Link } from 'react-router-dom';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -11,12 +13,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import GroupIcon from '@material-ui/icons/Group';
@@ -54,7 +53,7 @@ class Nav extends Component {
     render(){
         const { classes } = this.props;
         const { drawerOpen } = this.state;
-        const list = (anchor) => (
+        const list = () => (
             <div
                 className={classes.list}
                 role="presentation"
@@ -62,26 +61,36 @@ class Nav extends Component {
                 onKeyDown={this.openDrawer}
             >
                 <List>
-                    <ListItem button key={'home'}>
-                        <ListItemIcon><HomeIcon/></ListItemIcon>
-                        <ListItemText primary={'Home'} />
-                    </ListItem>
-                    <ListItem button key={'events'}>
-                        <ListItemIcon><EventAvailableIcon/></ListItemIcon>
-                        <ListItemText primary={'Events'} />
-                    </ListItem>
-                    <ListItem button key={'team'}>
-                        <ListItemIcon><GroupIcon/></ListItemIcon>
-                        <ListItemText primary={'Team'} />
-                    </ListItem>
-                    <ListItem button key={'join'}>
-                        <ListItemIcon><GroupAddIcon/></ListItemIcon>
-                        <ListItemText primary={'Join'} />
-                    </ListItem>
-                    <ListItem button key={'contact'}>
-                        <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
-                        <ListItemText primary={'Contact'} />
-                    </ListItem>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'home'}>
+                            <ListItemIcon><HomeIcon/></ListItemIcon>
+                            <ListItemText primary={'Home'} />
+                        </ListItem>
+                    </Link>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'events'}>
+                            <ListItemIcon><EventAvailableIcon/></ListItemIcon>
+                            <ListItemText primary={'Events'} />
+                        </ListItem>
+                    </Link>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'team'}>
+                            <ListItemIcon><GroupIcon/></ListItemIcon>
+                            <ListItemText primary={'Team'} />
+                        </ListItem>
+                    </Link>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'join'}>
+                            <ListItemIcon><GroupAddIcon/></ListItemIcon>
+                            <ListItemText primary={'Join'} />
+                        </ListItem>
+                    </Link>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'contact'}>
+                            <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
+                            <ListItemText primary={'Contact'} />
+                        </ListItem>
+                    </Link>
                 </List>
             </div>
         );

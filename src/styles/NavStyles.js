@@ -2,11 +2,11 @@ import sizes from './sizes';
 
 export default {
     Nav: {
-
+        height: "10vh",
     },
     AppBar: {
         width: "100%",
-        background: "#394bad",
+        background: "transparent",
     },
     ToolBar: {
         background: "transparent",
@@ -43,4 +43,8 @@ export default {
             display: "none",
         },
     },
+    link: {
+        textDecoration: "none",
+        color: "black",
+    }
 }
