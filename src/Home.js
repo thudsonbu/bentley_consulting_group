@@ -5,12 +5,7 @@ import styles from './styles/HomeStyles';
 
 import Nav from './Nav';
 import Jumbotron from "./Jumbotron";
-
-import Button from "@material-ui/core/Button";
-import EventAvailableIcon from '@material-ui/icons/EventAvailable';
-import GroupIcon from '@material-ui/icons/Group';
-import GroupAddIcon from '@material-ui/icons/GroupAdd';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import Footer from './Footer';
 
 
 class Home extends Component {
@@ -113,9 +108,7 @@ class Home extends Component {
                             <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
                         </div>
                     </div>
-                    <div className={classes.Footer}>
-
-                    </div>
+                <Footer/>
                 </div>
             </div>
         )

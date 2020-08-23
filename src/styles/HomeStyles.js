@@ -221,8 +221,4 @@ export default {
         backgroundSize: "cover",
         backgroundPosition: "center",
     },
-    Footer: {
-        width: "100%",
-        backgroundColor: "#"
-    }
 }
