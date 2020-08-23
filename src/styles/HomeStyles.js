@@ -1,6 +1,17 @@
 import sizes from './sizes';
 import logo from '../images/Logo.png';
-import projects from "../images/presentation.jpg"
+import projects from "../images/presentation.jpg";
+import cases from "../images/charts.jpg";
+import courses from "../images/education.jpg";
+import EY from "../images/EY.jpeg";
+import Massaro from "../images/MassaroLogo.PNG";
+import RSM from "../images/RSM logo.jpg";
+import PWC from "../images/pwc.png";
+import Deloitte from "../images/DeloitteNewSmall.png";
+import events from "../images/events.jpg";
+import team from "../images/team.jpg";
+import contact from "../images/contact.jpg";
+import join from "../images/join.jpg";
 
 export default {
     Home: {
@@ -50,7 +61,7 @@ export default {
     },
     AboutText: {
     },
-    WhatWeDo: {
+    SectionTitleBlock: {
         marginTop: "100px",
         backgroundColor: "#064cd5",
         height: "200px",
@@ -59,12 +70,13 @@ export default {
         justifyContent: "center",
         alignItems: "center",
     },
-    WhatWeDoTitle: {
+    SectionTitle: {
         color: "#ffffff",
         fontSize: "4rem",
     },
-    ExperienceTitle: {
+    SectionSubTitle: {
         marginTop: "50px",
+        padding: "30px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -74,7 +86,7 @@ export default {
     Block: {
         width: "300px",
         height: "400px",
-        margin: "50px",
+        margin: "75px",
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
@@ -84,6 +96,20 @@ export default {
         height: "250px",
         width: "300px",
         backgroundImage: `url(${projects})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    BlockImageCases: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${cases})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    BlockImageCourses: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${courses})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
     },
@@ -101,5 +127,102 @@ export default {
     },
     BlockText: {
         padding: "0px 20px 10px 20px",
+    },
+    LogoBlockEY: {
+        margin: "50px",
+        height: "150px",
+        width: "150px",
+        backgroundImage: `url(${EY})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        transition: "box-shadow .25s",
+        borderRadius: "50%",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    LogoBlockRSM: {
+        margin: "50px",
+        height: "150px",
+        width: "150px",
+        backgroundImage: `url(${RSM})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        transition: "box-shadow .25s",
+        borderRadius: "50%",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    LogoBlockDeloitte: {
+        margin: "50px",
+        height: "150px",
+        width: "150px",
+        backgroundImage: `url(${Deloitte})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    LogoBlockMassaro: {
+        margin: "50px",
+        height: "150px",
+        width: "300px",
+        backgroundImage: `url(${Massaro})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    LogoBlockPWC: {
+        margin: "50px",
+        height: "150px",
+        width: "150px",
+        backgroundImage: `url(${PWC})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "50%",
+        transition: "box-shadow .25s",
+        "&:hover": {
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    BlockImageJoin: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${join})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    BlockImageContact: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${contact})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    BlockImageEvents: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${events})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    BlockImageTeam: {
+        height: "250px",
+        width: "300px",
+        backgroundImage: `url(${team})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    },
+    Footer: {
+        width: "100%",
+        backgroundColor: "#"
     }
 }
