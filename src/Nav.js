@@ -109,48 +109,36 @@ class Nav extends Component {
                         <div className={classes.miniLogo}/>
                     </div>
                     <div className={classes.NavRight}>
-                        <div className={classes.miniLogoRight}>
-                        </div>
-                        <Button
-                            variant="outlined"
-                            color="default"
-                            className={classes.button}
-                            startIcon={<HomeIcon />}
-                        >
-                            Home
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            color="default"
-                            className={classes.button}
-                            startIcon={<EventAvailableIcon />}
-                        >
-                            Events
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            color="default"
-                            className={classes.button}
-                            startIcon={<GroupIcon />}
-                        >
-                            Team
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            color="default"
-                            className={classes.button}
-                            startIcon={<GroupAddIcon />}
-                        >
-                            Join
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            color="default"
-                            className={classes.button}
-                            startIcon={<PhoneIphoneIcon />}
-                        >
-                            Contact
-                        </Button>
+                        <Link to={'/'} className={classes.link}>
+                            <ListItem button key={'home'} className={classes.ListItem}>
+                                <ListItemIcon><HomeIcon className={classes.Icon}/></ListItemIcon>
+                                <ListItemText primary={'Home'}/>
+                            </ListItem>
+                        </Link>
+                        <Link to={'/'} className={classes.link}>
+                            <ListItem button key={'events'} className={classes.ListItem}>
+                                <ListItemIcon><EventAvailableIcon className={classes.Icon}/></ListItemIcon>
+                                <ListItemText primary={'Events'} />
+                            </ListItem>
+                        </Link>
+                        <Link to={'/'} className={classes.link}>
+                            <ListItem button key={'team'} className={classes.ListItem}>
+                                <ListItemIcon><GroupIcon className={classes.Icon}/></ListItemIcon>
+                                <ListItemText primary={'Team'} />
+                            </ListItem>
+                        </Link>
+                        <Link to={'/'} className={classes.link}>
+                            <ListItem button key={'join'} className={classes.ListItem}>
+                                <ListItemIcon><GroupAddIcon className={classes.Icon}/></ListItemIcon>
+                                <ListItemText primary={'Join'} />
+                            </ListItem>
+                        </Link>
+                        <Link to={'/'} className={classes.link}>
+                            <ListItem button key={'contact'} className={classes.ListItem}>
+                                <ListItemIcon><PhoneIphoneIcon className={classes.Icon}/></ListItemIcon>
+                                <ListItemText primary={'Contact'} />
+                            </ListItem>
+                        </Link>
                     </div>
                 </Toolbar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>

@@ -39,6 +39,12 @@ export default {
     NavRight: {
         color: "black",
         marginLeft: "auto",
+        width: "50%",
+        height: "50%",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        alignItems: "center",
     },
     miniLogoRight: {
         color: "black",
@@ -53,9 +59,11 @@ export default {
             display: "none",
         }
     },
+    Icon: {
+        color: "#000000",
+    },
     button: {
         borderColor: "transparent",
-        margin: "5px",
         [sizes.down("sm")]: {
             display: "none",
         },

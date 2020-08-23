@@ -76,7 +76,7 @@ export default {
     },
     SectionSubTitle: {
         marginTop: "50px",
-        padding: "30px",
+        padding: "30px 40px 20px 40px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
