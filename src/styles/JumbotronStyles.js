@@ -13,11 +13,10 @@ export default {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "-10vh",
     },
     JumbotronTitle: {
         fontSize: "5rem",
-        [sizes.down("sm")]:{
+        [sizes.down("md")]:{
             marginLeft: "20px",
         }
     },

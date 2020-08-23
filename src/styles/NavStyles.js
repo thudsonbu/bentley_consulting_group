@@ -1,4 +1,5 @@
 import sizes from './sizes';
+import logo from '../images/Logo.png';
 
 export default {
     Nav: {
@@ -6,21 +7,29 @@ export default {
     },
     AppBar: {
         width: "100%",
-        background: "transparent",
+        backgroundColor: "white",
     },
     ToolBar: {
         background: "transparent",
+        backgroundColor: "white",
     },
     NavLeft: {
         marginRight: "auto",
     },
-    titleLeft: {
+    miniLogo: {
+        color: "black",
+        marginLeft: "20px",
+        paddingLeft: "30px",
+        width: "50px",
+        height: "50px",
+        backgroundImage: `url(${logo})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         [sizes.down("sm")]: {
             display: "none",
         }
     },
     menuButton: {
-        color: "white",
         marginRight: "auto",
         // border: "1px solid white",
         [sizes.up("sm")]: {
@@ -28,15 +37,23 @@ export default {
         },
     },
     NavRight: {
+        color: "black",
         marginLeft: "auto",
     },
-    titleRight: {
+    miniLogoRight: {
+        color: "black",
+        marginLeft: "20px",
+        paddingLeft: "30px",
+        width: "50px",
+        height: "50px",
+        backgroundImage: `url(${logo})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         [sizes.up("sm")]: {
             display: "none",
         }
     },
     button: {
-        color: "white",
         borderColor: "transparent",
         margin: "5px",
         [sizes.down("sm")]: {

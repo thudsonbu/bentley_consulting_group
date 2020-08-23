@@ -96,72 +96,67 @@ class Nav extends Component {
         );
 
         return(
-            <div className={classes.Nav}>
-                <AppBar position="static" className={classes.AppBar}>
-                    <Toolbar className={classes.ToolBar}>
-                        <div className={classes.NavLeft}>
-                            <IconButton
-                                edge="start"
-                                className={classes.menuButton}
-                                aria-label="menu"
-                                onClick={this.openDrawer}>
-                                <MenuIcon/>
-                            </IconButton>
-                            <Typography variant="h6" className={classes.titleLeft}>
-                                BCG
-                            </Typography>
+            <AppBar position="fixed" className={classes.AppBar}>
+                <Toolbar className={classes.ToolBar}>
+                    <div className={classes.NavLeft}>
+                        <IconButton
+                            edge="start"
+                            className={classes.menuButton}
+                            aria-label="menu"
+                            onClick={this.openDrawer}>
+                            <MenuIcon/>
+                        </IconButton>
+                        <div className={classes.miniLogo}/>
+                    </div>
+                    <div className={classes.NavRight}>
+                        <div className={classes.miniLogoRight}>
                         </div>
-                        <div className={classes.NavRight}>
-                            <Typography variant="h6" className={classes.titleRight}>
-                                BCG
-                            </Typography>
-                            <Button
-                                variant="outlined"
-                                color="default"
-                                className={classes.button}
-                                startIcon={<HomeIcon />}
-                            >
-                                Home
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                color="default"
-                                className={classes.button}
-                                startIcon={<EventAvailableIcon />}
-                            >
-                                Events
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                color="default"
-                                className={classes.button}
-                                startIcon={<GroupIcon />}
-                            >
-                                Team
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                color="default"
-                                className={classes.button}
-                                startIcon={<GroupAddIcon />}
-                            >
-                                Join
-                            </Button>
-                            <Button
-                                variant="outlined"
-                                color="default"
-                                className={classes.button}
-                                startIcon={<PhoneIphoneIcon />}
-                            >
-                                Contact
-                            </Button>
-                        </div>
-                    </Toolbar>
-                </AppBar>
+                        <Button
+                            variant="outlined"
+                            color="default"
+                            className={classes.button}
+                            startIcon={<HomeIcon />}
+                        >
+                            Home
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="default"
+                            className={classes.button}
+                            startIcon={<EventAvailableIcon />}
+                        >
+                            Events
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="default"
+                            className={classes.button}
+                            startIcon={<GroupIcon />}
+                        >
+                            Team
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="default"
+                            className={classes.button}
+                            startIcon={<GroupAddIcon />}
+                        >
+                            Join
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="default"
+                            className={classes.button}
+                            startIcon={<PhoneIphoneIcon />}
+                        >
+                            Contact
+                        </Button>
+                    </div>
+                </Toolbar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>
                     {list('left')}
                 </Drawer>
-            </div>
+            </AppBar>
         )
     }
 }
