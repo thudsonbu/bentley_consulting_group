@@ -86,7 +86,7 @@ export default {
     Block: {
         width: "300px",
         height: "400px",
-        margin: "75px",
+        margin: "60px",
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
@@ -95,6 +95,16 @@ export default {
             margin: "50px",
             width: "350px",
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+        }
+    },
+    BlockContainer: {
+        width: "80%",
+        display: "Flex",
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        alignItems: "center",
+        [sizes.down("xl")]: {
+            width: "100%",
         }
     },
     BlockImageProjects: {

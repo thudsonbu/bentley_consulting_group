@@ -76,36 +76,40 @@ class Home extends Component {
                         <h1>Reach out to or Join the BCG</h1>
                         <p>Would you like to become a consultant? Are you a business owner or representative that would like to contact us?</p>
                     </div>
-                    <div className={classes.Block}>
-                        <div className={classes.BlockImageJoin}/>
-                        <div className={classes.BlockContent}>
-                            <h2 className={classes.BlockTitle}>Join</h2>
-                            <p className={classes.BlockText}>Interested in joining the BCG, click here.</p>
+                    <div className={classes.BlockContainer}>
+                        <div className={classes.Block}>
+                            <div className={classes.BlockImageJoin}/>
+                            <div className={classes.BlockContent}>
+                                <h2 className={classes.BlockTitle}>Join</h2>
+                                <p className={classes.BlockText}>Interested in joining the BCG, click here.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className={classes.Block}>
-                        <div className={classes.BlockImageContact}/>
-                        <div className={classes.BlockContent}>
-                            <h2 className={classes.BlockTitle}>Contact</h2>
-                            <p className={classes.BlockText}>Would you like to work with the BCG or schedule an event?</p>
+                        <div className={classes.Block}>
+                            <div className={classes.BlockImageContact}/>
+                            <div className={classes.BlockContent}>
+                                <h2 className={classes.BlockTitle}>Contact</h2>
+                                <p className={classes.BlockText}>Would you like to work with the BCG or schedule an event?</p>
+                            </div>
                         </div>
                     </div>
                     <div className={classes.SectionSubTitle}>
                         <h1>Find events or meet our team.</h1>
                         <p>Would you like to become a consultant? Are you a business owner or representative that would like to contact us?</p>
                     </div>
-                    <div className={classes.Block}>
-                        <div className={classes.BlockImageEvents}/>
-                        <div className={classes.BlockContent}>
-                            <h2 className={classes.BlockTitle}>Events</h2>
-                            <p className={classes.BlockText}>See what events we have planned.</p>
+                    <div className={classes.BlockContainer}>
+                        <div className={classes.Block}>
+                            <div className={classes.BlockImageEvents}/>
+                            <div className={classes.BlockContent}>
+                                <h2 className={classes.BlockTitle}>Events</h2>
+                                <p className={classes.BlockText}>See what events we have planned.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className={classes.Block}>
-                        <div className={classes.BlockImageTeam}/>
-                        <div className={classes.BlockContent}>
-                            <h2 className={classes.BlockTitle}>Team</h2>
-                            <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
+                        <div className={classes.Block}>
+                            <div className={classes.BlockImageTeam}/>
+                            <div className={classes.BlockContent}>
+                                <h2 className={classes.BlockTitle}>Team</h2>
+                                <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
+                            </div>
                         </div>
                     </div>
                 <Footer/>
