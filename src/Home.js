@@ -6,19 +6,35 @@ import styles from './styles/HomeStyles';
 import Nav from './Nav';
 import Jumbotron from "./Jumbotron";
 import Footer from './Footer';
+import ContactUsForm from "./ContactUsForm";
 
 
 class Home extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            contactFormOpen: true,
+        };
+        this.contactSubmit = this.contactSubmit.bind(this);
+    }
+
+    contactSubmit() {
+        this.setState({
+            contactFormOpen: true,
+        })
     }
 
     render(){
+        const { contactFormOpen } = this.state;
         const { classes } = this.props;
         return (
             <div className={Home}>
                 <Nav/>
                 <Jumbotron/>
+                <ContactUsForm
+                    open={contactFormOpen}
+                    handleSubmit={this.contactSubmit}
+                />
                 <div className={classes.About}>
                     <div className={classes.AboutBox}>
                         <div className={classes.Logo}>

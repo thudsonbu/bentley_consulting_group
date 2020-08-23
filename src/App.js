@@ -5,8 +5,9 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Page from './Page';
 import Home from './Home';
+import './styles/Page.css';
 
-import Nav from './Nav';
+
 
 class App extends Component {
     constructor(props){
