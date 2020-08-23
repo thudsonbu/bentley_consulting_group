@@ -17,6 +17,12 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
+import EventAvailableIcon from '@material-ui/icons/EventAvailable';
+import GroupIcon from '@material-ui/icons/Group';
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+
 
 
 class Nav extends Component {
@@ -56,37 +62,91 @@ class Nav extends Component {
                 onKeyDown={this.openDrawer}
             >
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
-                <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                    <ListItem button key={'home'}>
+                        <ListItemIcon><HomeIcon/></ListItemIcon>
+                        <ListItemText primary={'Home'} />
+                    </ListItem>
+                    <ListItem button key={'events'}>
+                        <ListItemIcon><EventAvailableIcon/></ListItemIcon>
+                        <ListItemText primary={'Events'} />
+                    </ListItem>
+                    <ListItem button key={'team'}>
+                        <ListItemIcon><GroupIcon/></ListItemIcon>
+                        <ListItemText primary={'Team'} />
+                    </ListItem>
+                    <ListItem button key={'join'}>
+                        <ListItemIcon><GroupAddIcon/></ListItemIcon>
+                        <ListItemText primary={'Join'} />
+                    </ListItem>
+                    <ListItem button key={'contact'}>
+                        <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
+                        <ListItemText primary={'Contact'} />
+                    </ListItem>
                 </List>
             </div>
         );
 
         return(
             <div className={classes.Nav}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <IconButton
-                            edge="start"
-                            className={classes.menuButton}
-                            color="inherit"
-                            aria-label="menu"
-                            onClick={this.openDrawer}>
-                            <MenuIcon />
-                        </IconButton>
+                <AppBar position="static" className={classes.AppBar}>
+                    <Toolbar className={classes.ToolBar}>
+                        <div className={classes.NavLeft}>
+                            <IconButton
+                                edge="start"
+                                className={classes.menuButton}
+                                aria-label="menu"
+                                onClick={this.openDrawer}>
+                                <MenuIcon/>
+                            </IconButton>
+                            <Typography variant="h6" className={classes.titleLeft}>
+                                BCG
+                            </Typography>
+                        </div>
+                        <div className={classes.NavRight}>
+                            <Typography variant="h6" className={classes.titleRight}>
+                                BCG
+                            </Typography>
+                            <Button
+                                variant="outlined"
+                                color="default"
+                                className={classes.button}
+                                startIcon={<HomeIcon />}
+                            >
+                                Home
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                color="default"
+                                className={classes.button}
+                                startIcon={<EventAvailableIcon />}
+                            >
+                                Events
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                color="default"
+                                className={classes.button}
+                                startIcon={<GroupIcon />}
+                            >
+                                Team
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                color="default"
+                                className={classes.button}
+                                startIcon={<GroupAddIcon />}
+                            >
+                                Join
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                color="default"
+                                className={classes.button}
+                                startIcon={<PhoneIphoneIcon />}
+                            >
+                                Contact
+                            </Button>
+                        </div>
                     </Toolbar>
                 </AppBar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>
