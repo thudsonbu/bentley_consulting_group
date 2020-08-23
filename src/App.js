@@ -1,13 +1,43 @@
 import React, { Component } from 'react';
+
+import { Route, Switch } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+import Page from './Page';
+import Home from './Home';
+
 import Nav from './Nav';
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            page: "home",
+        }
+    }
     render() {
         return (
-            <div className="App">
-                <Nav/>
-            </div>
-        );
+            <Route
+                className='background'
+                render = {({location}) => (
+                <TransitionGroup style={{height: "100%"}}>
+                    <CSSTransition key={location.key} classNames='page' timeout={750}>
+                        <Switch location={location}>
+                            <Route
+                                exact
+                                path="/"
+                                render= {(routeProps) => (
+                                    <Page>
+                                        <Home/>
+                                    </Page>
+                                )}
+                            />
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
+                )}
+            />
+        )
     }
 }
 
