@@ -89,7 +89,7 @@ class ContactUs extends Component{
         const { classes } = this.props;
         const { FirstName, LastName, Organization, Position, Email, Subscribe, Inquiry, Submitted} = this.state;
         return(
-            <div className={classes.ContactUs}>
+            <div className={ContactUs}>
                 {this.renderRedirect()}
                 <Nav currentLocation={"ContactUs"}/>
                 <div className={classes.ContactUsContent}>

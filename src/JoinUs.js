@@ -84,10 +84,10 @@ class JoinUs extends Component{
     }
 
     render(){
-        const { classes, join } = this.props;
+        const { classes, } = this.props;
         const { FirstName, LastName, Major, Year, Email, Subscribe, Inquiry, Submitted} = this.state;
         return(
-            <div className={classes.JoinUs}>
+            <div className={JoinUs}>
                 {this.renderRedirect()}
                 <Nav currentLocation={"JoinUs"}/>
                 <div className={classes.JoinUsContent}>

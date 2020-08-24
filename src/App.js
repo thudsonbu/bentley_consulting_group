@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import Page from './Page';
+
 import Home from './Home';
-import './styles/Page.css';
 import JoinUs from "./JoinUs";
 import ContactUs from "./ContactUs";
+import Page from './Page';
+import './styles/Page.css';
+
 
 
 
@@ -24,13 +26,13 @@ class App extends Component {
                 className='background'
                 render = {({location}) => (
                 <TransitionGroup style={{height: "100%"}}>
-                    <CSSTransition key={location.key} classNames='page' timeout={750}>
+                    <CSSTransition key={location.key} classNames='page' timeout={1000}>
                         <Switch location={location}>
                             <Route
                                 exact
                                 path="/"
                                 render= {(routeProps) => (
-                                    <Page>
+                                    <Page className="page">
                                         <Home/>
                                     </Page>
                                 )}
@@ -39,7 +41,7 @@ class App extends Component {
                                 exact
                                 path="/JoinUs"
                                 render= {(routeProps) => (
-                                    <Page>
+                                    <Page className="page">
                                         <JoinUs/>
                                     </Page>
                                 )}
@@ -48,7 +50,7 @@ class App extends Component {
                                 exact
                                 path="/ContactUs"
                                 render= {(routeProps) => (
-                                    <Page>
+                                    <Page className="page">
                                         <ContactUs/>
                                     </Page>
                                 )}
