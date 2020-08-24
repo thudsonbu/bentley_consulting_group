@@ -8,6 +8,8 @@ import Jumbotron from "./Jumbotron";
 import Footer from './Footer';
 import ContactUsForm from "./ContactUsForm";
 
+import { Link } from 'react-router-dom';
+
 
 class Home extends Component {
     constructor(props){
@@ -119,20 +121,24 @@ class Home extends Component {
                         <p>Would you like to become a consultant? Are you a business owner or representative that would like to contact us?</p>
                     </div>
                     <div className={classes.BlockContainer}>
-                        <div className={classes.Block}>
-                            <div className={classes.BlockImageJoin}/>
-                            <div className={classes.BlockContent}>
-                                <h2 className={classes.BlockTitle}>Join</h2>
-                                <p className={classes.BlockText}>Interested in joining the BCG or being added to our email list?</p>
+                        <Link to='/JoinUs' className={classes.Link}>
+                            <div className={classes.Block}>
+                                <div className={classes.BlockImageJoin}/>
+                                <div className={classes.BlockContent}>
+                                    <h2 className={classes.BlockTitle}>Join</h2>
+                                    <p className={classes.BlockText}>Interested in joining the BCG or being added to our email list?</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className={classes.ClickableBlock} onClick={this.openContactForm}>
-                            <div className={classes.BlockImageContact}/>
-                            <div className={classes.BlockContent}>
-                                <h2 className={classes.BlockTitle}>Contact</h2>
-                                <p className={classes.BlockText}>Would you like to work with the BCG or schedule an event?</p>
+                        </Link>
+                        <Link to='/ContactUs' className={classes.Link}>
+                            <div className={classes.ClickableBlock}>
+                                <div className={classes.BlockImageContact}/>
+                                <div className={classes.BlockContent}>
+                                    <h2 className={classes.BlockTitle}>Contact</h2>
+                                    <p className={classes.BlockText}>Would you like to work with the BCG or schedule an event?</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className={classes.SectionSubTitle}>
                         <h1>Find events or meet our team.</h1>

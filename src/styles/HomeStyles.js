@@ -348,4 +348,7 @@ export default {
         backgroundSize: "cover",
         backgroundPosition: "center",
     },
+    Link: {
+        textDecoration: "none",
+    }
 }
