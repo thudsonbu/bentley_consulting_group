@@ -78,6 +78,7 @@ export default {
     SectionTitle: {
         color: "#ffffff",
         fontSize: "4rem",
+        padding: "20px",
     },
     SectionSubTitle: {
         marginTop: "50px",
@@ -123,9 +124,6 @@ export default {
         flexWrap: "wrap",
         justifyContent: "space-around",
         alignItems: "center",
-        [sizes.down("xl")]: {
-            width: "100%",
-        }
     },
     BlockImageProjects: {
         height: "250px",
@@ -175,11 +173,16 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "25px",
+            height: "200px",
+            width: "200px",
+        }
     },
     LogoBlockRSM: {
         margin: "50px",
-        height: "150px",
-        width: "150px",
+        height: "175px",
+        width: "175px",
         backgroundImage: `url(${RSM})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -188,6 +191,11 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "15px",
+            height: "250px",
+            width: "250px",
+        }
     },
     LogoBlockDeloitte: {
         margin: "50px",
@@ -201,6 +209,11 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "15px",
+            height: "200px",
+            width: "200px",
+        }
     },
     LogoBlockMassaro: {
         margin: "50px",
@@ -214,6 +227,9 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "25px",
+        }
     },
     LogoBlockPWC: {
         margin: "50px",
@@ -227,10 +243,15 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "15px",
+            height: "200px",
+            width: "200px",
+        }
     },
     LogoBlockTableau: {
         margin: "50px",
-        height: "200px",
+        height: "175px",
         width: "400px",
         backgroundImage: `url(${tableau})`,
         backgroundSize: "cover",
@@ -240,11 +261,16 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "25px",
+            height: "150px",
+            width: "400px",
+        }
     },
     LogoBlockSalesForce: {
-        margin: "50px",
-        height: "150px",
-        width: "150px",
+        margin: "15px",
+        height: "200px",
+        width: "200px",
         backgroundImage: `url(${salesforce})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -253,6 +279,12 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "10px",
+            marginLeft: "90px",
+            height: "250px",
+            width: "250px",
+        }
     },
     LogoBlockClickup: {
         margin: "50px",
@@ -266,11 +298,15 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "25px",
+            marginBottom: "0px",
+        }
     },
     LogoBlockAirtable: {
-        margin: "50px",
+        margin: "25px",
         height: "200px",
-        width: "220px",
+        width: "250px",
         backgroundImage: `url(${airtable})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -279,6 +315,10 @@ export default {
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
+        [sizes.down("sm")]:{
+            margin: "25px",
+            marginLeft: "50px",
+        }
     },
     BlockImageJoin: {
         height: "250px",
