@@ -23,6 +23,7 @@ export default {
         },
         [sizes.down("md")]: {
             width: "90%",
+            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         }
     },
     SectionTitleBlock: {

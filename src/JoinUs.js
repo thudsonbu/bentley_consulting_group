@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import {withStyles} from '@material-ui/styles';
 import styles from './styles/JoinUsStyles';
 
+import { Redirect } from 'react-router-dom';
+
 import Button from '@material-ui/core/Button';
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import TextField from '@material-ui/core/TextField';
@@ -13,6 +15,12 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 
 import Nav from './Nav';
@@ -27,16 +35,65 @@ class JoinUs extends Component{
             Major: "",
             Year: "",
             Email: "",
-            Subscribe: false,
+            Subscribe: true,
             Inquiry: "",
+            Submitted: false,
+            Redirect: false,
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleCheck = this.handleCheck.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+        this.renderRedirect = this.renderRedirect.bind(this);
+    }
+
+    handleChange(evt) {
+        this.setState( {
+            [evt.target.name]: evt.target.value
+        });
+    }
+
+    handleCheck(evt) {
+        this.setState( {
+            [evt.target.name]: evt.target.checked
+        });
+    }
+
+    handleClose(){
+        this.setState({
+            Submitted: false,
+            Redirect: true,
+        });
+    }
+
+
+    handleSubmit() {
+        let new_member = {...this.state};
+        console.log(new_member);
+        this.setState({
+            FirstName: "",
+            LastName: "",
+            Major: "",
+            Year: "",
+            Email: "",
+            Subscribe: true,
+            Inquiry: "",
+            Submitted: true,
+        });
+    }
+
+    renderRedirect() {
+        if (this.state.Redirect){
+            return <Redirect to='/' />
         }
     }
 
     render(){
         const { classes } = this.props;
-        const { FirstName, LastName, Major, Email, Subscribe, Inquiry } = this.state;
+        const { FirstName, LastName, Major, Year, Email, Subscribe, Inquiry, Submitted} = this.state;
         return(
             <div className={classes.JoinUs}>
+                {this.renderRedirect()}
                 <Nav currentLocation={"JoinUs"}/>
                 <div className={classes.JoinUsContent}>
                     <div className={classes.SectionTitleBlock}>
@@ -47,7 +104,7 @@ class JoinUs extends Component{
                             <h1>Become a Consultant</h1>
                             <p className={classes.SectionSubTitleText}>Fill out the form below to become part of the foremost consulting organization on bentley campus.</p>
                         </div>
-                        <ValidatorForm className={classes.ValidatorForm}>
+                        <ValidatorForm onSubmit={this.handleSubmit} className={classes.ValidatorForm}>
                             <div className={classes.inputFieldContainer}>
                                 <div className={classes.FirstNameFieldContainer}>
                                     <TextValidator
@@ -81,6 +138,7 @@ class JoinUs extends Component{
                                         <Select
                                             className={classes.MajorField}
                                             labelId="demo-simple-select-label"
+                                            name="Major"
                                             id="Major"
                                             value={Major}
                                             onChange={this.handleChange}
@@ -100,8 +158,9 @@ class JoinUs extends Component{
                                     <Select
                                         className={classes.YearField}
                                         labelId="demo-simple-select-label"
-                                        id="Major"
-                                        value={Major}
+                                        id="Year"
+                                        name="Year"
+                                        value={Year}
                                         onChange={this.handleChange}
                                     >
                                         <MenuItem value={"Freshman"}>Freshman</MenuItem>
@@ -141,19 +200,19 @@ class JoinUs extends Component{
                                         control={
                                             <Checkbox
                                                 checked={Subscribe}
-                                                onChange={this.handleChange}
-                                                name="checkedB"
+                                                onChange={this.handleCheck}
+                                                name="Subscribe"
                                                 color="primary"
                                             />
                                         }
-                                        label="Add me to email list"
+                                        label="Subscribe"
                                     />
                                 </div>
                                 <div className={classes.SubmitButtonContainer}>
                                     <Button
                                         variant="contained"
                                         className={classes.SubmitButton}
-                                        onClick={this.handleSubmit}
+                                        type="submit"
                                         color="primary">
                                         Submit
                                     </Button>
@@ -162,6 +221,19 @@ class JoinUs extends Component{
                         </ValidatorForm>
                     </div>
                 </div>
+                <Dialog
+                    open={Submitted}
+                    onClose={this.handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+                    <DialogTitle id="alert-dialog-title">Submitted Succesfully!</DialogTitle>
+                    <DialogActions>
+                        <Button onClick={this.handleClose} color="primary">
+                            Continue
+                        </Button>
+                    </DialogActions>
+                </Dialog>
                 <Footer/>
             </div>
         )
