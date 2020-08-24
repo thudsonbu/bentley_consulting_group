@@ -1,5 +1,6 @@
 import sizes from './sizes';
 import background from '../images/bentleyLibrary.jpg';
+import backgroundMobile from '../images/bentleyLibraryMobile.e42854fb.jpg';
 
 export default {
     Jumbotron: {
@@ -7,12 +8,14 @@ export default {
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
         color: "white",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        [sizes.up("sm")]: {
+            backgroundAttachment: "fixed",
+        }
     },
     JumbotronTitle: {
         fontSize: "5rem",

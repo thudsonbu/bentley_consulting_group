@@ -36,9 +36,6 @@ export default {
         borderColor: "transparent",
         backgroundColor: "transparent",
         color: "#ffffff",
-        [sizes.down("sm")]: {
-            display: "none",
-        },
     },
     miniLogo: {
         color: "black",
