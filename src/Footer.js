@@ -14,41 +14,43 @@ import { white } from '@material-ui/core/colors';
 
 import { withStyles } from '@material-ui/styles';
 import styles from './styles/FooterStyles';
+import Button from "@material-ui/core/Button";
 
 function Footer(props) {
     return (
         <div className={props.classes.Footer}>
             <div className={props.classes.FooterLinks}>
                 <Link to={'/'} className={props.classes.link}>
-                    <ListItem button key={'home'} className={props.classes.ListItem}>
-                        <ListItemIcon><HomeIcon className={props.classes.Icon}/></ListItemIcon>
-                        <ListItemText primary={'Home'} />
-                    </ListItem>
+                    <Button
+                        className={props.classes.button}
+                        startIcon={<EventAvailableIcon className={props.classes.Icon}/>}
+                    >
+                        Events
+                    </Button>
                 </Link>
                 <Link to={'/'} className={props.classes.link}>
-                    <ListItem button key={'events'} className={props.classes.ListItem}>
-                        <ListItemIcon><EventAvailableIcon className={props.classes.Icon}/></ListItemIcon>
-                        <ListItemText primary={'Events'} />
-                    </ListItem>
+                    <Button
+                        className={props.classes.button}
+                        startIcon={<GroupIcon className={props.classes.Icon}/>}
+                    >
+                        Team
+                    </Button>
                 </Link>
                 <Link to={'/'} className={props.classes.link}>
-                    <ListItem button key={'team'} className={props.classes.ListItem}>
-                        <ListItemIcon><GroupIcon className={props.classes.Icon}/></ListItemIcon>
-                        <ListItemText primary={'Team'} />
-                    </ListItem>
+                    <Button
+                        className={props.classes.button}
+                        startIcon={<GroupAddIcon className={props.classes.Icon}/>}
+                    >
+                        Join Us
+                    </Button>
                 </Link>
-                <Link to={'/'} className={props.classes.link}>
-                    <ListItem button key={'join'} className={props.classes.ListItem}>
-                        <ListItemIcon><GroupAddIcon className={props.classes.Icon}/></ListItemIcon>
-                        <ListItemText primary={'Join'} />
-                    </ListItem>
-                </Link>
-                <Link to={'/'} className={props.classes.link}>
-                    <ListItem button key={'contact'} className={props.classes.ListItem}>
-                        <ListItemIcon><PhoneIphoneIcon className={props.classes.Icon}/></ListItemIcon>
-                        <ListItemText primary={'Contact'} />
-                    </ListItem>
-                </Link>
+                <Button
+                    className={props.classes.button}
+                    startIcon={<PhoneIphoneIcon className={props.classes.Icon}/>}
+                    onClick={props.contactUs}
+                >
+                    Contact Us
+                </Button>
             </div>
             <div className={props.classes.FooterCC}>
                 <div className={props.classes.miniLogo}/>

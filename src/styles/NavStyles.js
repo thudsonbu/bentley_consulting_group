@@ -43,7 +43,7 @@ export default {
     NavRight: {
         color: "black",
         marginLeft: "auto",
-        width: "60%",
+        width: "40%",
         height: "50%",
         display: "flex",
         flexWrap: "wrap",
@@ -58,6 +58,8 @@ export default {
     },
     button: {
         borderColor: "transparent",
+        backgroundColor: "#ffffff",
+        color: "black",
         [sizes.down("sm")]: {
             display: "none",
         },

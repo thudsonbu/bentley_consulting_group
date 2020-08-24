@@ -21,6 +21,7 @@ class ContactUsForm extends Component {
             Inquiry: "",
         };
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(evt) {
@@ -29,14 +30,22 @@ class ContactUsForm extends Component {
         });
     }
 
+    handleSubmit(){
+        let new_contact = {};
+        new_contact.firstName = this.state.FirstName;
+        new_contact.lastName = this.state.LastName;
+        new_contact.email = this.state.Email;
+        new_contact.inquiry = this.state.Inquiry;
+        this.props.handleSubmit(new_contact);
+    }
+
     render() {
-        const { open, classes } = this.props;
+        const { open, classes, handleClose, handleSubmit } = this.props;
         const { FirstName, LastName, Email, Inquiry } = this.state;
         return(
             <Dialog
                 open={open}
-                onClose={this.handleClose}
-                className={classes.ContactUs}
+                onClose={handleClose}
             >
                 <ValidatorForm>
                     <DialogTitle id="contact-us-form-title">Contact Us Form</DialogTitle>
@@ -100,6 +109,14 @@ class ContactUsForm extends Component {
                                 </div>
                             </div>
                     </DialogContent>
+                    <DialogActions>
+                        <Button
+                            className={classes.submitButton}
+                            onClick={this.handleSubmit}
+                        >
+                            Submit
+                        </Button>
+                    </DialogActions>
                 </ValidatorForm>
             </Dialog>
         )

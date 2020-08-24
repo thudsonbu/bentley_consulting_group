@@ -32,6 +32,14 @@ export default {
         justifyContent: "center",
         paddingBottom: "10px",
     },
+    button: {
+        borderColor: "transparent",
+        backgroundColor: "transparent",
+        color: "#ffffff",
+        [sizes.down("sm")]: {
+            display: "none",
+        },
+    },
     miniLogo: {
         color: "black",
         paddingLeft: "30px",

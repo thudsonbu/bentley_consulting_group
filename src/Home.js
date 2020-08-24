@@ -13,15 +13,31 @@ class Home extends Component {
     constructor(props){
         super(props);
         this.state = {
-            contactFormOpen: true,
+            contactFormOpen: false,
         };
-        this.contactSubmit = this.contactSubmit.bind(this);
+        this.inquirySubmit = this.inquirySubmit.bind(this);
+        this.openContactForm = this.openContactForm.bind(this);
+        this.closeContactForm = this.closeContactForm.bind(this);
     }
 
-    contactSubmit() {
+    openContactForm(){
         this.setState({
             contactFormOpen: true,
         })
+    }
+
+    closeContactForm(){
+        this.setState({
+            contactFormOpen: false,
+        })
+    }
+
+
+    inquirySubmit(newContact) {
+        console.log(newContact);
+        this.setState({
+            contactFormOpen: false,
+        });
     }
 
     render(){
@@ -29,11 +45,12 @@ class Home extends Component {
         const { classes } = this.props;
         return (
             <div className={Home}>
-                <Nav/>
+                <Nav contactUs={this.openContactForm}/>
                 <Jumbotron/>
                 <ContactUsForm
                     open={contactFormOpen}
-                    handleSubmit={this.contactSubmit}
+                    handleClose={this.closeContactForm}
+                    handleSubmit={this.inquirySubmit}
                 />
                 <div className={classes.About}>
                     <div className={classes.AboutBox}>
@@ -106,10 +123,10 @@ class Home extends Component {
                             <div className={classes.BlockImageJoin}/>
                             <div className={classes.BlockContent}>
                                 <h2 className={classes.BlockTitle}>Join</h2>
-                                <p className={classes.BlockText}>Interested in joining the BCG, click here.</p>
+                                <p className={classes.BlockText}>Interested in joining the BCG or being added to our email list?</p>
                             </div>
                         </div>
-                        <div className={classes.Block}>
+                        <div className={classes.ClickableBlock} onClick={this.openContactForm}>
                             <div className={classes.BlockImageContact}/>
                             <div className={classes.BlockContent}>
                                 <h2 className={classes.BlockTitle}>Contact</h2>
@@ -137,7 +154,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                <Footer/>
+                <Footer contactUs={this.openContactForm}/>
                 </div>
             </div>
         )

@@ -51,7 +51,7 @@ class Nav extends Component {
     }
 
     render(){
-        const { classes } = this.props;
+        const { classes, contactUs } = this.props;
         const { drawerOpen } = this.state;
         const list = () => (
             <div
@@ -61,12 +61,6 @@ class Nav extends Component {
                 onKeyDown={this.openDrawer}
             >
                 <List>
-                    <Link to={'/'} className={classes.link}>
-                        <ListItem button key={'home'}>
-                            <ListItemIcon><HomeIcon/></ListItemIcon>
-                            <ListItemText primary={'Home'} />
-                        </ListItem>
-                    </Link>
                     <Link to={'/'} className={classes.link}>
                         <ListItem button key={'events'}>
                             <ListItemIcon><EventAvailableIcon/></ListItemIcon>
@@ -85,12 +79,14 @@ class Nav extends Component {
                             <ListItemText primary={'Join'} />
                         </ListItem>
                     </Link>
-                    <Link to={'/'} className={classes.link}>
-                        <ListItem button key={'contact'}>
-                            <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
-                            <ListItemText primary={'Contact'} />
-                        </ListItem>
-                    </Link>
+                    <ListItem
+                        button
+                        key={'contact'}
+                        onClick={contactUs}
+                    >
+                        <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
+                        <ListItemText primary={'Contact'} />
+                    </ListItem>
                 </List>
             </div>
         );
@@ -106,39 +102,42 @@ class Nav extends Component {
                             onClick={this.openDrawer}>
                             <MenuIcon/>
                         </IconButton>
-                        <div className={classes.miniLogo}/>
+                        <Link to={'/'} className={classes.link}>
+                            <div className={classes.miniLogo}/>
+                        </Link>
                     </div>
                     <div className={classes.NavRight}>
                         <Link to={'/'} className={classes.link}>
-                            <ListItem button key={'home'} className={classes.ListItem}>
-                                <ListItemIcon><HomeIcon className={classes.Icon}/></ListItemIcon>
-                                <ListItemText primary={'Home'}/>
-                            </ListItem>
+                            <Button
+                                className={classes.button}
+                                startIcon={<EventAvailableIcon className={classes.Icon}/>}
+                            >
+                                Events
+                            </Button>
                         </Link>
                         <Link to={'/'} className={classes.link}>
-                            <ListItem button key={'events'} className={classes.ListItem}>
-                                <ListItemIcon><EventAvailableIcon className={classes.Icon}/></ListItemIcon>
-                                <ListItemText primary={'Events'} />
-                            </ListItem>
+                            <Button
+                                className={classes.button}
+                                startIcon={<GroupIcon className={classes.Icon}/>}
+                            >
+                                Team
+                            </Button>
                         </Link>
                         <Link to={'/'} className={classes.link}>
-                            <ListItem button key={'team'} className={classes.ListItem}>
-                                <ListItemIcon><GroupIcon className={classes.Icon}/></ListItemIcon>
-                                <ListItemText primary={'Team'} />
-                            </ListItem>
+                            <Button
+                                className={classes.button}
+                                startIcon={<GroupAddIcon className={classes.Icon}/>}
+                            >
+                                Join Us
+                            </Button>
                         </Link>
-                        <Link to={'/'} className={classes.link}>
-                            <ListItem button key={'join'} className={classes.ListItem}>
-                                <ListItemIcon><GroupAddIcon className={classes.Icon}/></ListItemIcon>
-                                <ListItemText primary={'Join'} />
-                            </ListItem>
-                        </Link>
-                        <Link to={'/'} className={classes.link}>
-                            <ListItem button key={'contact'} className={classes.ListItem}>
-                                <ListItemIcon><PhoneIphoneIcon className={classes.Icon}/></ListItemIcon>
-                                <ListItemText primary={'Contact'} />
-                            </ListItem>
-                        </Link>
+                        <Button
+                            className={classes.button}
+                            startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
+                            onClick={contactUs}
+                        >
+                            Contact Us
+                        </Button>
                     </div>
                 </Toolbar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>
