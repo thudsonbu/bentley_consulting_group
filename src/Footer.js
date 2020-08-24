@@ -36,7 +36,7 @@ function Footer(props) {
                         Team
                     </Button>
                 </Link>
-                <Link to={'/'} className={props.classes.link}>
+                <Link to={'/JoinUs'} className={props.classes.link}>
                     <Button
                         className={props.classes.button}
                         startIcon={<GroupAddIcon className={props.classes.Icon}/>}
@@ -44,13 +44,14 @@ function Footer(props) {
                         Join Us
                     </Button>
                 </Link>
-                <Button
-                    className={props.classes.button}
-                    startIcon={<PhoneIphoneIcon className={props.classes.Icon}/>}
-                    onClick={props.contactUs}
-                >
-                    Contact Us
-                </Button>
+                <Link to={'/ContactUs'} className={props.classes.link}>
+                    <Button
+                        className={props.classes.button}
+                        startIcon={<PhoneIphoneIcon className={props.classes.Icon}/>}
+                    >
+                        Contact Us
+                    </Button>
+                </Link>
             </div>
             <div className={props.classes.FooterCC}>
                 <div className={props.classes.miniLogo}/>

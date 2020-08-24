@@ -1,27 +1,29 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
 
-import {withStyles} from '@material-ui/styles';
-import styles from './styles/JoinUsStyles';
+import Nav from "./Nav";
+import Footer from "./Footer";
 
-import { Redirect } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
-import Button from '@material-ui/core/Button';
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import TextField from '@material-ui/core/TextField';
-import Checkbox from '@material-ui/core/Checkbox';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import {TextValidator, ValidatorForm} from "react-material-ui-form-validator";
+
+import InputLabel from "@material-ui/core/InputLabel/InputLabel";
+import Select from "@material-ui/core/Select/Select";
+import MenuItem from "@material-ui/core/MenuItem";
+import TextField from "@material-ui/core/TextField/TextField";
+import FormControlLabel from "@material-ui/core/FormControlLabel/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox/Checkbox";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions/DialogActions";
+
+import {withStyles} from "@material-ui/styles";
+import styles from "./styles/ContactUsStyles";
 
 
-import Nav from './Nav';
-import Footer from './Footer';
 
-class JoinUs extends Component{
+class ContactUs extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -68,8 +70,8 @@ class JoinUs extends Component{
         this.setState({
             FirstName: "",
             LastName: "",
-            Major: "",
-            Year: "",
+            Organization: "",
+            Position: "",
             Email: "",
             Subscribe: true,
             Inquiry: "",
@@ -84,17 +86,17 @@ class JoinUs extends Component{
     }
 
     render(){
-        const { classes, join } = this.props;
-        const { FirstName, LastName, Major, Year, Email, Subscribe, Inquiry, Submitted} = this.state;
+        const { classes } = this.props;
+        const { FirstName, LastName, Organization, Position, Email, Subscribe, Inquiry, Submitted} = this.state;
         return(
-            <div className={classes.JoinUs}>
+            <div className={classes.ContactUs}>
                 {this.renderRedirect()}
-                <Nav currentLocation={"JoinUs"}/>
-                <div className={classes.JoinUsContent}>
-                    <div className={classes.JoinUsForm}>
+                <Nav currentLocation={"ContactUs"}/>
+                <div className={classes.ContactUsContent}>
+                    <div className={classes.ContactUsForm}>
                         <div className={classes.SectionSubTitle}>
-                            <h1>Become a Consultant</h1>
-                            <p className={classes.SectionSubTitleText}>Fill out the form below to become part of the foremost consulting organization on bentley campus.</p>
+                            <h1>Contact Us Form</h1>
+                            <p className={classes.SectionSubTitleText}>Fill out the form below and we will get back to you as soon as possible</p>
                         </div>
                         <ValidatorForm onSubmit={this.handleSubmit} className={classes.ValidatorForm}>
                             <div className={classes.inputFieldContainer}>
@@ -125,42 +127,31 @@ class JoinUs extends Component{
                                         errorMessages={["Last Name Required"]}
                                     />
                                 </div>
-                                <div className={classes.MajorFieldContainer}>
-                                        <InputLabel id="demo-simple-select-label">Major</InputLabel>
-                                        <Select
-                                            className={classes.MajorField}
-                                            labelId="demo-simple-select-label"
-                                            name="Major"
-                                            id="Major"
-                                            value={Major}
-                                            onChange={this.handleChange}
-                                        >
-                                            <MenuItem value={"Finance/Accounting"}>Finance/Accounting</MenuItem>
-                                            <MenuItem value={"Economics/Eco-Fi"}>Economics/Eco-Fi</MenuItem>
-                                            <MenuItem value={"Data Analytics/Actuarial Science"}>Data Analytics/Actuarial Science</MenuItem>
-                                            <MenuItem value={"CIS/ISAC/IDCC"}>CIS/ISAC/IDCC</MenuItem>
-                                            <MenuItem value={"Management"}>Management</MenuItem>
-                                            <MenuItem value={"Marketing"}>Marketing</MenuItem>
-                                            <MenuItem value={"Sales"}>Sales</MenuItem>
-                                            <MenuItem value={"Other"}>Other</MenuItem>
-                                        </Select>
-                                </div>
-                                <div className={classes.YearFieldContainer}>
-                                    <InputLabel id="demo-simple-select-label">Year</InputLabel>
-                                    <Select
-                                        className={classes.YearField}
-                                        labelId="demo-simple-select-label"
-                                        id="Year"
-                                        name="Year"
-                                        value={Year}
+                                <div className={classes.OrganizationContainer}>
+                                    <TextValidator
+                                        margin="dense"
+                                        id="Organization"
+                                        label="Organizaton Name"
+                                        name={"Organization"}
+                                        className={classes.OrganizationField}
+                                        value={Organization}
                                         onChange={this.handleChange}
-                                    >
-                                        <MenuItem value={"Freshman"}>Freshman</MenuItem>
-                                        <MenuItem value={"Sophomore"}>Sophomore</MenuItem>
-                                        <MenuItem value={"Junior"}>Junior</MenuItem>
-                                        <MenuItem value={"Senior"}>Senior</MenuItem>
-                                    </Select>
+                                        validators={["required"]}
+                                        errorMessages={["Organization Required"]}
+                                    />
                                 </div>
+                                <div className={classes.PositionContainer}>
+                                    <TextValidator
+                                        margin="dense"
+                                        id="Position"
+                                        label="Position"
+                                        name={"Organization"}
+                                        className={classes.PositionField}
+                                        value={Position}
+                                        onChange={this.handleChange}
+                                    />
+                                </div>
+
                                 <div className={classes.EmailFieldContainer}>
                                     <TextValidator
                                         margin="dense"
@@ -232,4 +223,4 @@ class JoinUs extends Component{
     }
 }
 
-export default withStyles(styles)(JoinUs);
+export default withStyles(styles)(ContactUs);

@@ -7,6 +7,7 @@ import Page from './Page';
 import Home from './Home';
 import './styles/Page.css';
 import JoinUs from "./JoinUs";
+import ContactUs from "./ContactUs";
 
 
 
@@ -40,6 +41,15 @@ class App extends Component {
                                 render= {(routeProps) => (
                                     <Page>
                                         <JoinUs/>
+                                    </Page>
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/ContactUs"
+                                render= {(routeProps) => (
+                                    <Page>
+                                        <ContactUs/>
                                     </Page>
                                 )}
                             />

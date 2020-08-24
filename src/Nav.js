@@ -79,14 +79,12 @@ class Nav extends Component {
                             <ListItemText primary={'Join'} />
                         </ListItem>
                     </Link>
-                    <ListItem
-                        button
-                        key={'contact'}
-                        onClick={contactUs}
-                    >
-                        <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
-                        <ListItemText primary={'Contact'} />
-                    </ListItem>
+                    <Link to={'/ContactUs'} className={classes.link}>
+                        <ListItem button key={'contact'}>
+                            <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
+                            <ListItemText primary={'Contact'} />
+                        </ListItem>
+                    </Link>
                 </List>
             </div>
         );
@@ -131,13 +129,14 @@ class Nav extends Component {
                                 Join Us
                             </Button>
                         </Link>
-                        <Button
-                            className={classes.button}
-                            startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
-                            onClick={contactUs}
-                        >
-                            Contact Us
-                        </Button>
+                        <Link to={'/ContactUs'} className={classes.link}>
+                            <Button
+                                className={classes.button}
+                                startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
+                            >
+                                Contact Us
+                            </Button>
+                        </Link>
                     </div>
                 </Toolbar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>
