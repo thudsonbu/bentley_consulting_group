@@ -6,6 +6,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Page from './Page';
 import Home from './Home';
 import './styles/Page.css';
+import JoinUs from "./JoinUs";
 
 
 
@@ -30,6 +31,15 @@ class App extends Component {
                                 render= {(routeProps) => (
                                     <Page>
                                         <Home/>
+                                    </Page>
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/JoinUs"
+                                render= {(routeProps) => (
+                                    <Page>
+                                        <JoinUs/>
                                     </Page>
                                 )}
                             />

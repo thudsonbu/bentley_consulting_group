@@ -73,7 +73,7 @@ class Nav extends Component {
                             <ListItemText primary={'Team'} />
                         </ListItem>
                     </Link>
-                    <Link to={'/'} className={classes.link}>
+                    <Link to={'/JoinUs'} className={classes.link}>
                         <ListItem button key={'join'}>
                             <ListItemIcon><GroupAddIcon/></ListItemIcon>
                             <ListItemText primary={'Join'} />
@@ -123,7 +123,7 @@ class Nav extends Component {
                                 Team
                             </Button>
                         </Link>
-                        <Link to={'/'} className={classes.link}>
+                        <Link to={'/JoinUs'} className={classes.link}>
                             <Button
                                 className={classes.button}
                                 startIcon={<GroupAddIcon className={classes.Icon}/>}

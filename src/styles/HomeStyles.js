@@ -180,7 +180,7 @@ export default {
         }
     },
     LogoBlockRSM: {
-        margin: "50px",
+        margin: "40px",
         height: "175px",
         width: "175px",
         backgroundImage: `url(${RSM})`,
@@ -198,7 +198,7 @@ export default {
         }
     },
     LogoBlockDeloitte: {
-        margin: "50px",
+        margin: "40px",
         height: "150px",
         width: "150px",
         backgroundImage: `url(${Deloitte})`,
@@ -216,7 +216,7 @@ export default {
         }
     },
     LogoBlockMassaro: {
-        margin: "50px",
+        margin: "40px",
         height: "150px",
         width: "300px",
         backgroundImage: `url(${Massaro})`,
@@ -232,7 +232,7 @@ export default {
         }
     },
     LogoBlockPWC: {
-        margin: "50px",
+        margin: "40px",
         height: "150px",
         width: "150px",
         backgroundImage: `url(${PWC})`,
@@ -250,7 +250,7 @@ export default {
         }
     },
     LogoBlockTableau: {
-        margin: "50px",
+        margin: "40px",
         height: "175px",
         width: "400px",
         backgroundImage: `url(${tableau})`,
