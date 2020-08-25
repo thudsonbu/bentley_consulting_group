@@ -32,7 +32,7 @@ class App extends Component {
                                 exact
                                 path="/"
                                 render= {(routeProps) => (
-                                    <Page className="page">
+                                    <Page>
                                         <Home/>
                                     </Page>
                                 )}
@@ -41,7 +41,7 @@ class App extends Component {
                                 exact
                                 path="/JoinUs"
                                 render= {(routeProps) => (
-                                    <Page className="page">
+                                    <Page>
                                         <JoinUs/>
                                     </Page>
                                 )}
@@ -50,7 +50,7 @@ class App extends Component {
                                 exact
                                 path="/ContactUs"
                                 render= {(routeProps) => (
-                                    <Page className="page">
+                                    <Page>
                                         <ContactUs/>
                                     </Page>
                                 )}

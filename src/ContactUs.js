@@ -6,10 +6,6 @@ import Footer from "./Footer";
 import {Redirect} from 'react-router-dom';
 
 import {TextValidator, ValidatorForm} from "react-material-ui-form-validator";
-
-import InputLabel from "@material-ui/core/InputLabel/InputLabel";
-import Select from "@material-ui/core/Select/Select";
-import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox/Checkbox";
@@ -131,7 +127,7 @@ class ContactUs extends Component{
                                     <TextValidator
                                         margin="dense"
                                         id="Organization"
-                                        label="Organizaton Name"
+                                        label="Organizaton"
                                         name={"Organization"}
                                         className={classes.OrganizationField}
                                         value={Organization}
@@ -145,13 +141,12 @@ class ContactUs extends Component{
                                         margin="dense"
                                         id="Position"
                                         label="Position"
-                                        name={"Organization"}
+                                        name={"Position"}
                                         className={classes.PositionField}
                                         value={Position}
                                         onChange={this.handleChange}
                                     />
                                 </div>
-
                                 <div className={classes.EmailFieldContainer}>
                                     <TextValidator
                                         margin="dense"

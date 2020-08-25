@@ -57,12 +57,17 @@ export default {
         color: "#000000",
     },
     button: {
+        paddingBottom: "10px",
         borderColor: "transparent",
+        borderRadius: "0px",
         backgroundColor: "#ffffff",
-        color: "black",
+        color: "#000000",
         [sizes.down("sm")]: {
             display: "none",
         },
+    },
+    buttonActive: {
+        borderBottom: "2px solid #064cd5",
     },
     link: {
         textDecoration: "none",

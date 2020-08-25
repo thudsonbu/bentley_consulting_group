@@ -5,6 +5,8 @@ import styles from './styles/NavStyles';
 
 import { Link } from 'react-router-dom';
 
+import classNames from 'classnames';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -51,7 +53,7 @@ class Nav extends Component {
     }
 
     render(){
-        const { classes, contactUs } = this.props;
+        const { classes, currentLocation } = this.props;
         const { drawerOpen } = this.state;
         const list = () => (
             <div
@@ -107,7 +109,19 @@ class Nav extends Component {
                     <div className={classes.NavRight}>
                         <Link to={'/'} className={classes.link}>
                             <Button
-                                className={classes.button}
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "Home"}
+                                )}
+                                startIcon={<HomeIcon className={classes.Icon}/>}
+                            >
+                                About
+                            </Button>
+                        </Link>
+                        <Link to={'/'} className={classes.link}>
+                            <Button
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "Events"}
+                                )}
                                 startIcon={<EventAvailableIcon className={classes.Icon}/>}
                             >
                                 Events
@@ -115,7 +129,9 @@ class Nav extends Component {
                         </Link>
                         <Link to={'/'} className={classes.link}>
                             <Button
-                                className={classes.button}
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "Team"}
+                                )}
                                 startIcon={<GroupIcon className={classes.Icon}/>}
                             >
                                 Team
@@ -123,7 +139,9 @@ class Nav extends Component {
                         </Link>
                         <Link to={'/JoinUs'} className={classes.link}>
                             <Button
-                                className={classes.button}
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "JoinUs"}
+                                )}
                                 startIcon={<GroupAddIcon className={classes.Icon}/>}
                             >
                                 Join Us
@@ -131,7 +149,9 @@ class Nav extends Component {
                         </Link>
                         <Link to={'/ContactUs'} className={classes.link}>
                             <Button
-                                className={classes.button}
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "ContactUs"}
+                                )}
                                 startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
                             >
                                 Contact Us
