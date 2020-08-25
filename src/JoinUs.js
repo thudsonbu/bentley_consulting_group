@@ -17,6 +17,8 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
+import emailjs from 'emailjs-com';
+
 
 import Nav from './Nav';
 import Footer from './Footer';
@@ -63,8 +65,18 @@ class JoinUs extends Component{
 
 
     handleSubmit() {
-        let new_member = {...this.state};
-        console.log(new_member);
+        let service_id = "gmail";
+        let template_id = "template_hkYYtvcK_clone";
+        let user_id = "user_9gwe93oXhYXzPs26jpMqw";
+        let templateParams = {
+            "FirstName" : this.state.FirstName
+        };
+        emailjs.send(service_id, template_id, templateParams, user_id)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+        });
         this.setState({
             FirstName: "",
             LastName: "",

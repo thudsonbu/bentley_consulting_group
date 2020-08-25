@@ -61,8 +61,8 @@ class ContactUs extends Component{
 
 
     handleSubmit() {
-        let new_member = {...this.state};
-        console.log(new_member);
+        let new_contact = {...this.state};
+        console.log(new_contact);
         this.setState({
             FirstName: "",
             LastName: "",

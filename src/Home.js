@@ -46,7 +46,7 @@ class Home extends Component {
         const { contactFormOpen } = this.state;
         const { classes } = this.props;
         return (
-            <div className={Home}>
+            <div className={classes.Home}>
                 <Nav currentLocation={"Home"}/>
                 <Jumbotron/>
                 <ContactUsForm
