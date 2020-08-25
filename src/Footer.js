@@ -1,15 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon/ListItemIcon";
-import HomeIcon from "@material-ui/icons/Home";
-import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import GroupIcon from '@material-ui/icons/Group';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import { white } from '@material-ui/core/colors';
 
 
 import { withStyles } from '@material-ui/styles';

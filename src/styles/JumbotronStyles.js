@@ -1,6 +1,5 @@
 import sizes from './sizes';
 import background from '../images/bentleyLibrary.jpg';
-import backgroundMobile from '../images/bentleyLibraryMobile.e42854fb.jpg';
 
 export default {
     Jumbotron: {

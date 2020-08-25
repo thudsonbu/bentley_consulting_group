@@ -9,7 +9,6 @@ import classNames from 'classnames';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -64,7 +63,13 @@ class Nav extends Component {
             >
                 <List>
                     <Link to={'/'} className={classes.link}>
-                        <ListItem button key={'events'}>
+                        <ListItem button key={'about'} >
+                            <ListItemIcon><HomeIcon/></ListItemIcon>
+                            <ListItemText primary={'About'} />
+                        </ListItem>
+                    </Link>
+                    <Link to={'/'} className={classes.link}>
+                        <ListItem button key={'events'} >
                             <ListItemIcon><EventAvailableIcon/></ListItemIcon>
                             <ListItemText primary={'Events'} />
                         </ListItem>

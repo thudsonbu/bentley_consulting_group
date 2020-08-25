@@ -40,7 +40,7 @@ class ContactUsForm extends Component {
     }
 
     render() {
-        const { open, classes, handleClose, handleSubmit } = this.props;
+        const { open, classes, handleClose, } = this.props;
         const { FirstName, LastName, Email, Inquiry } = this.state;
         return(
             <Dialog

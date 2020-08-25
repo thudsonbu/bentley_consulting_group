@@ -13,7 +13,6 @@ import team from "../images/team.jpg";
 import contact from "../images/contact.jpg";
 import join from "../images/join.jpg";
 import tableau from "../images/tableau.jpg";
-import slack from "../images/slack.png";
 import salesforce from "../images/salesforce.jpg";
 import clickup from "../images/clickup.png";
 import airtable from "../images/airtable.png";

@@ -1,4 +1,3 @@
-import sizes from "./sizes";
 import LogoWhite from "../images/LogoWhite.png";
 
 export default {
