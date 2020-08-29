@@ -5,8 +5,8 @@ import courses from "../images/education.jpg";
 export default {
     Event: {
         width: "300px",
-        height: "450px",
-        margin: "60px",
+        height: "465px",
+        margin: "40px 60px 90px 60px",
         transition: "box-shadow .25s",
         "&:hover": {
             cursor: "pointer",
@@ -18,21 +18,32 @@ export default {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         }
     },
+    drawerOpen: {
+        height: "540px",
+    },
     EventContent: {
         width: "100%",
-        height: "100px",
+        height: "115px",
         marginTop: "-19px",
         color: "#ffffff",
         backgroundColor: "#064cd5",
     },
     EventTitle: {
-        paddingTop: "20px",
+        paddingTop: "15px",
         width: "100%",
         textAlign: "center",
     },
-    EventDate: {
-        width: "100%",
-        textAlign: "center",
+    EventData: {
+        padding: "0px 15px 0px 15px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+    },
+    EventDrawer: {
+        height: "75px",
+        padding: "0px 15px 10px 15px",
+        backgroundColor: "#064cd5",
+        color: "#ffffff",
     },
     EventImage: {
         height: "350px",
@@ -40,4 +51,5 @@ export default {
         backgroundSize: "cover",
         backgroundPosition: "center",
     },
+    
 }
