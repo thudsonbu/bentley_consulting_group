@@ -17,6 +17,7 @@ import DialogActions from "@material-ui/core/DialogActions/DialogActions";
 import {withStyles} from "@material-ui/styles";
 import styles from "./styles/ContactUsStyles";
 
+import emailjs from 'emailjs-com';
 
 
 class ContactUs extends Component{
@@ -25,8 +26,8 @@ class ContactUs extends Component{
         this.state = {
             FirstName: "",
             LastName: "",
-            Major: "",
-            Year: "",
+            Organization: "",
+            Position: "",
             Email: "",
             Subscribe: true,
             Inquiry: "",
@@ -59,10 +60,25 @@ class ContactUs extends Component{
         });
     }
 
-
     handleSubmit() {
-        let new_contact = {...this.state};
-        console.log(new_contact);
+        let service_id = "gmail";
+        let template_id = "template_hkYYtvcK_clone";
+        let user_id = "user_9gwe93oXhYXzPs26jpMqw";
+        let templateParams = {
+            "FirstName" : this.state.FirstName,
+            "Lastname" : this.state.LastName,
+            "Organization" : this.state.Organization,
+            "Position" : this.state.Position,
+            "Email" : this.state.Email,
+            "Inquiry" : this.state.Inquiry,
+            "Subscribe" : this.state.Subscribe
+        };
+        emailjs.send(service_id, template_id, templateParams, user_id)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+        });
         this.setState({
             FirstName: "",
             LastName: "",

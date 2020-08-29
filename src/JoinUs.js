@@ -69,7 +69,13 @@ class JoinUs extends Component{
         let template_id = "template_hkYYtvcK_clone";
         let user_id = "user_9gwe93oXhYXzPs26jpMqw";
         let templateParams = {
-            "FirstName" : this.state.FirstName
+            "FirstName" : this.state.FirstName,
+            "Lastname" : this.state.LastName,
+            "Major" : this.state.Major,
+            "Year" : this.state.Year,
+            "Email" : this.state.Email,
+            "Inquiry" : this.state.Inquiry,
+            "Subscribe" : this.state.Subscribe,
         };
         emailjs.send(service_id, template_id, templateParams, user_id)
             .then(function(response) {
