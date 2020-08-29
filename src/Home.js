@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import InfoIcon from '@material-ui/icons/Info';
+
 import {withStyles} from '@material-ui/styles';
 import styles from './styles/HomeStyles';
 
@@ -147,6 +149,7 @@ class Home extends Component {
                                 <div className={classes.BlockContent}>
                                     <h2 className={classes.BlockTitle}>Join</h2>
                                     <p className={classes.BlockText}>Interested in joining the BCG or being added to our email list?</p>
+                                    <InfoIcon className={classes.InfoIcon} />
                                 </div>
                             </div>
                         </Link>
@@ -156,6 +159,7 @@ class Home extends Component {
                                 <div className={classes.BlockContent}>
                                     <h2 className={classes.BlockTitle}>Contact</h2>
                                     <p className={classes.BlockText}>Would you like to work with the BCG or schedule an event?</p>
+                                    <InfoIcon className={classes.InfoIcon} />
                                 </div>
                             </div>
                         </Link>
@@ -165,21 +169,23 @@ class Home extends Component {
                         <p>Would you like to become a consultant? Are you a business owner or representative that would like to contact us?</p>
                     </div>
                     <div className={classes.BlockContainer}>
-                        <Link to='/Events'>
+                        <Link to='/Events' className={classes.Link}>
                             <div className={classes.Block}>
                                 <div className={classes.BlockImageEvents}/>
                                 <div className={classes.BlockContent}>
                                     <h2 className={classes.BlockTitle}>Events</h2>
-                                    <p className={classes.BlockText}>See what events we have planned.</p>
+                                    <p className={classes.BlockText}>See what events the BCG have planned this semester.</p>
+                                    <InfoIcon className={classes.InfoIcon} />
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/'>
+                        <Link to='/' className={classes.Link}>
                             <div className={classes.Block}>
                                 <div className={classes.BlockImageTeam}/>
                                 <div className={classes.BlockContent}>
                                     <h2 className={classes.BlockTitle}>Team</h2>
                                     <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
+                                    <InfoIcon className={classes.InfoIcon} />
                                 </div>
                             </div>
                         </Link>

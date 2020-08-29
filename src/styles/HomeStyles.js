@@ -357,5 +357,11 @@ export default {
     },
     Link: {
         textDecoration: "none",
+    },
+    InfoIcon: {
+        fontSize: "2rem",
+        color: "#ffffff",
+        marginLeft: "260px",
+        marginTop: "25px",
     }
 }

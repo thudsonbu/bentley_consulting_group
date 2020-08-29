@@ -49,7 +49,6 @@ class Event extends Component{
                         </div>
                     </Collapse>
                 </div>
-                
             </div>
         )
     }
