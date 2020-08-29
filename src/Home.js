@@ -165,20 +165,24 @@ class Home extends Component {
                         <p>Would you like to become a consultant? Are you a business owner or representative that would like to contact us?</p>
                     </div>
                     <div className={classes.BlockContainer}>
-                        <div className={classes.Block}>
-                            <div className={classes.BlockImageEvents}/>
-                            <div className={classes.BlockContent}>
-                                <h2 className={classes.BlockTitle}>Events</h2>
-                                <p className={classes.BlockText}>See what events we have planned.</p>
+                        <Link to='/Events'>
+                            <div className={classes.Block}>
+                                <div className={classes.BlockImageEvents}/>
+                                <div className={classes.BlockContent}>
+                                    <h2 className={classes.BlockTitle}>Events</h2>
+                                    <p className={classes.BlockText}>See what events we have planned.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className={classes.Block}>
-                            <div className={classes.BlockImageTeam}/>
-                            <div className={classes.BlockContent}>
-                                <h2 className={classes.BlockTitle}>Team</h2>
-                                <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
+                        </Link>
+                        <Link to='/'>
+                            <div className={classes.Block}>
+                                <div className={classes.BlockImageTeam}/>
+                                <div className={classes.BlockContent}>
+                                    <h2 className={classes.BlockTitle}>Team</h2>
+                                    <p className={classes.BlockText}>Meet our executive board and consultants or reach out directly.</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 <Footer contactUs={this.openContactForm}/>
                 </div>
