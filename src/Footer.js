@@ -14,7 +14,7 @@ function Footer(props) {
     return (
         <div className={props.classes.Footer}>
             <div className={props.classes.FooterLinks}>
-                <Link to={'/'} className={props.classes.link}>
+                <Link to={'/Events'} className={props.classes.link}>
                     <Button
                         className={props.classes.button}
                         startIcon={<EventAvailableIcon className={props.classes.Icon}/>}

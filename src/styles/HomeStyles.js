@@ -19,7 +19,6 @@ import airtable from "../images/airtable.png";
 
 export default {
     Home: {
-        overflow: "scroll",
         height: "200vh",
     },
     About: {

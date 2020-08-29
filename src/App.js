@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 
 import Home from './Home';
+import Events from './Events';
 import JoinUs from "./JoinUs";
 import ContactUs from "./ContactUs";
 import Page from './Page';
@@ -34,6 +35,15 @@ class App extends Component {
                                 render= {(routeProps) => (
                                     <Page>
                                         <Home/>
+                                    </Page>
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/Events"
+                                render= {(routeProps) => (
+                                    <Page>
+                                        <Events />
                                     </Page>
                                 )}
                             />

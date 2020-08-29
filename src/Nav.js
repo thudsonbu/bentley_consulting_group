@@ -68,7 +68,7 @@ class Nav extends Component {
                             <ListItemText primary={'About'} />
                         </ListItem>
                     </Link>
-                    <Link to={'/'} className={classes.link}>
+                    <Link to={'/Events'} className={classes.link}>
                         <ListItem button key={'events'} >
                             <ListItemIcon><EventAvailableIcon/></ListItemIcon>
                             <ListItemText primary={'Events'} />
@@ -122,7 +122,7 @@ class Nav extends Component {
                                 About
                             </Button>
                         </Link>
-                        <Link to={'/'} className={classes.link}>
+                        <Link to={'/Events'} className={classes.link}>
                             <Button
                                 className={classNames(classes.button,
                                     {[classes.buttonActive]: currentLocation === "Events"}
