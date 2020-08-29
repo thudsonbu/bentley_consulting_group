@@ -6,7 +6,7 @@ export default {
     Event: {
         width: "300px",
         height: "465px",
-        margin: "40px 60px 90px 60px",
+        margin: "60px 50px 60px 50px",
         transition: "box-shadow .25s",
         "&:hover": {
             cursor: "pointer",

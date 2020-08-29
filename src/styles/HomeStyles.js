@@ -170,6 +170,7 @@ export default {
         borderRadius: "50%",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "25px",
@@ -188,6 +189,7 @@ export default {
         borderRadius: "50%",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "15px",
@@ -206,6 +208,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "15px",
@@ -224,6 +227,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "25px",
@@ -240,6 +244,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "15px",
@@ -258,6 +263,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "25px",
@@ -276,6 +282,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "10px",
@@ -295,6 +302,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "25px",
@@ -312,6 +320,7 @@ export default {
         transition: "box-shadow .25s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+            cursor: "pointer",
         },
         [sizes.down("sm")]:{
             margin: "25px",

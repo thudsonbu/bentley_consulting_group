@@ -99,20 +99,40 @@ class Home extends Component {
                         <h1>Network With Employers</h1>
                         <p>Employers that have worked with the BCG or regularly recruit from us.</p>
                     </div>
-                    <div className={classes.LogoBlockEY}/>
-                    <div className={classes.LogoBlockRSM}/>
-                    <div className={classes.LogoBlockDeloitte}/>
-                    <div className={classes.LogoBlockPWC}/>
-                    <div className={classes.LogoBlockMassaro}/>
+                    <a href='https://www.ey.com/en_us'>
+                        <div className={classes.LogoBlockEY}/>
+                    </a>
+                    <a href='https://rsmus.com/'>
+                        <div className={classes.LogoBlockRSM}/>
+                    </a>
+                    <a href='https://www2.deloitte.com/us/en.html'>
+                        <div className={classes.LogoBlockDeloitte}/>
+                    </a>
+                    <a href='https://www.pwc.com/'>
+                        <div className={classes.LogoBlockPWC}/>
+                    </a>
+                    <a href='https://massaroconsulting.com/'>
+                        <div className={classes.LogoBlockMassaro}/>
+                    </a>
                     <div className={classes.SectionSubTitle}>
                         <h1>Learn In Demand Technologies</h1>
                         <p>Technologies that consultants can learn through the BCG.</p>
                     </div>
-                    <div className={classes.LogoBlockTableau}/>
-                    <div className={classes.LogoBlockSalesForce}/>
-                    <div className={classes.LogoBlockSlack}/>
-                    <div className={classes.LogoBlockClickup}/>
-                    <div className={classes.LogoBlockAirtable}/>
+                    <a href='https://www.tableau.com/'>
+                        <div className={classes.LogoBlockTableau}/>
+                    </a>
+                    <a href='https://www.salesforce.com/'>
+                        <div className={classes.LogoBlockSalesForce}/>
+                    </a>
+                    <a href='https://slack.com/'>
+                        <div className={classes.LogoBlockSlack}/>
+                    </a>
+                    <a href='https://clickup.com/'>
+                        <div className={classes.LogoBlockClickup}/>
+                    </a>
+                    <a href='https://airtable.com/'>
+                        <div className={classes.LogoBlockAirtable}/>
+                    </a>
                     <div className={classes.SectionTitleBlock}>
                         <h1 className={classes.SectionTitle}>Learn More</h1>
                     </div>
