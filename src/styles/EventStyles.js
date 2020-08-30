@@ -1,6 +1,4 @@
 import sizes from './sizes';
-import courses from "../images/education.jpg";
-
 
 export default {
     Event: {
@@ -52,5 +50,4 @@ export default {
         backgroundSize: "cover",
         backgroundPosition: "center",
     },
-    
 }
