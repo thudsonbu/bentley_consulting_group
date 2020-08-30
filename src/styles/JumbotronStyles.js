@@ -19,7 +19,8 @@ export default {
     JumbotronTitle: {
         fontSize: "5rem",
         [sizes.down("md")]:{
-            marginLeft: "20px",
+            marginLeft: "10px",
+            fontSize: "4rem",
         }
     },
     JumbotronSubtext: {
