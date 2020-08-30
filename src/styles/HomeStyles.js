@@ -363,5 +363,8 @@ export default {
         color: "#ffffff",
         marginLeft: "260px",
         marginTop: "25px",
+        [sizes.down("md")]: {
+            marginLeft: "307px",
+        }
     }
 }
