@@ -40,7 +40,7 @@ class Event extends Component{
                 <div className={classes.EventContent} onClick={this.openDialog}>
                     <h2 className={classes.EventTitle}>{title}</h2>
                     <div className={classes.EventData}>
-                        <p className={classes.EventDate}>{date}</p>
+                        <p className={classes.EventDate}>Date: {date}</p>
                         <InfoIcon onClick={this.toggleDrawer}/>
                     </div>
                     <Collapse in={drawerOpen} >

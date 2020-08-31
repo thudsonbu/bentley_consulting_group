@@ -2,6 +2,7 @@ import tomheadshot from './images/tomheadshot.jfif';
 import celiaheadshot from './images/celiaheadshot.jfif';
 import michealheadshot from './images/michealheadshot.jfif';
 import milesheadshot from './images/milesheadshot.jfif';
+import alexheadshot from './images/alexheadshot.jfif';
 
 export default [
     {
@@ -18,15 +19,22 @@ export default [
         linkedin: "https://www.linkedin.com/in/celiaschurman/"
     },
     {
+        headshot: michealheadshot,
+        name: "Micheal Watkins",
+        position: "Case Manager",
+        linkedin: "https://www.linkedin.com/in/michaelrwatkins/"
+    },
+    {
         headshot: milesheadshot,
         name: "Miles Shaheen",
         position: "Financial Manager",
         linkedin: "https://www.linkedin.com/in/miles-shaheen1/"
     },
     {
-        headshot: michealheadshot,
-        name: "Micheal Watkins",
-        position: "Case Manager",
-        linkedin: "https://www.linkedin.com/in/michaelrwatkins/"
+        headshot: alexheadshot,
+        name: "Alex O'Niel",
+        position: "Marketing Manager",
+        linkedin: "https://www.linkedin.com/in/alexandra-oneil/"
     },
+
 ]

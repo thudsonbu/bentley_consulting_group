@@ -32,7 +32,7 @@ class Team extends Component {
                 </div>
                 <div className={classes.SectionSubTitle}>
                     <h1>Meet Our Executive Board</h1>
-                    <p>The leaders of the Bentley Consulting Group are devoted to the organization and seeing our consultant thrive.</p>
+                    <p>The leaders of the Bentley Consulting Group are devoted to the organization and seeing our consultants thrive.</p>
                 </div>
                 {team}
                 <Footer/>
