@@ -22,7 +22,7 @@ function Footer(props) {
                         Events
                     </Button>
                 </Link>
-                <Link to={'/'} className={props.classes.link}>
+                <Link to={'/Team'} className={props.classes.link}>
                     <Button
                         className={props.classes.button}
                         startIcon={<GroupIcon className={props.classes.Icon}/>}
