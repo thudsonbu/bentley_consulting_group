@@ -179,7 +179,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/' className={classes.Link}>
+                        <Link to='/Team' className={classes.Link}>
                             <div className={classes.Block}>
                                 <div className={classes.BlockImageTeam}/>
                                 <div className={classes.BlockContent}>

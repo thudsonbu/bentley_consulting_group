@@ -22,6 +22,9 @@ export default {
         height: "250px",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        [sizes.down("md")]: {
+            width: "350px",
+        }
     },
     Body: {
         height: "150px",
