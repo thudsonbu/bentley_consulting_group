@@ -5,7 +5,7 @@ export default {
         height: "200vh",
     },
     EventsContainer: {
-        marginTop: "50px",
+        marginTop: "80px",
         marginBottom: "50px",
         width: "100%",
         height: "300px",
