@@ -2,7 +2,7 @@ import sizes from './sizes';
 
 export default {
     Event: {
-        width: "300px",
+        width: "350px",
         height: "465px",
         margin: "60px 50px 110px 50px",
         transition: "box-shadow .25s",
