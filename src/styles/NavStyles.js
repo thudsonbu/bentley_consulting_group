@@ -43,7 +43,7 @@ export default {
     NavRight: {
         color: "black",
         marginLeft: "auto",
-        width: "40%",
+        width: "52%",
         height: "50%",
         display: "flex",
         flexWrap: "wrap",

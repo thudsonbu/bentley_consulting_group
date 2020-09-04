@@ -40,7 +40,6 @@ export default {
         justifyContent: "space-between",
     },
     EventDrawer: {
-        // height: "130px",
         padding: "0px 15px 10px 15px",
         backgroundColor: "#064cd5",
         color: "#ffffff",
