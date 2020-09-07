@@ -32,7 +32,7 @@ export default [
     },
     {
         headshot: alexheadshot,
-        name: "Alex O'Niel",
+        name: "Alex O'Neil",
         position: "Marketing Manager",
         linkedin: "https://www.linkedin.com/in/alexandra-oneil/"
     },

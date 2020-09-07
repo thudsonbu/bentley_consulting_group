@@ -18,6 +18,7 @@ export default {
         display: "flex",
         [sizes.down("md")]: {
             width: "100%",
+            justifyContent: "space-between",
         }
     },
     miniLogo: {
@@ -29,13 +30,8 @@ export default {
         backgroundImage: `url(${logo})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        [sizes.down("lg")]: {
-            marginLeft: "auto",
-        }
     },
     menuButton: {
-        marginRight: "auto",
-        // border: "1px solid white",
         [sizes.up("md")]: {
             display: "none",
         },
@@ -43,11 +39,10 @@ export default {
     NavRight: {
         color: "black",
         marginLeft: "auto",
-        width: "52%",
         height: "50%",
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "space-around",
+        justifyContent: "right",
         alignItems: "center",
         [sizes.down("md")]: {
             display: "none"
@@ -58,6 +53,7 @@ export default {
     },
     button: {
         paddingBottom: "10px",
+        marginRight: "15px",
         borderColor: "transparent",
         borderRadius: "0px",
         backgroundColor: "#ffffff",
