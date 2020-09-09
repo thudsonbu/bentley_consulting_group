@@ -3,9 +3,9 @@ import sizes from './sizes';
 export default {
     Event: {
         width: "350px",
-        height: "465px",
-        margin: "60px 50px 110px 50px",
-        transition: "box-shadow .25s",
+        height: "430px",
+        margin: "60px 50px 150px 50px",
+        transition: "all .2s",
         "&:hover": {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         },
@@ -16,12 +16,11 @@ export default {
             boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
         }
     },
-    drawerOpen: {
-        height: "600px",
+    EventInfo: {
+        height: "650px",
     },
     EventContent: {
         width: "100%",
-        height: "120px",
         marginTop: "-19px",
         color: "#ffffff",
         backgroundColor: "#064cd5",
@@ -32,15 +31,14 @@ export default {
         width: "100%",
         textAlign: "center",
     },
-    EventData: {
-        marginTop: "-10px",
-        cursor: "pointer",
-        padding: "0px 15px 0px 15px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+    InfoIcon: {
+        fontSize: "2rem",
+        marginLeft: "85%",
+        marginBottom: "2%",
     },
     EventDrawer: {
+        height: "200px",
+        marginTop: "-17px",
         padding: "0px 15px 10px 15px",
         backgroundColor: "#064cd5",
         color: "#ffffff",
@@ -53,6 +51,12 @@ export default {
         cursor: "pointer",
     },
     EventLocation: {
+        marginTop: "-10px",
+    },
+    EventTime: {
+        marginTop: "-10px",
+    },
+    EventDescription: {
         marginTop: "-10px",
     }
 }

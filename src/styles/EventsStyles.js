@@ -9,7 +9,6 @@ export default {
         display: "Flex",
         flexWrap: "wrap",
         justifyContent: "space-around",
-        alignItems: "center",
     },
     SectionTitleBlock: {
         backgroundColor: "#064cd5",

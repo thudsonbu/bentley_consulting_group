@@ -30,7 +30,7 @@ class Event extends Component{
 
 
     render() {
-        const { classes, image, title, date, location, description } = this.props;
+        const { classes, image, title, date, time, location, description } = this.props;
         const { drawerOpen } = this.state;
         console.log(image);
         return (
@@ -39,17 +39,14 @@ class Event extends Component{
                 </div>
                 <div className={classes.EventContent} onClick={this.openDialog}>
                     <h2 className={classes.EventTitle}>{title}</h2>
-                    <div className={classes.EventData}>
-                        <div className={classes.EventDateAndTime}>
-                            <p className={classes.EventDate}><strong>Date:</strong> {date}</p>
-                            <p className={classes.EventLocation}><strong>Location:</strong> {location}</p>
-                        </div>
-                        <InfoIcon onClick={this.toggleDrawer}/>
-                    </div>
+                    <InfoIcon className={classes.InfoIcon} onClick={this.toggleDrawer}/>
                 </div>
                 <Collapse in={drawerOpen} >
                     <div className={classes.EventDrawer}>
-                        <strong>Description:</strong> {description}
+                        <p className={classes.EventDate}><strong>Date:</strong> {date}</p>
+                        <p className={classes.EventTime}><strong>Time:</strong> {time}</p>
+                        <p className={classes.EventLocation}><strong>Location:</strong> {location}</p>
+                        <p className={classes.EventDescription}><strong>Description:</strong> {description}</p>
                     </div>
                 </Collapse>
             </div>

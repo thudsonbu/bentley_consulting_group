@@ -21,6 +21,7 @@ class Events extends Component{
                 image={event.image}
                 title={event.title}
                 date={event.date}
+                time={event.time}
                 location={event.location}
                 description={event.description}
             />
