@@ -17,7 +17,7 @@ export default {
         }
     },
     EventInfo: {
-        height: "650px",
+        height: "700px",
     },
     EventContent: {
         width: "100%",
@@ -37,8 +37,10 @@ export default {
         marginBottom: "2%",
     },
     EventDrawer: {
-        height: "200px",
-        marginTop: "-17px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "250px",
         padding: "0px 15px 10px 15px",
         backgroundColor: "#064cd5",
         color: "#ffffff",
