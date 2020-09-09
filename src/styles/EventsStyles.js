@@ -1,11 +1,8 @@
 import sizes from './sizes';
 
 export default {
-    Events: {
-        height: "200vh",
-    },
     EventsContainer: {
-        marginTop: "80px",
+        paddingTop: "8vh",
         marginBottom: "50px",
         width: "100%",
         height: "300px",
@@ -15,7 +12,6 @@ export default {
         alignItems: "center",
     },
     SectionTitleBlock: {
-        marginTop: "100px",
         backgroundColor: "#064cd5",
         height: "200px",
         width: "100%",

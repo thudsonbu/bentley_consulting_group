@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Button from '@material-ui/core/Button';
 import Collapse from '@material-ui/core/Collapse';
 import InfoIcon from '@material-ui/icons/Info';
 
@@ -31,24 +30,28 @@ class Event extends Component{
 
 
     render() {
-        const { classes, image, title, date, description } = this.props;
+        const { classes, image, title, date, location, description } = this.props;
         const { drawerOpen } = this.state;
         console.log(image);
         return (
             <div className={classNames(classes.Event, {[classes.EventInfo]: drawerOpen})}>
-                <div className={classes.EventImage} style={{backgroundImage: `url(${image})`,}} onClick={this.toggleDrawer}/>
+                <div className={classes.EventImage} style={{backgroundImage: `url(${image})`,}} onClick={this.toggleDrawer}>
+                </div>
                 <div className={classes.EventContent} onClick={this.openDialog}>
                     <h2 className={classes.EventTitle}>{title}</h2>
                     <div className={classes.EventData}>
-                        <p className={classes.EventDate}>Date: {date}</p>
+                        <div className={classes.EventDateAndTime}>
+                            <p className={classes.EventDate}><strong>Date:</strong> {date}</p>
+                            <p className={classes.EventLocation}><strong>Location:</strong> {location}</p>
+                        </div>
                         <InfoIcon onClick={this.toggleDrawer}/>
                     </div>
-                    <Collapse in={drawerOpen} >
-                        <div className={classes.EventDrawer}>
-                            {description}
-                        </div>
-                    </Collapse>
                 </div>
+                <Collapse in={drawerOpen} >
+                    <div className={classes.EventDrawer}>
+                        <strong>Description:</strong> {description}
+                    </div>
+                </Collapse>
             </div>
         )
     }

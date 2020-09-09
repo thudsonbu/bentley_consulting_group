@@ -21,18 +21,19 @@ class Events extends Component{
                 image={event.image}
                 title={event.title}
                 date={event.date}
+                location={event.location}
                 description={event.description}
             />
         ))
         return (
             <div className={classes.Events}>
+                <Nav currentLocation={"Events"} />
                 <div className={classes.EventsContainer}>
-                    <Nav currentLocation={"Events"} />
                     <div className={classes.SectionTitleBlock}>
                         <h1 className={classes.SectionTitle}>Upcoming Events</h1>
                     </div>
                     <div className={classes.SectionSubTitle}>
-                        <h1>Events that the BCG has planned this semester.</h1>
+                        <h1>Events the BCG has planned this year.</h1>
                         <p>Learn about each events that the BCG has planned, and RSVP to events.</p>
                     </div>
                     {eventBlocks}

@@ -2,7 +2,6 @@ import sizes from './sizes';
 
 export default {
     Team: {
-        marginTop: "80px",
         marginBottom: "50px",
         width: "100%",
         height: "300px",
@@ -12,7 +11,7 @@ export default {
         alignItems: "center",
     },
     SectionTitleBlock: {
-        marginTop: "100px",
+        marginTop: "8vh",
         backgroundColor: "#064cd5",
         height: "200px",
         width: "100%",

@@ -33,6 +33,7 @@ export default {
         textAlign: "center",
     },
     EventData: {
+        marginTop: "-10px",
         cursor: "pointer",
         padding: "0px 15px 0px 15px",
         display: "flex",
@@ -51,4 +52,7 @@ export default {
         backgroundPosition: "center",
         cursor: "pointer",
     },
+    EventLocation: {
+        marginTop: "-10px",
+    }
 }
