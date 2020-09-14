@@ -3,24 +3,17 @@ import projectmanagement from './images/ProjectManagement.png';
 import consultingcases from './images/consultingconversation.jpg';
 import massaro from './images/masarro.png';
 import firstmeeting from './images/FirstMeeting.jpg';
+import peanutbutter from './images/PeanutButterCase.PNG';
 
 
 export default [
     {
-        image: firstmeeting,
-        title: "First General Body Meeting",
-        date: "September 10th, 2020",
-        time: "7:30-8:30pm",
-        location: "ZoomID 830 053 3651",
-        description: "At our first general body meeting consultants will be introducted to the consulting field, as well as the BCG's executive board",
-    },
-    {
-        image: consultingcases,
-        title: "Weekly Case Workshop",
+        image: peanutbutter,
+        title: "Case 1: Peanutbutter",
         date: "September 17th, 2020",
         time: "7:30-8:30pm",
         location: "ZoomID 830 053 3651",
-        description: "Each week the BCG leads consultants through a consulting case to prepare for consulting interviews, and apply their business accument in real world problems."
+        description: "Our first consulting case of the semester involves a peanut butter manufacturer analyzing a potential business venture. Expect financial and competitive analysis as well as business strategy.",
     },
     {
         image: datavisualization,
@@ -43,7 +36,7 @@ export default [
         title: "Agile Management",
         date: "March 2021",
         time: "TBD",
-        location: "ZoomID TBD",
+        location: "TBD",
         description: "A four week long bootcamp in project management that will cover the basics of effective task management and scheduling. The course is broken into building effective teams, how to lead, project management methodologies, and project managment software."
     },
 ]
