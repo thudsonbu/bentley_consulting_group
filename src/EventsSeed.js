@@ -1,19 +1,17 @@
 import datavisualization from './images/DataVisualization.jpg';
 import projectmanagement from './images/ProjectManagement.png';
-import consultingcases from './images/consultingconversation.jpg';
 import massaro from './images/masarro.png';
-import firstmeeting from './images/FirstMeeting.jpg';
-import peanutbutter from './images/PeanutButterCase.PNG';
+import frameworks from './images/frameworks.jpg';
 
 
 export default [
     {
-        image: peanutbutter,
-        title: "Case 1: Peanutbutter",
-        date: "September 17th, 2020",
+        image: frameworks,
+        title: "Intro to Case Frameworks",
+        date: "September 24th, 2020",
         time: "7:30-8:30pm",
         location: "ZoomID 830 053 3651",
-        description: "Our first consulting case of the semester involves a peanut butter manufacturer analyzing a potential business venture. Expect financial and competitive analysis as well as business strategy.",
+        description: "Embeded within each business problem or consulting case lies some fundamental truths. The truths can be aggregated into what are known as case frameworks. This week we will introduce consultants to the frameworks that are vital in solving business problems.",
     },
     {
         image: datavisualization,

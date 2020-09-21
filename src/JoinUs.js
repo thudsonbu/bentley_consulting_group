@@ -237,7 +237,7 @@ class JoinUs extends Component{
                     aria-labelledby="alert-dialog-title"
                     aria-describedby="alert-dialog-description"
                 >
-                    <DialogTitle id="alert-dialog-title">Submitted Succesfully!</DialogTitle>
+                    <DialogTitle id="alert-dialog-title">Submitted Successfully!</DialogTitle>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="primary">
                             Continue
