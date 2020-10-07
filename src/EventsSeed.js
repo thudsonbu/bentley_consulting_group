@@ -5,22 +5,14 @@ import frameworks from './images/frameworks.jpg';
 
 
 export default [
-    {
-        image: frameworks,
-        title: "Intro to Case Frameworks",
-        date: "September 24th, 2020",
-        time: "7:30-8:30pm",
-        location: "ZoomID 830 053 3651",
-        description: "Embeded within each business problem or consulting case lies some fundamental truths. The truths can be aggregated into what are known as case frameworks. This week we will introduce consultants to the frameworks that are vital in solving business problems.",
-    },
-    {
-        image: datavisualization,
-        title: "Data Vizualizaton Bootcamp",
-        date: "October 1st, 2020",
-        time: "7:30-8:30pm",
-        location: "ZoomID 830 053 3651",
-        description: "A four week long bootcamp in which consultants will learn to effectively visualize data with Tableau. The course is broken into data preperation, data visualization theory, tableau basics, and tableau advanced."
-    },
+    // {
+    //     image: frameworks,
+    //     title: "Intro to Case Frameworks pt. 2",
+    //     date: "October  1st, 2020",
+    //     time: "7:30-8:30pm",
+    //     location: "ZoomID 830 053 3651",
+    //     description: "Embeded within each business problem or consulting case lies some fundamental truths. The truths can be aggregated into what are known as case frameworks. This week we will introduce consultants to the frameworks that are vital in solving business problems.",
+    // },
     {
         image: massaro,
         title: "Massaro Info Session",
@@ -28,6 +20,14 @@ export default [
         time: "6:00-7:00pm",
         location: "ZoomID TBD",
         description: "Massaro is a fast growing technology and management consulting firm based in Boston. They are always interested in speaking with Bentley students, especially those looking for employment after graduation."
+    },
+    {
+        image: datavisualization,
+        title: "Data Vizualizaton Bootcamp pt 2",
+        date: "October 15th, 2020",
+        time: "7:30-8:30pm",
+        location: "ZoomID 830 053 3651",
+        description: "In this session, we will cover the fundamentals of using Tableau, including how to connect to data, common chart types, basic data concepts, and an introduction to analyzing data in a Tableau workspace."
     },
     {
         image: projectmanagement,
