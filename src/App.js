@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-
 import Home from './Home';
 import Events from './Events';
 import Team from './Team';
@@ -12,7 +11,25 @@ import ContactUs from "./ContactUs";
 import Page from './Page';
 import './styles/Page.css';
 
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
+const firebaseConfig = {
+    apiKey: "AIzaSyAxucYxxSMnBVAKBMAMTsuuyPC6z0lQQKQ",
+    authDomain: "bentleyconsultinggroup-544d2.firebaseapp.com",
+    databaseURL: "https://bentleyconsultinggroup-544d2.firebaseio.com",
+    projectId: "bentleyconsultinggroup-544d2",
+    storageBucket: "bentleyconsultinggroup-544d2.appspot.com",
+    messagingSenderId: "456175144630",
+    appId: "1:456175144630:web:12fb478e8ab14f2aa46017",
+    measurementId: "G-C4WG3FRNXN"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+const firestore = firebase.firestore();
 
 
 class App extends Component {
@@ -35,7 +52,7 @@ class App extends Component {
                                 path="/"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Home/>
+                                        <Home auth={auth} firestore={firestore}/>
                                     </Page>
                                 )}
                             />
@@ -44,7 +61,7 @@ class App extends Component {
                                 path="/Events"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Events />
+                                        <Events auth={auth} firestore={firestore}/>
                                     </Page>
                                 )}
                             />
@@ -53,7 +70,7 @@ class App extends Component {
                                 path="/Team"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Team />
+                                        <Team auth={auth} firestore={firestore}/>
                                     </Page>
                                 )}
                             />
@@ -62,7 +79,7 @@ class App extends Component {
                                 path="/JoinUs"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <JoinUs/>
+                                        <JoinUs auth={auth} firestore={firestore}/>
                                     </Page>
                                 )}
                             />
@@ -71,7 +88,7 @@ class App extends Component {
                                 path="/ContactUs"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <ContactUs/>
+                                        <ContactUs auth={auth} firestore={firestore}/>
                                     </Page>
                                 )}
                             />
