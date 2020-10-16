@@ -15,7 +15,7 @@ import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions/DialogActions";
 
 import {withStyles} from "@material-ui/styles";
-import styles from "./styles/ContactUsStyles";
+import styles from "../styles/ContactUsStyles";
 
 import emailjs from 'emailjs-com';
 

@@ -5,7 +5,7 @@ import Event from './Event';
 import Footer from './Footer';
 
 import { withStyles } from '@material-ui/styles';
-import styles from './styles/EventsStyles';
+import styles from '../styles/EventsStyles';
 
 import events from './EventsSeed';
 

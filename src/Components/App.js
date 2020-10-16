@@ -9,11 +9,7 @@ import Team from './Team';
 import JoinUs from "./JoinUs";
 import ContactUs from "./ContactUs";
 import Page from './Page';
-import './styles/Page.css';
-
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import '../styles/Page.css';
 
 
 class App extends Component {
@@ -36,7 +32,7 @@ class App extends Component {
                                 path="/"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Home auth={auth} firestore={firestore}/>
+                                        <Home/>
                                     </Page>
                                 )}
                             />
@@ -45,7 +41,7 @@ class App extends Component {
                                 path="/Events"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Events auth={auth} firestore={firestore}/>
+                                        <Events/>
                                     </Page>
                                 )}
                             />
@@ -54,7 +50,7 @@ class App extends Component {
                                 path="/Team"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <Team auth={auth} firestore={firestore}/>
+                                        <Team/>
                                     </Page>
                                 )}
                             />
@@ -63,7 +59,7 @@ class App extends Component {
                                 path="/JoinUs"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <JoinUs auth={auth} firestore={firestore}/>
+                                        <JoinUs/>
                                     </Page>
                                 )}
                             />
@@ -72,7 +68,7 @@ class App extends Component {
                                 path="/ContactUs"
                                 render= {(routeProps) => (
                                     <Page>
-                                        <ContactUs auth={auth} firestore={firestore}/>
+                                        <ContactUs/>
                                     </Page>
                                 )}
                             />

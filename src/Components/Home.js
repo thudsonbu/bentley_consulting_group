@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import InfoIcon from '@material-ui/icons/Info';
 
 import {withStyles} from '@material-ui/styles';
-import styles from './styles/HomeStyles';
+import styles from '../styles/HomeStyles';
 
 import Nav from './Nav';
 import Jumbotron from "./Jumbotron";

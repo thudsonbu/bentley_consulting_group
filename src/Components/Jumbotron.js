@@ -1,6 +1,6 @@
 import React from 'react';
 import {withStyles} from '@material-ui/styles';
-import styles from './styles/JumbotronStyles';
+import styles from '../styles/JumbotronStyles';
 
 function Jumbotron(props) {
     return (

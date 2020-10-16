@@ -6,7 +6,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 
 import { withStyles } from '@material-ui/core';
-import styles from './styles/TeamStyles.js';
+import styles from '../styles/TeamStyles.js';
 
 class Team extends Component {
     constructor(props){
