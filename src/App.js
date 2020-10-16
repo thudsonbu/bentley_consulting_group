@@ -15,22 +15,6 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAxucYxxSMnBVAKBMAMTsuuyPC6z0lQQKQ",
-    authDomain: "bentleyconsultinggroup-544d2.firebaseapp.com",
-    databaseURL: "https://bentleyconsultinggroup-544d2.firebaseio.com",
-    projectId: "bentleyconsultinggroup-544d2",
-    storageBucket: "bentleyconsultinggroup-544d2.appspot.com",
-    messagingSenderId: "456175144630",
-    appId: "1:456175144630:web:12fb478e8ab14f2aa46017",
-    measurementId: "G-C4WG3FRNXN"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-
 
 class App extends Component {
     constructor(props){
