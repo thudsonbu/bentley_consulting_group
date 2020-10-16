@@ -19,14 +19,35 @@ function LoginForm() {
         <div className={classes.LoginForm}>
             <Nav currentLocation={"Login"}/>
             <div className={classes.formContainer}>
-                <TextField required id="standard-required" defaultValue="Hello World" />
-                <TextField
-                    required
-                    id="standard-password-input"
-                    label="Password"
-                    type="password"
-                    autoComplete="current-password"
-                />
+                <ValidatorForm onSubmit={this.handleSubmit} className={classes.ValidatorForm}>
+                    <div className={classes.EmailFieldContainer}>
+                        <TextValidator
+                            autoFocus
+                            margin="dense"
+                            id="Email"
+                            label="Email"
+                            name={"Email"}
+                            className={classes.EmailField}
+                            value={Email}
+                            onChange={this.handleChange}
+                            validators={["required"]}
+                            errorMessages={["Email Required for Login"]}
+                        />
+                    </div>
+                    <div className={classes.PasswordFieldContainer}>
+                        <TextValidator
+                            margin="dense"
+                            id="Password"
+                            label="Password"
+                            name={"Password"}
+                            className={classes.PasswordField}
+                            value={Password}
+                            onChange={this.handleChange}
+                            validators={["required"]}
+                            errorMessages={["Password Required for Login"]}
+                        />
+                    </div>
+                </ValidatorForm>
             </div>
             <Footer/>
         </div> 
