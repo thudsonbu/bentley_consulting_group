@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {withStyles} from '@material-ui/styles';
-import styles from '../styles/JoinUsStyles';
+import styles from '../../styles/JoinUsStyles';
 
 import { Redirect } from 'react-router-dom';
 
@@ -20,8 +20,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import emailjs from 'emailjs-com';
 
 
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from '../Partials/Nav';
+import Footer from '../Partials/Footer';
 
 class JoinUs extends Component{
     constructor(props){

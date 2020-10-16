@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { withStyles } from '@material-ui/styles';
-import styles from '../styles/NavStyles';
+import styles from '../../styles/NavStyles';
 
 import { Link } from 'react-router-dom';
 

@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import InfoIcon from '@material-ui/icons/Info';
 
 import {withStyles} from '@material-ui/styles';
-import styles from '../styles/HomeStyles';
+import styles from '../../styles/HomeStyles';
 
-import Nav from './Nav';
+import Nav from '../Partials/Nav';
 import Jumbotron from "./Jumbotron";
-import Footer from './Footer';
-import ContactUsForm from "./ContactUsForm";
+import Footer from '../Partials/Footer';
+import ContactUsForm from "../Form/ContactUsForm";
 
 import { Link } from 'react-router-dom';
 

@@ -1,7 +1,7 @@
-import datavisualization from '../images/DataVisualization.jpg';
-import projectmanagement from '../images/ProjectManagement.png';
-import massaro from '../images/masarro.png';
-import frameworks from '../images/frameworks.jpg';
+import datavisualization from '../../images/DataVisualization.jpg';
+import projectmanagement from '../../images/ProjectManagement.png';
+import massaro from '../../images/masarro.png';
+import frameworks from '../../images/frameworks.jpg';
 
 
 export default [

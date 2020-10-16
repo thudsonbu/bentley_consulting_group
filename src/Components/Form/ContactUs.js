@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "../Partials/Nav";
+import Footer from "../Partials/Footer";
 
 import {Redirect} from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions/DialogActions";
 
 import {withStyles} from "@material-ui/styles";
-import styles from "../styles/ContactUsStyles";
+import styles from "../../styles/ContactUsStyles";
 
 import emailjs from 'emailjs-com';
 

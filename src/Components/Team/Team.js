@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 import teamseed from './TeamSeed';
 import Member from './Member';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from '../Partials/Nav';
+import Footer from '../Partials/Footer';
 
 import { withStyles } from '@material-ui/core';
-import styles from '../styles/TeamStyles.js';
+import styles from '../../styles/TeamStyles.js';
 
 class Team extends Component {
     constructor(props){

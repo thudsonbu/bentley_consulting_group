@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Nav from './Nav';
+import Nav from '../Partials/Nav';
 import Event from './Event';
-import Footer from './Footer';
+import Footer from '../Partials/Footer';
 
 import { withStyles } from '@material-ui/styles';
-import styles from '../styles/EventsStyles';
+import styles from '../../styles/EventsStyles';
 
 import events from './EventsSeed';
 

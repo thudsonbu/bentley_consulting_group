@@ -1,9 +1,9 @@
-import tomheadshot from '../images/tomheadshot.jfif';
-import celiaheadshot from '../images/celiaheadshot.jfif';
-import michealheadshot from '../images/michealheadshot.jfif';
-import milesheadshot from '../images/milesheadshot.jfif';
-import alexheadshot from '../images/alexheadshot.jfif';
-import sandhyaheadshot from '../images/sandhyaheadshot.jpg';
+import tomheadshot from '../../images/tomheadshot.jfif';
+import celiaheadshot from '../../images/celiaheadshot.jfif';
+import michealheadshot from '../../images/michealheadshot.jfif';
+import milesheadshot from '../../images/milesheadshot.jfif';
+import alexheadshot from '../../images/alexheadshot.jfif';
+import sandhyaheadshot from '../../images/sandhyaheadshot.jpg';
 
 export default [
     {

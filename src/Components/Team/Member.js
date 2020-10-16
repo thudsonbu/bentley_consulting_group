@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { withStyles } from '@material-ui/core';
-import styles from '../styles/MemberStyles.js';
+import styles from '../../styles/MemberStyles.js';
 
 import { Link } from 'react-router-dom';
 

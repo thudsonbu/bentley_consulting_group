@@ -7,7 +7,7 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 
 
 import { withStyles } from '@material-ui/styles';
-import styles from '../styles/FooterStyles';
+import styles from '../../styles/FooterStyles';
 import Button from "@material-ui/core/Button";
 
 function Footer(props) {

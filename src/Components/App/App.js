@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import Home from './Home';
-import Events from './Events';
-import Team from './Team';
-import JoinUs from "./JoinUs";
-import ContactUs from "./ContactUs";
+import Home from '../Home/Home';
+import Events from '../Event/Events';
+import Team from '../Team/Team';
+import JoinUs from "../Form/JoinUs";
+import ContactUs from "../Form/ContactUs";
 import Page from './Page';
-import '../styles/Page.css';
+import '../../styles/Page.css';
 
 
 class App extends Component {

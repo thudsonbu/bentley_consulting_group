@@ -8,7 +8,7 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import TextField from '@material-ui/core/TextField';
 import { DialogContentText } from '@material-ui/core';
 import { withStyles } from "@material-ui/core/styles";
-import styles from '../styles/ContactUsFormStyles';
+import styles from '../../styles/ContactUsFormStyles';
 
 class ContactUsForm extends Component {
 
