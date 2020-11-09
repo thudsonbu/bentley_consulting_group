@@ -1,4 +1,4 @@
-import react, {useState} from 'react';
+import React, { useState } from 'react';
 
 import Nav from "../Partials/Nav";
 import Footer from "../Partials/Footer";
@@ -10,11 +10,13 @@ import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions/DialogActions";
+import {TextValidator, ValidatorForm} from "react-material-ui-form-validator";
 
 import {withStyles} from "@material-ui/styles";
 import styles from "../../styles/LoginFormStyles";
 
-function LoginForm() {
+function LoginForm(props) {
+    const { classes } = props;
     return (
         <div className={classes.LoginForm}>
             <Nav currentLocation={"Login"}/>
@@ -28,10 +30,10 @@ function LoginForm() {
                             label="Email"
                             name={"Email"}
                             className={classes.EmailField}
-                            value={Email}
+                            // value={Email}
                             onChange={this.handleChange}
-                            validators={["required"]}
-                            errorMessages={["Email Required for Login"]}
+                            validators={["required, isEmail"]}
+                            errorMessages={["Email Required for Login", "Invalid Email"]}
                         />
                     </div>
                     <div className={classes.PasswordFieldContainer}>
@@ -41,7 +43,7 @@ function LoginForm() {
                             label="Password"
                             name={"Password"}
                             className={classes.PasswordField}
-                            value={Password}
+                            // value={Password}
                             onChange={this.handleChange}
                             validators={["required"]}
                             errorMessages={["Password Required for Login"]}

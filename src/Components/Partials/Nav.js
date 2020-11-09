@@ -92,6 +92,12 @@ class Nav extends Component {
                             <ListItemText primary={'Contact'} />
                         </ListItem>
                     </Link>
+                    <Link to={'/Login'} className={classes.link}>
+                        <ListItem button key={'login'}>
+                            <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
+                            <ListItemText primary={'Login'} />
+                        </ListItem>
+                    </Link>
                 </List>
             </div>
         );
@@ -160,6 +166,16 @@ class Nav extends Component {
                                 startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
                             >
                                 Contact Us
+                            </Button>
+                        </Link>
+                        <Link to={'/Login'} className={classes.link}>
+                            <Button
+                                className={classNames(classes.button,
+                                    {[classes.buttonActive]: currentLocation === "Login"}
+                                )}
+                                startIcon={<PhoneIphoneIcon className={classes.Icon}/>}
+                            >
+                                Login
                             </Button>
                         </Link>
                     </div>

@@ -10,6 +10,7 @@ import JoinUs from "../Form/JoinUs";
 import ContactUs from "../Form/ContactUs";
 import Page from './Page';
 import '../../styles/Page.css';
+import LoginForm from '../Form/LoginForm';
 
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
                             <Route
                                 exact
                                 path="/"
-                                render= {(routeProps) => (
+                                render= {() => (
                                     <Page>
                                         <Home/>
                                     </Page>
@@ -39,7 +40,7 @@ class App extends Component {
                             <Route
                                 exact
                                 path="/Events"
-                                render= {(routeProps) => (
+                                render= {() => (
                                     <Page>
                                         <Events/>
                                     </Page>
@@ -48,7 +49,7 @@ class App extends Component {
                             <Route
                                 exact
                                 path="/Team"
-                                render= {(routeProps) => (
+                                render= {() => (
                                     <Page>
                                         <Team/>
                                     </Page>
@@ -57,7 +58,7 @@ class App extends Component {
                             <Route
                                 exact
                                 path="/JoinUs"
-                                render= {(routeProps) => (
+                                render= {() => (
                                     <Page>
                                         <JoinUs/>
                                     </Page>
@@ -66,9 +67,18 @@ class App extends Component {
                             <Route
                                 exact
                                 path="/ContactUs"
-                                render= {(routeProps) => (
+                                render= {() => (
                                     <Page>
                                         <ContactUs/>
+                                    </Page>
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/"
+                                render= {() => (
+                                    <Page>
+                                        <LoginForm/>
                                     </Page>
                                 )}
                             />
