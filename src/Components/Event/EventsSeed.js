@@ -1,18 +1,8 @@
 import datavisualization from '../../images/DataVisualization.jpg';
 import projectmanagement from '../../images/ProjectManagement.png';
 import massaro from '../../images/masarro.png';
-import frameworks from '../../images/frameworks.jpg';
-
 
 export default [
-    // {
-    //     image: frameworks,
-    //     title: "Intro to Case Frameworks pt. 2",
-    //     date: "October  1st, 2020",
-    //     time: "7:30-8:30pm",
-    //     location: "ZoomID 830 053 3651",
-    //     description: "Embeded within each business problem or consulting case lies some fundamental truths. The truths can be aggregated into what are known as case frameworks. This week we will introduce consultants to the frameworks that are vital in solving business problems.",
-    // },
     {
         image: datavisualization,
         title: "Data Vizualizaton Bootcamp pt 4",

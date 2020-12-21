@@ -30,14 +30,14 @@ function Footer(props) {
                         Team
                     </Button>
                 </Link>
-                <Link to={'/JoinUs'} className={props.classes.link}>
+                {/* <Link to={'/JoinUs'} className={props.classes.link}>
                     <Button
                         className={props.classes.button}
                         startIcon={<GroupAddIcon className={props.classes.Icon}/>}
                     >
                         Join Us
                     </Button>
-                </Link>
+                </Link> */}
                 <Link to={'/ContactUs'} className={props.classes.link}>
                     <Button
                         className={props.classes.button}

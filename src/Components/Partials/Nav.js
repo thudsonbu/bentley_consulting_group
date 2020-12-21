@@ -80,22 +80,16 @@ class Nav extends Component {
                             <ListItemText primary={'Team'} />
                         </ListItem>
                     </Link>
-                    <Link to={'/JoinUs'} className={classes.link}>
+                    {/* <Link to={'/JoinUs'} className={classes.link}>
                         <ListItem button key={'join'}>
                             <ListItemIcon><GroupAddIcon/></ListItemIcon>
                             <ListItemText primary={'Join'} />
                         </ListItem>
-                    </Link>
+                    </Link> */}
                     <Link to={'/ContactUs'} className={classes.link}>
                         <ListItem button key={'contact'}>
                             <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
                             <ListItemText primary={'Contact'} />
-                        </ListItem>
-                    </Link>
-                    <Link to={'/Login'} className={classes.link}>
-                        <ListItem button key={'login'}>
-                            <ListItemIcon><PhoneIphoneIcon/></ListItemIcon>
-                            <ListItemText primary={'Login'} />
                         </ListItem>
                     </Link>
                 </List>
@@ -148,7 +142,7 @@ class Nav extends Component {
                                 Team
                             </Button>
                         </Link>
-                        <Link to={'/JoinUs'} className={classes.link}>
+                        {/* <Link to={'/JoinUs'} className={classes.link}>
                             <Button
                                 className={classNames(classes.button,
                                     {[classes.buttonActive]: currentLocation === "JoinUs"}
@@ -157,7 +151,7 @@ class Nav extends Component {
                             >
                                 Join Us
                             </Button>
-                        </Link>
+                        </Link> */}
                         <Link to={'/ContactUs'} className={classes.link}>
                             <Button
                                 className={classNames(classes.button,
@@ -168,7 +162,7 @@ class Nav extends Component {
                                 Contact Us
                             </Button>
                         </Link>
-                        <Link to={'/Login'} className={classes.link}>
+                        {/* <Link to={'/Login'} className={classes.link}>
                             <Button
                                 className={classNames(classes.button,
                                     {[classes.buttonActive]: currentLocation === "Login"}
@@ -177,7 +171,7 @@ class Nav extends Component {
                             >
                                 Login
                             </Button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </Toolbar>
                 <Drawer anchor={'left'} open={drawerOpen} onClose={this.closeDrawer}>

@@ -7,11 +7,10 @@ import sandhyaheadshot from '../../images/sandhyaheadshot.jpg';
 
 export default [
     {
-        headshot: tomheadshot,
-        name: "Tom Hudson",
+        headshot: michealheadshot,
+        name: "Micheal Watkins",
         position: "President",
-        github: "https://github.com/thudsonbu",
-        linkedin: "https://www.linkedin.com/in/tom-hudson-17329a161/"
+        linkedin: "https://www.linkedin.com/in/michaelrwatkins/"
     },
     {
         headshot: celiaheadshot,
@@ -20,16 +19,17 @@ export default [
         linkedin: "https://www.linkedin.com/in/celiaschurman/"
     },
     {
-        headshot: michealheadshot,
-        name: "Micheal Watkins",
-        position: "Case Manager",
-        linkedin: "https://www.linkedin.com/in/michaelrwatkins/"
-    },
-    {
         headshot: milesheadshot,
         name: "Miles Shaheen",
         position: "Financial Manager",
         linkedin: "https://www.linkedin.com/in/miles-shaheen1/"
+    },
+    {
+        headshot: tomheadshot,
+        name: "Tom Hudson",
+        position: "Tech Lead",
+        github: "https://github.com/thudsonbu",
+        linkedin: "https://www.linkedin.com/in/tom-hudson-17329a161/"
     },
     {
         headshot: alexheadshot,
