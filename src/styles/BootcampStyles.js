@@ -1,7 +1,7 @@
 import sizes from "./sizes";
 
 export default {
-  EventsContainer: {
+  BootcampContainer: {
     paddingTop: "8vh",
     marginBottom: "50px",
     width: "100%",
@@ -46,12 +46,5 @@ export default {
       width: "350px",
       boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     },
-  },
-  BlockContainer: {
-    width: "80%",
-    display: "Flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignItems: "center",
   },
 };
