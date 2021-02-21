@@ -31,10 +31,6 @@ class Events extends Component {
           </div>
           <div className={classes.SectionSubTitle}>
             <h1>Events the BCG has planned this year.</h1>
-            <p>
-              Learn about each events that the BCG has planned, and RSVP to
-              events.
-            </p>
           </div>
           {eventBlocks}
           <Footer />

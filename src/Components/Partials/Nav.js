@@ -19,6 +19,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import HomeIcon from "@material-ui/icons/Home";
 import EventAvailableIcon from "@material-ui/icons/EventAvailable";
+import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 import GroupIcon from "@material-ui/icons/Group";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 
@@ -73,7 +74,7 @@ class Nav extends Component {
           <Link to={"/Bootcamp"} className={classes.link}>
             <ListItem button key={"bootcamp"}>
               <ListItemIcon>
-                <GroupIcon />
+                <FlightTakeoffIcon />
               </ListItemIcon>
               <ListItemText primary={"Bootcamp"} />
             </ListItem>
@@ -148,7 +149,7 @@ class Nav extends Component {
                 className={classNames(classes.button, {
                   [classes.buttonActive]: currentLocation === "Bootcamp",
                 })}
-                startIcon={<GroupIcon className={classes.Icon} />}
+                startIcon={<FlightTakeoffIcon className={classes.Icon} />}
               >
                 Bootcamp
               </Button>

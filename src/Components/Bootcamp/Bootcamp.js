@@ -13,12 +13,10 @@ const Bootcamp = (props) => {
       <Nav currentLocation={"Bootcamp"} />
       <div className={classes.BootcampContainer}>
         <div className={classes.SectionTitleBlock}>
-          <h1 className={classes.SectionTitle}>
-            The Bentley Consulting Group Bootcamp
-          </h1>
+          <h1 className={classes.SectionTitle}>Consulting Bootcamp</h1>
         </div>
         <div className={classes.SectionSubtitle}>
-          <h1>Bentley Consulting Group Bootcamp</h1>
+          <h1>The Bentley Consulting Group Consulting Bootcamp</h1>
         </div>
       </div>
       <Footer />

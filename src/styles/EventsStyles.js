@@ -22,9 +22,10 @@ export default {
     color: "#ffffff",
     fontSize: "4rem",
     padding: "20px",
+    fontWeight: "300",
   },
   SectionSubTitle: {
-    marginTop: "50px",
+    marginTop: "30px",
     padding: "30px 40px 20px 40px",
     width: "100%",
     display: "flex",

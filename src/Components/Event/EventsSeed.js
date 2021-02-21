@@ -1,30 +1,13 @@
-import datavisualization from '../../images/DataVisualization.jpg';
-import projectmanagement from '../../images/ProjectManagement.png';
-import massaro from '../../images/masarro.png';
+import projectmanagement from "../../images/ProjectManagement.png";
 
 export default [
-    {
-        image: datavisualization,
-        title: "Data Vizualizaton Bootcamp pt 4",
-        date: "November 12th, 2020",
-        time: "7:30-8:30pm",
-        location: "ZoomID 830 053 3651",
-        description: "In this session, we will finish up the capstone project and build out some beautiful and informative visualizations."
-    },
-    {
-        image: massaro,
-        title: "Massaro Communication Session",
-        date: "November 19th, 2020 6-7pm",
-        time: "6:00-7:00pm",
-        location: "ZoomID TBD",
-        description: "Learning how to communicate efficiently and effectively in the workspace is vital to a succesful career. In this session, our friends at Massaro will give their tips and insights into effective communication in consulting."
-    },
-    {
-        image: projectmanagement,
-        title: "Agile Management",
-        date: "March 2021",
-        time: "TBD",
-        location: "TBD",
-        description: "A four week long bootcamp in project management that will cover the basics of effective task management and scheduling. The course is broken into building effective teams, how to lead, project management methodologies, and project managment software."
-    },
-]
+  {
+    image: projectmanagement,
+    title: "BCG Bootcamp",
+    date: "2/24/2021",
+    time: "9:20 PM",
+    location: "Zoom",
+    description:
+      "Learn more about Bentley Consulting Group's first ever bootcamp. Get inside tips and advice about the application process and learn more about the consulting space.",
+  },
+];
