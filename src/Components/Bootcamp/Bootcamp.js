@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Partials/Nav";
+import Tiles from "./BootcampTiles";
 import Footer from "../Partials/Footer";
 
 import { withStyles } from "@material-ui/styles";
@@ -19,6 +20,7 @@ const Bootcamp = (props) => {
           <h1>The Bentley Consulting Group Consulting Bootcamp</h1>
         </div>
       </div>
+      <Tiles />
       <Footer />
     </div>
   );
