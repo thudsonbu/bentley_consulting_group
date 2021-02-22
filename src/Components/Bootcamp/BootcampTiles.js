@@ -26,22 +26,42 @@ const BootcampTiles = (props) => {
       <div className={classes.BootcampTile}>
         <BuildIcon className={classes.Icon} />
         <p className={classes.Title}>Problem Solving</p>
+        <p className={classes.Description}>
+          Through various events students will be able to meet with real
+          consultants and get ahead.
+        </p>
       </div>
       <div className={classes.BootcampTile}>
         <DoubleArrowIcon className={classes.Icon} />
         <p className={classes.Title}>Skill Development</p>
+        <p className={classes.Description}>
+          Through various events students will be able to meet with real
+          consultants and get ahead.
+        </p>
       </div>{" "}
       <div className={classes.BootcampTile}>
         <DataUsageIcon className={classes.Icon} />
         <p className={classes.Title}>Interview Prep</p>
+        <p className={classes.Description}>
+          Through various events students will be able to meet with real
+          consultants and get ahead.
+        </p>
       </div>{" "}
       <div className={classes.BootcampTile}>
         <HowToRegIcon className={classes.Icon} />
         <p className={classes.Title}>Recommendations</p>
+        <p className={classes.Description}>
+          Through various events students will be able to meet with real
+          consultants and get ahead.
+        </p>
       </div>{" "}
       <div className={classes.BootcampTile}>
         <SuperVisorAccountIcon className={classes.Icon} />
         <p className={classes.Title}>Mentorship</p>
+        <p className={classes.Description}>
+          Through various events students will be able to meet with real
+          consultants and get ahead.
+        </p>
       </div>
     </div>
   );

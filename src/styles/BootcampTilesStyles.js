@@ -10,6 +10,7 @@ export default {
     paddingLeft: "20%",
     marginTop: "-20px",
   },
+
   BootcampTile: {
     margin: "30px",
     width: "200px",
@@ -20,6 +21,15 @@ export default {
     boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     "&:hover": {
       boxShadow: "0px 0px 20px 12px rgba(170,170,170,1)",
+    },
+    "&:hover $Icon": {
+      display: "none",
+    },
+    "&:hover $Title": {
+      marginTop: "40px",
+    },
+    "&:hover $Description": {
+      display: "block",
     },
   },
 
@@ -40,8 +50,6 @@ export default {
   Description: {
     display: "none",
     textAlign: "center",
-    "&:hover": {
-      
-    }
+    marginTop: "-20px",
   },
 };
