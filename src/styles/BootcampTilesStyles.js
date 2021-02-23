@@ -8,7 +8,12 @@ export default {
     alignItems: "space-between",
     width: "60%",
     paddingLeft: "20%",
-    marginTop: "-20px",
+    paddingTop: "50px",
+    [sizes.down("md")]: {
+      paddingTop: "100px",
+      width: "80%",
+      paddingLeft: "10%",
+    },
   },
 
   BootcampTile: {
@@ -44,12 +49,14 @@ export default {
     fontSize: "1.3rem",
     textAlign: "center",
     paddingBottom: "25px",
+    padding: "5px",
     marginTop: "-3px",
   },
 
   Description: {
     display: "none",
     textAlign: "center",
-    marginTop: "-20px",
+    marginTop: "-30px",
+    padding: "5px",
   },
 };

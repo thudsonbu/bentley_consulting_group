@@ -24,8 +24,8 @@ export default {
     padding: "20px",
     fontWeight: "300",
   },
-  SectionSubTitle: {
-    marginTop: "30px",
+  SectionSubtitle: {
+    marginTop: "10px",
     padding: "30px 40px 20px 40px",
     width: "100%",
     display: "flex",
@@ -33,19 +33,28 @@ export default {
     justifyContent: "center",
     alignItems: "center",
   },
-  ClickableBlock: {
+  SectionSubtitleTitle: {
+    textAlign: "center",
+  },
+  SectionSubtitleDescription: {
+    textAlign: "center",
+    marginBottom: "50px",
+  },
+  GoButtonContainer: {
+    marginTop: "50px",
+    width: "100%",
+    height: "150px",
+    display: "flex",
+    justifyContent: "center",
+    aligntItems: "center",
+    marginBottom: "50px",
+  },
+  GoButton: {
     width: "300px",
-    height: "450px",
-    margin: "60px",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      cursor: "pointer",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-    },
-    [sizes.down("md")]: {
-      margin: "50px",
-      width: "350px",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-    },
+    height: "100px",
+    fontSize: "2rem",
+    backgroundColor: "#064cd5",
+    color: "#ffffff",
+    padding: "20px",
   },
 };
