@@ -49,10 +49,10 @@ const BootcampTiles = (props) => {
       </div>{" "}
       <div className={classes.BootcampTile}>
         <HowToRegIcon className={classes.Icon} />
-        <p className={classes.Title}>Recommendations</p>
+        <p className={classes.Title}>Recs</p>
         <p className={classes.Description}>
           Students often receive letters of recommendation after completing a
-          project succesfully.
+          project successfully.
         </p>
       </div>{" "}
       <div className={classes.BootcampTile}>
@@ -60,7 +60,7 @@ const BootcampTiles = (props) => {
         <p className={classes.Title}>Mentorship</p>
         <p className={classes.Description}>
           Get one on one coaching from Bentley Consulting Group's experienced
-          eboard members.
+          E-Board members.
         </p>
       </div>
     </div>
