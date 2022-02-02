@@ -4,8 +4,6 @@ import Tiles from "./BootcampTiles";
 import Footer from "../Partials/Footer";
 import Button from "@material-ui/core/Button";
 
-import { Link } from "react-router-dom";
-
 import { withStyles } from "@material-ui/styles";
 import styles from "../../styles/BootcampStyles";
 

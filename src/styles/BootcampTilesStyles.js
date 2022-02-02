@@ -6,13 +6,13 @@ export default {
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "space-between",
-    width: "60%",
-    paddingLeft: "20%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "1000px",
     paddingTop: "50px",
     [sizes.down("md")]: {
-      paddingTop: "100px",
+      paddingTop: "120px",
       width: "80%",
-      paddingLeft: "10%",
     },
   },
 
@@ -31,7 +31,7 @@ export default {
       display: "none",
     },
     "&:hover $Title": {
-      marginTop: "40px",
+      display: "none"
     },
     "&:hover $Description": {
       display: "block",
@@ -56,7 +56,7 @@ export default {
   Description: {
     display: "none",
     textAlign: "center",
-    marginTop: "-30px",
     padding: "5px",
+    marginTop: "30px"
   },
 };

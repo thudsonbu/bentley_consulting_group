@@ -149,7 +149,6 @@ export default {
   },
   BlockContent: {
     width: "100%",
-    height: "200px",
     marginTop: "-19px",
     color: "#ffffff",
     backgroundColor: "#064cd5",

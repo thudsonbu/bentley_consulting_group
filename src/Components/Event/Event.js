@@ -38,8 +38,9 @@ class Event extends Component {
       location,
       description,
     } = this.props;
+
     const { drawerOpen } = this.state;
-    console.log(image);
+
     return (
       <div
         className={classNames(classes.Event, {

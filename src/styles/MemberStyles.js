@@ -2,14 +2,11 @@ import sizes from './sizes';
 
 export default {
     Member: {
-        width: "250px",
-        height: "400px",
+        width: "300px",
+        height: "500px",
         margin: "60px 30px 90px 30px",
         transition: "box-shadow .25s",
-        "&:hover": {
-            cursor: "pointer",
-            boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-        },
+        borderRadius: "10px",
         [sizes.down("md")]: {
             margin: "50px",
             marginBottom: "90px",
@@ -18,8 +15,8 @@ export default {
         }
     },
     Headshot: {
-        width: "250px",
-        height: "250px",
+        width: "300px",
+        height: "350px",
         backgroundPosition: "center",
         backgroundSize: "cover",
         [sizes.down("md")]: {
@@ -27,7 +24,7 @@ export default {
         }
     },
     Body: {
-        height: "150px",
+        height: "170px",
         backgroundColor: "#064cd5",
         color: "#ffffff",
         display: "flex",
@@ -37,6 +34,10 @@ export default {
     },
     Name: {
         marginBottom: "-10px",
+    },
+    Position: {
+        fontSize: "1rem",
+        textAlign: "center",
     },
     Icons: {
         height: "40px",
@@ -48,5 +49,6 @@ export default {
         color: "#ffffff",
         fontSize: "2rem",
         margin: "0px 15px 0px 15px",
+        paddingBottom: "10px"
     }
 }

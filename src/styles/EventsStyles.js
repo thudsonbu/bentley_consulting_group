@@ -2,7 +2,7 @@ import sizes from "./sizes";
 
 export default {
   EventsContainer: {
-    paddingTop: "8vh",
+    paddingTop: "50px",
     marginBottom: "50px",
     width: "100%",
     height: "300px",

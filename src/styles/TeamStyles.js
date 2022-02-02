@@ -1,5 +1,3 @@
-import sizes from "./sizes";
-
 export default {
   Team: {
     marginBottom: "50px",
@@ -10,8 +8,9 @@ export default {
     justifyContent: "space-around",
     alignItems: "center",
   },
+
   SectionTitleBlock: {
-    marginTop: "8vh",
+    marginTop: "50px",
     backgroundColor: "#064cd5",
     height: "200px",
     width: "100%",
@@ -19,12 +18,14 @@ export default {
     justifyContent: "center",
     alignItems: "center",
   },
+
   SectionTitle: {
     color: "#ffffff",
     fontSize: "4rem",
     padding: "20px",
     fontWeight: "300",
   },
+
   SectionSubTitle: {
     marginTop: "30px",
     padding: "30px 40px 20px 40px",

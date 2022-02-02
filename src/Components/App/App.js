@@ -11,7 +11,6 @@ import JoinUs from "../Form/JoinUs";
 import ContactUs from "../Form/ContactUs";
 import Page from "./Page";
 import "../../styles/Page.css";
-import LoginForm from "../Form/LoginForm";
 
 class App extends Component {
   constructor(props) {
