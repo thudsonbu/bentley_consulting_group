@@ -20,7 +20,7 @@ export default [
   {
     headshot: sandhya,
     name: "Sandhya Sangappa",
-    position: "Vice President",
+    position: "Co President",
     linkedin: "https://www.linkedin.com/in/sandhya-sangappa",
   },
   {
