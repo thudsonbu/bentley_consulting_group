@@ -26,7 +26,7 @@ export default {
     },
   },
   SectionTitleBlock: {
-    marginTop: "10vh",
+    marginTop: "50px",
     backgroundColor: "#064cd5",
     height: "200px",
     width: "100%",

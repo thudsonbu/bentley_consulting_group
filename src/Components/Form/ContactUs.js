@@ -115,6 +115,9 @@ class ContactUs extends Component {
         {this.renderRedirect()}
         <Nav currentLocation={"ContactUs"} />
         <div className={classes.ContactUsContent}>
+        <div className={classes.SectionTitleBlock}>
+          <h1 className={classes.SectionTitle}>Contact Us</h1>
+        </div>
           <div className={classes.ContactUsForm}>
             <div className={classes.SectionSubTitle}>
               <h1>Contact Us Form</h1>
