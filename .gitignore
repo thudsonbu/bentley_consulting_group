@@ -12,6 +12,9 @@ firebaseConf.js
 # production
 /build
 
+# deployment
+.firebase
+
 #environmental variables
 .env
 
