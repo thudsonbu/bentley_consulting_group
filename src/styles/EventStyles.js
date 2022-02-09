@@ -7,13 +7,13 @@ export default {
     margin: "60px 50px 150px 50px",
     transition: "all .2s",
     "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
     [sizes.down("md")]: {
       margin: "50px",
       marginBottom: "110px",
       width: "350px",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
   },
 
@@ -37,7 +37,7 @@ export default {
   },
 
   InfoIcon: {
-    fontSize: "24px",
+    fontSize: "36px",
     marginLeft: "85%",
     marginBottom: "2%",
   },
@@ -46,7 +46,7 @@ export default {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: "250px",
+    height: "262px",
     padding: "0px 15px 10px 15px",
     backgroundColor: "#064cd5",
     color: "#ffffff",

@@ -17,7 +17,7 @@ const App = (props) => {
     <Route
       className="background"
       render={({ location }) => (
-        <TransitionGroup style={{ height: "100%" }}>
+        <TransitionGroup>
           <CSSTransition key={location.key} classNames="page" timeout={1000}>
             <Switch location={location}>
               <Route

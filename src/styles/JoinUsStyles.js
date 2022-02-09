@@ -34,6 +34,26 @@ export default {
     alignItems: "center",
     padding: "20px",
   },
+  SectionSubTitle: {
+    width: "100%",
+    display: "flex",
+    color: "#ffffff",
+    backgroundColor: "#064cd5",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  SectionSubTitleText: {
+    padding: "0px 10px 0px 10px",
+    textAlign: "center",
+  },
+  inputFieldContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px",
+  },
   FirstNameFieldContainer: {
     width: "40%",
     paddingTop: "20px",

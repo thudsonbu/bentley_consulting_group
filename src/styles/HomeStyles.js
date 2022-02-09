@@ -1,4 +1,6 @@
 import sizes from "./Sizes";
+import shared from "./Shared";
+
 import logo from "../images/Logo.png";
 import projects from "../images/presentation.jpg";
 import cases from "../images/charts.jpg";
@@ -18,6 +20,7 @@ import clickup from "../images/clickup.png";
 import airtable from "../images/airtable.png";
 
 export default {
+  ...shared,
   About: {
     marginTop: "50px",
     marginBottom: "50px",
@@ -61,44 +64,22 @@ export default {
     fontWeight: "300",
     textTransform: "uppercase",
   },
-  SectionTitleBlock: {
-    marginTop: "100px",
-    backgroundColor: "#064cd5",
-    height: "200px",
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  SectionTitle: {
-    color: "#ffffff",
-    fontSize: "48px",
-    padding: "20px",
-    fontWeight: "300",
-  },
-  SectionSubTitle: {
-    marginTop: "30px",
-    padding: "30px 40px 20px 40px",
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+
   Block: {
     width: "300px",
-    height: "450px",
+    height: "400px",
     margin: "60px",
-    transition: "box-shadow .25s",
+    transition: "box-shadow .15s",
     "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
     [sizes.down("md")]: {
       margin: "50px",
       width: "350px",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
   },
+
   ClickableBlock: {
     width: "300px",
     height: "450px",
@@ -115,6 +96,7 @@ export default {
       boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     },
   },
+
   BlockContainer: {
     width: "80%",
     display: "Flex",

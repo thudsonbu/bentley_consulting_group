@@ -8,6 +8,7 @@ export default {
     display: "Flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
+    minHeight: "55vh"
   },
   ClickableBlock: {
     width: "300px",

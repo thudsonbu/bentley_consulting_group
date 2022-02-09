@@ -123,7 +123,7 @@ class ContactUs extends Component {
               <h1>Contact Us Form</h1>
               <p className={classes.SectionSubTitleText}>
                 Fill out the form below and we will get back to you as soon as
-                possible
+                possible.
               </p>
             </div>
             <ValidatorForm

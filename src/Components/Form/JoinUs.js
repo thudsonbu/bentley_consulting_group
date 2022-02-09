@@ -118,6 +118,9 @@ class JoinUs extends Component {
         {this.renderRedirect()}
         <Nav currentLocation={"JoinUs"} />
         <div className={classes.JoinUsContent}>
+        <div className={classes.SectionTitleBlock}>
+          <h1 className={classes.SectionTitle}>Join Us</h1>
+        </div>
           <div className={classes.JoinUsForm}>
             <div className={classes.SectionSubTitle}>
               <h1>Become a Consultant</h1>

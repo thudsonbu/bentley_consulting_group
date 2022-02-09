@@ -149,7 +149,7 @@ const Home = ( props ) => {
             </div>
           </Link>
           <Link to="/ContactUs" className={classes.Link}>
-            <div className={classes.ClickableBlock}>
+            <div className={classes.Block}>
               <div className={classes.BlockImageContact} />
               <div className={classes.BlockContent}>
                 <h2 className={classes.BlockTitle}>Contact</h2>
