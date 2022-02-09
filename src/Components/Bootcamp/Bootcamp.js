@@ -11,21 +11,19 @@ const Bootcamp = (props) => {
   const { classes } = props;
 
   return (
-    <div className={classes.Bootcamp}>
+    <div>
       <Nav currentLocation={"Bootcamp"} />
-      <div className={classes.BootcampContainer}>
-        <div className={classes.SectionTitleBlock}>
-          <h1 className={classes.SectionTitle}>Consulting Bootcamp</h1>
-        </div>
-        <div className={classes.SectionSubtitle}>
-          <h1 className={classes.SectionSubtitleTitle}>
-            The Bentley Consulting Group Consulting Bootcamp
-          </h1>
-          <p className={classes.SectionSubtitleDescription}>
-            The Bentley Consulting Group bootcamp is a fantastic opportunity for
-            students interested in consulting to get a head start.
-          </p>
-        </div>
+      <div className={classes.SectionTitleBlock}>
+        <h1 className={classes.SectionTitle}>Consulting Bootcamp</h1>
+      </div>
+      <div className={classes.SectionSubTitle}>
+        <h1>
+          The Bentley Consulting Group Consulting Bootcamp
+        </h1>
+        <p>
+          The Bentley Consulting Group bootcamp is a fantastic opportunity for
+          students interested in consulting to get a head start.
+        </p>
       </div>
       <Tiles />
       <div className={classes.GoButtonContainer}>
