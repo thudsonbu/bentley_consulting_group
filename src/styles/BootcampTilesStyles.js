@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
 
 export default {
   TileContainer: {
@@ -23,40 +23,49 @@ export default {
     backgroundColor: "#064cd5",
     color: "#ffffff",
     borderRadius: "10px",
-    boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    boxSizing: "border-box",
+    boxShadow: "0 2px 5px rgba(0,0,0,0.3)",
     "&:hover": {
-      boxShadow: "0px 0px 20px 12px rgba(170,170,170,1)",
+      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
     "&:hover $Icon": {
-      display: "none",
+      transition: "opacity 0.2s",
+      opacity: "0%"
     },
-    "&:hover $Title": {
-      display: "none"
+    "& h1": {
+      fontSize: "20px",
+      fontWeight: "400",
+      textAlign: "center",
+      paddingBottom: "25px",
+      padding: "5px",
+      opacity: "100%",
+      transition: "opacity 0.1s",
     },
-    "&:hover $Description": {
-      display: "block",
+    "&:hover h1": {
+      transition: "opacity 0.2s",
+      opacity: "0%"
     },
+    "& p": {
+      fontSize: "16px",
+      textAlign: "center",
+      marginTop: "-175px",
+      height: "100px",
+      padding: "16px",
+      transition: "opacity 0.1s",
+      opacity: "0%"
+    },
+    "&:hover p": {
+      transition: "opacity 0.2s",
+      opacity: "100%"
+    }
   },
 
   Icon: {
-    fontSize: "1rem",
+    fontSize: "16px",
     width: "100%",
     height: "100px",
     paddingTop: "25px",
-  },
-
-  Title: {
-    fontSize: "1.3rem",
-    textAlign: "center",
-    paddingBottom: "25px",
-    padding: "5px",
-    marginTop: "-3px",
-  },
-
-  Description: {
-    display: "none",
-    textAlign: "center",
-    padding: "5px",
-    marginTop: "30px"
+    opacity: "100%",
+    transition: "opacity 0.1s",
   },
 };

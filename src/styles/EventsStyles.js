@@ -1,37 +1,13 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
+import shared from "./Shared";
 
 export default {
+  ...shared,
   EventsContainer: {
-    paddingTop: "50px",
-    marginBottom: "50px",
     width: "100%",
-    height: "300px",
     display: "Flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-  },
-  SectionTitleBlock: {
-    backgroundColor: "#064cd5",
-    height: "200px",
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  SectionTitle: {
-    color: "#ffffff",
-    fontSize: "4rem",
-    padding: "20px",
-    fontWeight: "300",
-  },
-  SectionSubTitle: {
-    marginTop: "30px",
-    padding: "30px 40px 20px 40px",
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
   },
   ClickableBlock: {
     width: "300px",
@@ -47,12 +23,5 @@ export default {
       width: "350px",
       boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     },
-  },
-  BlockContainer: {
-    width: "80%",
-    display: "Flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
+  }
 };

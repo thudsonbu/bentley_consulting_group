@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
 import logo from "../images/Logo.png";
 import projects from "../images/presentation.jpg";
 import cases from "../images/charts.jpg";
@@ -18,9 +18,6 @@ import clickup from "../images/clickup.png";
 import airtable from "../images/airtable.png";
 
 export default {
-  Home: {
-    height: "200vh",
-  },
   About: {
     marginTop: "50px",
     marginBottom: "50px",
@@ -59,12 +56,11 @@ export default {
     },
   },
   AboutTitle: {
-    fontSize: "1.7rem",
+    fontSize: "28px",
     textAlign: "Left",
     fontWeight: "300",
     textTransform: "uppercase",
   },
-  AboutText: {},
   SectionTitleBlock: {
     marginTop: "100px",
     backgroundColor: "#064cd5",
@@ -76,7 +72,7 @@ export default {
   },
   SectionTitle: {
     color: "#ffffff",
-    fontSize: "4rem",
+    fontSize: "48px",
     padding: "20px",
     fontWeight: "300",
   },
@@ -361,7 +357,7 @@ export default {
     textDecoration: "none",
   },
   InfoIcon: {
-    fontSize: "2rem",
+    fontSize: "30px",
     color: "#ffffff",
     marginLeft: "260px",
     marginTop: "25px",

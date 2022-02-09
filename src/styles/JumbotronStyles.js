@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
 import background from "../images/bentleyLibrary.jpg";
 
 export default {
@@ -17,14 +17,11 @@ export default {
     },
   },
   JumbotronTitle: {
-    fontSize: "5rem",
+    fontSize: "80px",
     fontWeight: "300",
     [sizes.down("md")]: {
       marginLeft: "10px",
-      fontSize: "4rem",
+      fontSize: "48px",
     },
-  },
-  JumbotronSubtext: {
-    fontSize: "2rem",
-  },
+  }
 };

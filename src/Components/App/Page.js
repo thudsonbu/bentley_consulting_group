@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Page.css";
 
-function Page(props) {
+const Page = (props) => {
   return <section className="Page">{props.children}</section>;
 }
 

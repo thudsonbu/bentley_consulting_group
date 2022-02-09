@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Nav from "../Partials/Nav";
 import Event from "./Event";
@@ -9,35 +9,35 @@ import styles from "../../styles/EventsStyles";
 
 import events from "./EventsSeed";
 
-class Events extends Component {
-  render() {
-    const { classes } = this.props;
-    const eventBlocks = events.map((event) => (
-      <Event
-        image={event.image}
-        title={event.title}
-        date={event.date}
-        time={event.time}
-        location={event.location}
-        description={event.description}
-      />
-    ));
-    return (
-      <div className={classes.Events}>
-        <Nav currentLocation={"Events"} />
-        <div className={classes.EventsContainer}>
-          <div className={classes.SectionTitleBlock}>
-            <h1 className={classes.SectionTitle}>Upcoming Events</h1>
-          </div>
-          <div className={classes.SectionSubTitle}>
-            <h1>Events the BCG has planned this year.</h1>
-          </div>
-          {eventBlocks}
-          <Footer />
+const Events = (props) => {
+  const { classes } = props;
+
+  const eventBlocks = events.map((event) => (
+    <Event
+      image={event.image}
+      title={event.title}
+      date={event.date}
+      time={event.time}
+      location={event.location}
+      description={event.description}
+    />
+  ));
+
+  return (
+    <div className={classes.Events}>
+      <Nav currentLocation={"Events"} />
+        <div className={classes.SectionTitleBlock}>
+          <h1 className={classes.SectionTitle}>Upcoming Events</h1>
         </div>
-      </div>
-    );
-  }
-}
+        <div className={classes.SectionSubTitle}>
+          <h1>Events the BCG has planned this year.</h1>
+        </div>
+        <div className={classes.EventsContainer}>
+          {eventBlocks}
+        </div>
+        <Footer />
+    </div>
+  );
+};
 
 export default withStyles(styles)(Events);

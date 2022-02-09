@@ -1,3 +1,5 @@
+import colors from './Colors';
+
 export default {
   BootcampContainer: {
     paddingTop: "50px",
@@ -20,7 +22,7 @@ export default {
 
   SectionTitle: {
     color: "#ffffff",
-    fontSize: "4rem",
+    fontSize: "48px",
     padding: "20px",
     fontWeight: "300",
   },
@@ -57,9 +59,14 @@ export default {
   GoButton: {
     width: "300px",
     height: "100px",
-    fontSize: "2rem",
-    backgroundColor: "#064cd5",
-    color: "#ffffff",
+    fontSize: "24px",
+    backgroundColor: colors.blue,
+    color: colors.lightText,
     padding: "20px",
+    transition: "opacity .25s, background .25s",
+    "&:hover": {
+      background: colors.blue,
+      transition: "opacity .25s, background 15s",
+    }
   },
 };

@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
 import logo from "../images/Logo.png";
 
 export default {

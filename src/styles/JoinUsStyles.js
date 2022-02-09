@@ -1,6 +1,8 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
+import shared from "./Shared";
 
 export default {
+  ...shared,
   JoinUsContent: {
     display: "flex",
     alignItems: "center",
@@ -24,33 +26,6 @@ export default {
       width: "90%",
       boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     },
-  },
-  SectionTitleBlock: {
-    marginTop: "10vh",
-    backgroundColor: "#064cd5",
-    height: "200px",
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  SectionTitle: {
-    color: "#ffffff",
-    fontSize: "4rem",
-    padding: "20px",
-  },
-  SectionSubTitle: {
-    width: "100%",
-    display: "flex",
-    color: "#ffffff",
-    backgroundColor: "#064cd5",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  SectionSubTitleText: {
-    padding: "0px 10px 0px 10px",
-    textAlign: "center",
   },
   inputFieldContainer: {
     display: "flex",

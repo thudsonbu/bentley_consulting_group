@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { Route, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -12,82 +12,74 @@ import ContactUs from "../Form/ContactUs";
 import Page from "./Page";
 import "../../styles/Page.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      page: "home",
-    };
-  }
-  render() {
-    return (
-      <Route
-        className="background"
-        render={({ location }) => (
-          <TransitionGroup style={{ height: "100%" }}>
-            <CSSTransition key={location.key} classNames="page" timeout={1000}>
-              <Switch location={location}>
-                <Route
-                  exact
-                  path="/"
-                  render={() => (
-                    <Page>
-                      <Home />
-                    </Page>
-                  )}
-                />
-                <Route
-                  exact
-                  path="/Bootcamp"
-                  render={() => (
-                    <Page>
-                      <Bootcamp />
-                    </Page>
-                  )}
-                />
-                <Route
-                  exact
-                  path="/Events"
-                  render={() => (
-                    <Page>
-                      <Events />
-                    </Page>
-                  )}
-                />
-                <Route
-                  exact
-                  path="/Team"
-                  render={() => (
-                    <Page>
-                      <Team />
-                    </Page>
-                  )}
-                />
-                <Route
-                  exact
-                  path="/JoinUs"
-                  render={() => (
-                    <Page>
-                      <JoinUs />
-                    </Page>
-                  )}
-                />
-                <Route
-                  exact
-                  path="/ContactUs"
-                  render={() => (
-                    <Page>
-                      <ContactUs />
-                    </Page>
-                  )}
-                />
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
-        )}
-      />
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <Route
+      className="background"
+      render={({ location }) => (
+        <TransitionGroup style={{ height: "100%" }}>
+          <CSSTransition key={location.key} classNames="page" timeout={1000}>
+            <Switch location={location}>
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <Page>
+                    <Home />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/Bootcamp"
+                render={() => (
+                  <Page>
+                    <Bootcamp />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/Events"
+                render={() => (
+                  <Page>
+                    <Events />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/Team"
+                render={() => (
+                  <Page>
+                    <Team />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/JoinUs"
+                render={() => (
+                  <Page>
+                    <JoinUs />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/ContactUs"
+                render={() => (
+                  <Page>
+                    <ContactUs />
+                  </Page>
+                )}
+              />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
+  );
+};
 
 export default App;

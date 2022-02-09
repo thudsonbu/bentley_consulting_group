@@ -1,6 +1,8 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
+import shared from "./Shared";
 
 export default {
+  ...shared,
   ContactUsContent: {
     display: "flex",
     alignItems: "center",
@@ -36,7 +38,7 @@ export default {
   },
   SectionTitle: {
     color: "#ffffff",
-    fontSize: "4rem",
+    fontSize: "48px",
     padding: "20px",
     fontWeight: "300",
   },

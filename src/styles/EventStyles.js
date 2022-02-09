@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./Sizes";
 
 export default {
   Event: {
@@ -29,14 +29,15 @@ export default {
   },
 
   EventTitle: {
-    fontSize: "1.3rem",
+    fontSize: "24px",
+    fontWeight: "400",
     paddingTop: "15px",
     width: "100%",
     textAlign: "center",
   },
 
   InfoIcon: {
-    fontSize: "2rem",
+    fontSize: "24px",
     marginLeft: "85%",
     marginBottom: "2%",
   },
