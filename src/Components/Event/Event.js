@@ -52,26 +52,13 @@ class Event extends Component {
           style={{ backgroundImage: `url(${image})` }}
           onClick={this.toggleDrawer}
         ></div>
-        <div className={classes.EventContent} onClick={this.openDialog}>
-          <h2 className={classes.EventTitle}>{title}</h2>
-          <InfoIcon className={classes.InfoIcon} onClick={this.toggleDrawer} />
-        </div>
-        <Collapse in={drawerOpen}>
           <div className={classes.EventDrawer}>
-            <p className={classes.EventDate}>
-              <strong>Date:</strong> {date}
-            </p>
-            <p className={classes.EventTime}>
-              <strong>Time:</strong> {time}
-            </p>
-            <p className={classes.EventLocation}>
-              <strong>Location:</strong> {location}
-            </p>
-            <p className={classes.EventDescription}>
-              <strong>Description:</strong> {description}
-            </p>
+            <h2 className={classes.EventTitle}>{title}</h2>
+            <p><strong>Date:</strong> {date} </p>
+            <p><strong>Time:</strong> {time} </p>
+            <p><strong>Location:</strong> {location} </p>
+            <p><strong>Description:</strong> {description} </p>
           </div>
-        </Collapse>
       </div>
     );
   }

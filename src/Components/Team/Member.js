@@ -1,36 +1,36 @@
-import React from 'react'
+import React from "react";
 
-import { withStyles } from '@material-ui/core';
-import styles from '../../styles/MemberStyles.js';
+import { withStyles } from "@material-ui/core";
+import styles from "../../styles/MemberStyles.js";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
 
-const Member = ( props ) => {
-    const { headshot, name, position, linkedin, classes } = props;
+const Member = (props) => {
+  const { headshot, name, position, linkedin, classes } = props;
 
-    return (
-        <div className={classes.Member}>
-            <div
-                className={classes.Headshot}
-                style={{ backgroundImage: `url(${headshot})` }}
-            ></div>
-            <div className={classes.Body}>
-                <h3 className={classes.Name}>{name}</h3>
-                <p className={classes.Position}>{position}</p>
-                <div className={classes.Icons}>
-                    <a href={linkedin}>
-                        <LinkedInIcon className={classes.Icon} />
-                    </a>
-                    <Link to="/ContactUs">
-                        <EmailIcon className={classes.Icon} />
-                    </Link>
-                </div>
-            </div>
+  return (
+    <div className={classes.Member}>
+      <div
+        className={classes.Headshot}
+        style={{ backgroundImage: `url(${headshot})` }}
+      ></div>
+      <div className={classes.Body}>
+        <h3 className={classes.Name}>{name}</h3>
+        <p className={classes.Position}>{position}</p>
+        <div className={classes.Icons}>
+          <a href={linkedin}>
+            <LinkedInIcon className={classes.Icon} />
+          </a>
+          <Link to="/ContactUs">
+            <EmailIcon className={classes.Icon} />
+          </Link>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default withStyles(styles)(Member);

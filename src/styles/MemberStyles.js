@@ -36,7 +36,7 @@ export default {
     marginBottom: "-10px",
   },
   Position: {
-    fontSize: "12px",
+    fontSize: "16px",
     textAlign: "center",
   },
   Icons: {

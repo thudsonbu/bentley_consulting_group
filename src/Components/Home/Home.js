@@ -28,10 +28,9 @@ const Home = ( props ) => {
               The Bentley Consulting Group is the foremost consulting club on
               the Bentley University campus and provides its members with a
               community that works together to help each other achieve their
-              goals. The BCG was recently relaunched in 2019 after a falling
-              out of the executive board and since then has grown to over two
-              hundred members and has been involved with dozens of real world
-              business projects in partnership with Probono Consulting as well
+              goals. The BCG was recently relaunched in 2019 and since then has
+              grown to over four hundred members and has been involved with dozens
+              of real world business projects in partnership with Probono Consulting as well
               as RSM. If you are interested in consulting, just learning about
               what consulting is, or are preparing for a career in the field,
               this is the organization for you.

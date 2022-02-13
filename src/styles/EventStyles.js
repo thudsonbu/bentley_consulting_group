@@ -1,11 +1,13 @@
 import sizes from "./Sizes";
 
+const tileHeight = "440px";
+
 export default {
   Event: {
-    width: "350px",
-    height: "430px",
-    margin: "60px 50px 150px 50px",
-    transition: "all .2s",
+    width: "330px",
+    height: tileHeight,
+    margin: "60px 40px 150px 40px",
+    overflow: "hidden",
     "&:hover": {
       boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
@@ -15,25 +17,23 @@ export default {
       width: "350px",
       boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
     },
+    "&:hover $EventDrawer": {
+      marginTop: "-" + tileHeight,
+      opacity: '90%'
+    }
   },
 
   EventInfo: {
     height: "700px",
   },
 
-  EventContent: {
-    width: "100%",
-    marginTop: "-40px",
-    color: "#ffffff",
-    backgroundColor: "#064cd5",
-  },
-
   EventTitle: {
     fontSize: "24px",
     fontWeight: "400",
-    paddingTop: "15px",
+    padding: "30px 0px",
     width: "100%",
     textAlign: "center",
+    margin: "0",
   },
 
   InfoIcon: {
@@ -43,32 +43,22 @@ export default {
   },
 
   EventDrawer: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    height: "262px",
+    marginTop: "-85px",
+    transition: "all .25s ease-in-out",
+    height: tileHeight,
     padding: "0px 15px 10px 15px",
     backgroundColor: "#064cd5",
     color: "#ffffff",
+    "& p": {
+      marginTop: "-5px"
+    }
   },
 
   EventImage: {
-    height: "350px",
+    height: tileHeight,
     width: "100%",
     backgroundSize: "cover",
     backgroundPosition: "center",
     cursor: "pointer",
-  },
-
-  EventLocation: {
-    marginTop: "-10px",
-  },
-
-  EventTime: {
-    marginTop: "-10px",
-  },
-
-  EventDescription: {
-    marginTop: "-10px",
-  },
+  }
 };

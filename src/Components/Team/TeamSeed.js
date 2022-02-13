@@ -26,7 +26,7 @@ export default [
   {
     headshot: celia,
     name: "Celia Schurman",
-    position: "Head of Memebership Engagement",
+    position: "Head of Membership Engagement",
     linkedin: "https://www.linkedin.com/in/celiaschurman/",
   },
   {

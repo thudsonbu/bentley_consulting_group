@@ -21,6 +21,7 @@ import airtable from "../images/airtable.png";
 
 export default {
   ...shared,
+
   About: {
     marginTop: "50px",
     marginBottom: "50px",
@@ -30,7 +31,9 @@ export default {
     flexWrap: "wrap",
     justifyContent: "space-around",
     alignItems: "center",
+    lineHeight: "1.5rem"
   },
+
   AboutBox: {
     width: "90%",
     display: "Flex",
@@ -38,6 +41,7 @@ export default {
     justifyContent: "space-around",
     alignItems: "center",
   },
+
   Logo: {
     width: "500px",
     height: "300px",
@@ -50,6 +54,7 @@ export default {
       height: "200px",
     },
   },
+
   AboutContent: {
     width: "600px",
     [sizes.down("sm")]: {
