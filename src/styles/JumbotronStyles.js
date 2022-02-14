@@ -18,10 +18,24 @@ export default {
   },
   JumbotronTitle: {
     fontSize: "80px",
-    fontWeight: "300",
     [sizes.down("md")]: {
       marginLeft: "10px",
       fontSize: "48px",
     },
-  }
+  },
+
+  SeeAboutContainer: {
+    height: "10px",
+    cursor: "pointer"
+  },
+
+  SeeAbout: {
+    animation: "$learnMore 700ms ease-in-out infinite alternate",
+    fontWeight: "700",
+  },
+
+  '@keyframes learnMore': {
+    from: {},
+    to: {transform: "scale(0.95)"}
+  },
 };

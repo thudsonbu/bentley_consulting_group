@@ -1,4 +1,5 @@
 import sizes from "./Sizes";
+import colors from "./Colors";
 
 export default {
   TileContainer: {
@@ -20,8 +21,8 @@ export default {
     margin: "30px",
     width: "200px",
     height: "200px",
-    backgroundColor: "#064cd5",
-    color: "#ffffff",
+    backgroundColor: colors.blue,
+    color: colors.lightText,
     borderRadius: "10px",
     boxSizing: "border-box",
     boxShadow: "0 2px 5px rgba(0,0,0,0.3)",
@@ -34,11 +35,10 @@ export default {
     },
     "& h1": {
       fontSize: "20px",
-      fontWeight: "400",
       textAlign: "center",
       paddingBottom: "25px",
       padding: "5px",
-      opacity: "100%",
+      opacity: "90%",
       transition: "opacity 0.1s",
     },
     "&:hover h1": {
@@ -56,7 +56,7 @@ export default {
     },
     "&:hover p": {
       transition: "opacity 0.2s",
-      opacity: "100%"
+      opacity: "90%"
     }
   },
 

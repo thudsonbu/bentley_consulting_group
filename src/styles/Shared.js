@@ -9,29 +9,27 @@ export default {
     justifyContent: "center",
     alignItems: "center",
   },
+
   SectionTitle: {
-    color: "#ffffff",
+    color: colors.lightText,
     fontSize: "48px",
     padding: "20px",
-    fontWeight: "300"
   },
+
   SectionSubTitle: {
     paddingTop: "50px",
-    fontWeight: "400",
     width: "100%",
     display: "flex",
-    color: colors.white,
-    backgroundColor: colors.white,
+    color: colors.darkText,
+    backgroundColor: colors.lightBackground,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    "& h1": {
-      fontWeight: "400"
-    },
     "& p": {
       fontSize: "16px"
     }
   },
+
   SectionSubTitleText: {
     marginTop: "30px",
     padding: "30px 40px 20px 40px",

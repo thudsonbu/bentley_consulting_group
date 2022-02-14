@@ -1,4 +1,5 @@
 import sizes from "./Sizes";
+import colors from "./Colors";
 
 export default {
   Member: {
@@ -14,6 +15,7 @@ export default {
       boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
     },
   },
+
   Headshot: {
     width: "300px",
     height: "350px",
@@ -22,31 +24,52 @@ export default {
     [sizes.down("md")]: {
       width: "350px",
     },
+    "& div": {
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      opacity: "0%",
+      transition: "opacity 0.2s ease-in-out",
+    },
+    "&:hover div": {
+      backgroundColor: colors.blue,
+      opacity: "70%",
+    },
+    "& p": {
+      color: "white",
+    }
   },
+
   Body: {
     height: "170px",
-    backgroundColor: "#064cd5",
-    color: "#ffffff",
+    backgroundColor: colors.blue,
+    color: colors.lightBackground,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
+
   Name: {
-    marginBottom: "-10px",
+    marginBottom: "-5px",
   },
+
   Position: {
     fontSize: "16px",
     textAlign: "center",
   },
+
   Icons: {
     height: "40px",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
   },
+
   Icon: {
-    color: "#ffffff",
+    color: colors.lightText,
     fontSize: "2rem",
     margin: "0px 15px 0px 15px",
     paddingBottom: "10px",

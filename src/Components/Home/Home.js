@@ -22,9 +22,9 @@ const Home = ( props ) => {
         <div className={classes.AboutBox}>
           <div className={classes.Logo}></div>
           <div className={classes.AboutContent}>
-            <h1 className={classes.AboutTitle}>About</h1>
-            <hr />
-            <p className={classes.AboutText}>
+            <h1>About</h1>
+            <hr/>
+            <p>
               The Bentley Consulting Group is the foremost consulting club on
               the Bentley University campus and provides its members with a
               community that works together to help each other achieve their

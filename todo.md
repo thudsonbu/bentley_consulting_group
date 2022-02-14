@@ -13,7 +13,7 @@ scroll to top
 
 quotes and referalls
 
-font weights are too heavy
+==== font weights are too heavy
 
 line height on
 
@@ -21,7 +21,7 @@ event animation mabober ( flip card or something )
 
 less use of the blue
 
-info dropdown goes up
+-- info dropdown goes up
 
 arrow for up and down
 

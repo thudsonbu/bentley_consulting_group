@@ -43,12 +43,12 @@ export default {
   },
 
   Logo: {
-    width: "500px",
-    height: "300px",
+    width: "420px",
+    height: "250px",
     backgroundImage: `url(${logo})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    marginRight: "-100px",
+    marginRight: "-80px",
     [sizes.down("sm")]: {
       width: "300px",
       height: "200px",
@@ -56,18 +56,17 @@ export default {
   },
 
   AboutContent: {
-    width: "600px",
+    width: "65%",
+    maxWidth: "800px",
     [sizes.down("sm")]: {
       paddingTop: "20px",
-      paddingLeft: "40px",
+      paddingLeft: "60px",
       paddingRight: "40px",
     },
-  },
-  AboutTitle: {
-    fontSize: "28px",
-    textAlign: "Left",
-    fontWeight: "300",
-    textTransform: "uppercase",
+    "& h1": {
+      fontSize: "28px",
+      textAlign: "Left"
+    }
   },
 
   Block: {
@@ -109,6 +108,7 @@ export default {
     justifyContent: "space-around",
     alignItems: "center",
   },
+
   BlockImageProjects: {
     height: "250px",
     width: "100%",
@@ -116,6 +116,7 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockImageCases: {
     height: "250px",
     width: "100%",
@@ -123,6 +124,7 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockImageCourses: {
     height: "250px",
     width: "100%",
@@ -130,20 +132,24 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockContent: {
     width: "100%",
     marginTop: "-19px",
     color: "#ffffff",
     backgroundColor: "#064cd5",
   },
+
   BlockTitle: {
     paddingTop: "20px",
     width: "100%",
     textAlign: "center",
   },
+
   BlockText: {
     padding: "0px 20px 10px 20px",
   },
+
   LogoBlockEY: {
     margin: "50px",
     height: "150px",
@@ -163,6 +169,7 @@ export default {
       width: "200px",
     },
   },
+
   LogoBlockRSM: {
     margin: "40px",
     height: "175px",
@@ -182,6 +189,7 @@ export default {
       width: "250px",
     },
   },
+
   LogoBlockDeloitte: {
     margin: "40px",
     height: "150px",
@@ -201,6 +209,7 @@ export default {
       width: "200px",
     },
   },
+
   LogoBlockMassaro: {
     margin: "40px",
     height: "150px",
@@ -218,6 +227,7 @@ export default {
       margin: "25px",
     },
   },
+
   LogoBlockPWC: {
     margin: "40px",
     height: "150px",
@@ -237,6 +247,7 @@ export default {
       width: "200px",
     },
   },
+
   LogoBlockTableau: {
     margin: "40px",
     height: "175px",
@@ -256,6 +267,7 @@ export default {
       width: "400px",
     },
   },
+
   LogoBlockSalesForce: {
     margin: "15px",
     height: "200px",
@@ -276,6 +288,7 @@ export default {
       width: "250px",
     },
   },
+
   LogoBlockClickup: {
     margin: "50px",
     height: "200px",
@@ -294,6 +307,7 @@ export default {
       marginBottom: "0px",
     },
   },
+
   LogoBlockAirtable: {
     margin: "25px",
     height: "200px",
@@ -312,6 +326,7 @@ export default {
       marginLeft: "50px",
     },
   },
+
   BlockImageJoin: {
     height: "250px",
     width: "100%",
@@ -319,6 +334,7 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockImageContact: {
     height: "250px",
     width: "100%",
@@ -326,6 +342,7 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockImageEvents: {
     height: "250px",
     width: "100%",
@@ -333,6 +350,7 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   BlockImageTeam: {
     height: "250px",
     width: "100%",
@@ -340,9 +358,11 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   Link: {
     textDecoration: "none",
   },
+
   InfoIcon: {
     fontSize: "30px",
     color: "#ffffff",

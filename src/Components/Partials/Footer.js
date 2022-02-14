@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import EventAvailableIcon from "@material-ui/icons/EventAvailable";
 import GroupIcon from "@material-ui/icons/Group";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
+import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 
 import { withStyles } from "@material-ui/styles";
 import styles from "../../styles/FooterStyles";
@@ -17,14 +18,28 @@ function Footer(props) {
           <Button
             className={props.classes.button}
             startIcon={<EventAvailableIcon className={props.classes.Icon} />}
+            size="medium"
+            style={{fontSize: "20px"}}
           >
             Events
+          </Button>
+        </Link>
+        <Link to={"/Bootcamp"} className={props.classes.link}>
+          <Button
+            className={props.classes.button}
+            startIcon={<FlightTakeoffIcon className={props.classes.Icon} />}
+            size="medium"
+            style={{fontSize: "20px"}}
+          >
+            Bootcamp
           </Button>
         </Link>
         <Link to={"/Team"} className={props.classes.link}>
           <Button
             className={props.classes.button}
             startIcon={<GroupIcon className={props.classes.Icon} />}
+            size="medium"
+            style={{ fontSize: "20px" }}
           >
             Team
           </Button>
@@ -33,6 +48,8 @@ function Footer(props) {
           <Button
             className={props.classes.button}
             startIcon={<PhoneIphoneIcon className={props.classes.Icon} />}
+            size="medium"
+            style={{ fontSize: "20px" }}
           >
             Contact Us
           </Button>

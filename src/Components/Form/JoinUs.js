@@ -122,9 +122,9 @@ class JoinUs extends Component {
           <h1 className={classes.SectionTitle}>Join Us</h1>
         </div>
           <div className={classes.JoinUsForm}>
-            <div className={classes.SectionSubTitle}>
+            <div className={classes.FormTitle}>
               <h1>Become a Consultant</h1>
-              <p className={classes.SectionSubTitleText}>
+              <p>
                 Fill out the form below to become part of the foremost
                 consulting organization on bentley campus.
               </p>

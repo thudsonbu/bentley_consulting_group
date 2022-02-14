@@ -1,4 +1,5 @@
 import sizes from "./Sizes";
+import colors from "./Colors";
 
 const tileHeight = "440px";
 
@@ -29,7 +30,6 @@ export default {
 
   EventTitle: {
     fontSize: "24px",
-    fontWeight: "400",
     padding: "30px 0px",
     width: "100%",
     textAlign: "center",
@@ -47,8 +47,8 @@ export default {
     transition: "all .25s ease-in-out",
     height: tileHeight,
     padding: "0px 15px 10px 15px",
-    backgroundColor: "#064cd5",
-    color: "#ffffff",
+    backgroundColor: colors.blue,
+    color: colors.lightText,
     "& p": {
       marginTop: "-5px"
     }

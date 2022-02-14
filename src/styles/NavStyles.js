@@ -1,18 +1,22 @@
 import sizes from "./Sizes";
 import logo from "../images/Logo.png";
+import colors from "./Colors";
 
 export default {
   Nav: {
     height: "10vh",
   },
+
   AppBar: {
     width: "100%",
-    backgroundColor: "white",
+    backgroundColor: colors.lightBackground,
   },
+
   ToolBar: {
     background: "transparent",
-    backgroundColor: "white",
+    backgroundColor: colors.lightBackground,
   },
+
   NavLeft: {
     marginRight: "auto",
     display: "flex",
@@ -21,6 +25,7 @@ export default {
       justifyContent: "space-between",
     },
   },
+
   miniLogo: {
     color: "black",
     marginLeft: "20px",
@@ -31,11 +36,13 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   menuButton: {
     [sizes.up("md")]: {
       display: "none",
     },
   },
+
   NavRight: {
     color: "black",
     marginLeft: "auto",
@@ -48,9 +55,11 @@ export default {
       display: "none",
     },
   },
+
   Icon: {
-    color: "#000000",
+    color: colors.darkText,
   },
+
   button: {
     paddingBottom: "10px",
     marginRight: "15px",
@@ -62,9 +71,11 @@ export default {
       display: "none",
     },
   },
+
   buttonActive: {
-    borderBottom: "2px solid #064cd5",
+    borderBottom: `2px solid ${ colors.blue }`,
   },
+
   link: {
     textDecoration: "none",
     color: "black",

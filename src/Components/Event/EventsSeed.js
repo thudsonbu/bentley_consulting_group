@@ -9,23 +9,5 @@ export default [
     location: "Zoom",
     description:
       "Learn more about Bentley Consulting Group's consulting bootcamp. Get inside tips and advice about the application process and learn more about the consulting space.",
-  },
-  {
-    image: projectmanagement,
-    title: "BCG Bootcamp",
-    date: "2/14/2022",
-    time: "9:30 PM",
-    location: "Zoom",
-    description:
-      "Learn more about Bentley Consulting Group's consulting bootcamp. Get inside tips and advice about the application process and learn more about the consulting space.",
-  },
-  {
-    image: projectmanagement,
-    title: "BCG Bootcamp",
-    date: "2/14/2022",
-    time: "9:30 PM",
-    location: "Zoom",
-    description:
-      "Learn more about Bentley Consulting Group's consulting bootcamp. Get inside tips and advice about the application process and learn more about the consulting space.",
-  },
+  }
 ];

@@ -1,16 +1,18 @@
 import LogoWhite from "../images/LogoWhite.png";
+import colors from "./Colors";
 
 export default {
   Footer: {
-    marginTop: "30px",
+    marginTop: "150px",
     width: "100%",
     height: "250px",
-    backgroundColor: "#064cd5",
+    backgroundColor: colors.blue,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
+
   FooterLinks: {
     paddingTop: "20px",
     width: "70%",
@@ -20,9 +22,11 @@ export default {
     justifyContent: "space-around",
     alignItems: "center",
   },
+
   Icon: {
-    color: "#ffffff",
+    color: colors.lightText,
   },
+
   FooterCC: {
     width: "100%",
     height: "50%",
@@ -31,11 +35,13 @@ export default {
     justifyContent: "center",
     paddingBottom: "10px",
   },
+
   button: {
     borderColor: "transparent",
     backgroundColor: "transparent",
-    color: "#ffffff",
+    color: colors.lightText,
   },
+
   miniLogo: {
     color: "black",
     paddingLeft: "30px",
@@ -45,11 +51,15 @@ export default {
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
+
   CC: {
-    color: "#ffffff",
+    color: colors.lightText,
   },
+
   link: {
     textDecoration: "none",
-    color: "#ffffff",
+    color: colors.lightText,
+    fontSize: "80px"
   },
+
 };

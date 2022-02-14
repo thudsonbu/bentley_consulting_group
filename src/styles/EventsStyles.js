@@ -3,6 +3,7 @@ import shared from "./Shared";
 
 export default {
   ...shared,
+
   EventsContainer: {
     width: "100%",
     display: "Flex",
@@ -10,6 +11,7 @@ export default {
     justifyContent: "space-around",
     minHeight: "55vh"
   },
+
   ClickableBlock: {
     width: "300px",
     height: "450px",

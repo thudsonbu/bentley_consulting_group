@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-import Collapse from "@material-ui/core/Collapse";
-import InfoIcon from "@material-ui/icons/Info";
-
 import classNames from "classnames";
 import { withStyles } from "@material-ui/styles";
 import styles from "../../styles/EventStyles";
