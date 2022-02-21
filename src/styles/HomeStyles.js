@@ -102,6 +102,10 @@ export default {
       width: "320px",
       boxShadow: boxShadows.default,
     },
+    "&:hover svg": {
+      marginLeft: "265px",
+      transition: "margin 0.1s ease-in-out",
+    }
   },
 
   Link: {
@@ -151,10 +155,7 @@ export default {
     width: "100%",
     color: "#ffffff",
     backgroundColor: "#064cd5",
-    "&:hover svg": {
-      marginLeft: "265px",
-      transition: "margin 0.1s ease-in-out",
-    },
+
   },
 
   BlockTitle: {
