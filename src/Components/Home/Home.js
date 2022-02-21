@@ -110,20 +110,17 @@ const Home = ( props ) => {
           <h1>Learn In Demand Technologies</h1>
           <p>Technologies that consultants can learn through the BCG.</p>
         </div>
-        <a href="https://www.tableau.com/">
-          <div className={classes.LogoBlockTableau} />
-        </a>
         <a href="https://www.salesforce.com/">
           <div className={classes.LogoBlockSalesForce} />
-        </a>
-        <a href="https://slack.com/">
-          <div className={classes.LogoBlockSlack} />
         </a>
         <a href="https://clickup.com/">
           <div className={classes.LogoBlockClickup} />
         </a>
         <a href="https://airtable.com/">
           <div className={classes.LogoBlockAirtable} />
+        </a>
+        <a href="https://www.tableau.com/">
+          <div className={classes.LogoBlockTableau} />
         </a>
         <div className={classes.SectionTitleBlock}>
           <h1 className={classes.SectionTitle}>Learn More</h1>

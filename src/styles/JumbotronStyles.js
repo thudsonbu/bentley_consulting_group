@@ -16,8 +16,10 @@ export default {
       backgroundAttachment: "fixed",
     },
   },
+
   JumbotronTitle: {
     fontSize: "80px",
+    textAlign: "center",
     [sizes.down("md")]: {
       marginLeft: "10px",
       fontSize: "48px",

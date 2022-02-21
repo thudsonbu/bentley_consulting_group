@@ -22,7 +22,7 @@ import airtable from "../images/airtable.png";
 
 const logoBlockDefaults = {
   height: "175px",
-  width: "175px",
+  width: "220px",
   margin: "50px",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -33,6 +33,14 @@ const logoBlockDefaults = {
     boxShadow: boxShadows.default
   }
 };
+
+const blockImageDefaults = {
+  height: "250px",
+  width: "220px",
+  width: "100%",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+}
 
 export default {
   ...shared,
@@ -93,7 +101,7 @@ export default {
     },
     [sizes.down("md")]: {
       margin: "50px",
-      width: "350px",
+      width: "320px",
       boxShadow: boxShadows.default,
     },
   },
@@ -107,7 +115,7 @@ export default {
     },
     [sizes.down("md")]: {
       margin: "50px",
-      width: "350px",
+      width: "320px",
       boxShadow: boxShadows.default,
     },
   },
@@ -121,27 +129,18 @@ export default {
   },
 
   BlockImageProjects: {
-    height: "250px",
-    width: "100%",
+    ...blockImageDefaults,
     backgroundImage: `url(${projects})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
   },
 
   BlockImageCases: {
-    height: "250px",
-    width: "100%",
+    ...blockImageDefaults,
     backgroundImage: `url(${cases})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
   },
 
   BlockImageCourses: {
-    height: "250px",
-    width: "100%",
+    ...blockImageDefaults,
     backgroundImage: `url(${courses})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
   },
 
   BlockContent: {
@@ -179,8 +178,12 @@ export default {
 
   LogoBlockMassaro: {
     ...logoBlockDefaults,
-    width: "300px",
-    backgroundImage: `url(${Massaro})`
+    width: "340px",
+    padding: "0 20px 0 20px",
+    backgroundImage: `url(${Massaro})`,
+    [sizes.down("md")]: {
+      height: "75px",
+    }
   },
 
   LogoBlockPWC: {
@@ -190,6 +193,7 @@ export default {
 
   LogoBlockTableau: {
     ...logoBlockDefaults,
+    padding: "0px 30px 0px 30px",
     width: "375px",
     backgroundImage: `url(${tableau})`
   },
@@ -201,7 +205,6 @@ export default {
 
   LogoBlockClickup: {
     ...logoBlockDefaults,
-    width: "200px",
     backgroundImage: `url(${clickup})`
   },
 
@@ -209,7 +212,7 @@ export default {
 
   LogoBlockAirtable: {
     ...logoBlockDefaults,
-    width: "220px",
+    paddingLeft: "60px",
     backgroundImage: `url(${airtable})`,
   },
 
@@ -255,7 +258,7 @@ export default {
     marginLeft: "260px",
     marginTop: "25px",
     [sizes.down("md")]: {
-      marginLeft: "307px",
+      marginLeft: "270px",
     },
   },
 };
