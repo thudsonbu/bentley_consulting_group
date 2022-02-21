@@ -9,18 +9,17 @@ export default {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding: "20px"
   },
 
   SectionTitle: {
     color: colors.lightText,
     fontSize: "48px",
-    padding: "20px",
     textAlign: "center",
   },
 
   SectionSubTitle: {
     paddingTop: "50px",
+    textAlign: "center",
     width: "100%",
     display: "flex",
     color: colors.darkText,

@@ -3,6 +3,7 @@ import shared from './Shared';
 
 export default {
   ...shared,
+
   GoButtonContainer: {
     marginTop: "50px",
     width: "100%",
