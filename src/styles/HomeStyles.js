@@ -93,17 +93,7 @@ export default {
 
   Block: {
     width: "300px",
-    transition: "box-shadow .15s",
-    "&:hover": {
-      boxShadow: boxShadows.default,
-    },
-    [sizes.down("md")]: {
-      width: "320px",
-      boxShadow: boxShadows.default,
-    },
-  },
-
-  ClickableBlock: {
+    margin: "60px",
     transition: "box-shadow .15s",
     "&:hover": {
       boxShadow: boxShadows.default,
@@ -116,7 +106,6 @@ export default {
 
   Link: {
     textDecoration: "none",
-    margin: "60px",
     [sizes.down("md")]: {
       margin: "50px"
     }
