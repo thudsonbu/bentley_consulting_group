@@ -36,7 +36,6 @@ const logoBlockDefaults = {
 
 const blockImageDefaults = {
   height: "250px",
-  width: "220px",
   width: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -194,7 +193,7 @@ export default {
   LogoBlockTableau: {
     ...logoBlockDefaults,
     padding: "0px 30px 0px 30px",
-    width: "375px",
+    width: "340px",
     backgroundImage: `url(${tableau})`
   },
 
@@ -207,8 +206,6 @@ export default {
     ...logoBlockDefaults,
     backgroundImage: `url(${clickup})`
   },
-
-  //TODO fix clickup styles on mobile
 
   LogoBlockAirtable: {
     ...logoBlockDefaults,

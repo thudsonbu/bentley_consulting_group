@@ -1,5 +1,6 @@
 import LogoWhite from "../images/LogoWhite.png";
 import colors from "./Colors";
+import sizes from "./Sizes";
 
 export default {
   Footer: {
@@ -46,8 +47,8 @@ export default {
   miniLogo: {
     color: "black",
     paddingLeft: "30px",
-    width: "50px",
-    height: "50px",
+    width: "40px",
+    height: "40px",
     backgroundImage: `url(${LogoWhite})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -55,12 +56,16 @@ export default {
 
   CC: {
     color: colors.lightText,
+    fontSize: "15px"
   },
 
   link: {
     textDecoration: "none",
     color: colors.lightText,
-    fontSize: "80px"
+    fontSize: "80px",
+    [sizes.down("md")]: {
+      fontSize: "50px"
+    }
   },
 
 };

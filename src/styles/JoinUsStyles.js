@@ -53,14 +53,6 @@ export default {
     }
   },
 
-  inputFieldContainer: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px",
-  },
-
   FirstNameFieldContainer: {
     width: "40%",
     paddingTop: "20px",

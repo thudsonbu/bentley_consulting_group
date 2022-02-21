@@ -11,8 +11,6 @@ import Footer from "../Partials/Footer";
 
 import { Link } from "react-router-dom";
 
-//TODO make sure that what we do cards are the same height
-
 const Home = ( props ) => {
   const { classes } = props;
 
@@ -82,7 +80,7 @@ const Home = ( props ) => {
           </div>
         </div>
         <div className={classes.SectionTitleBlock}>
-          <h1 className={classes.SectionTitle}>Our Partnerships</h1>
+          <h1 className={classes.SectionTitle}>Our Partners</h1>
         </div>
         <div className={classes.SectionSubTitle}>
           <h1>Network With Employers</h1>

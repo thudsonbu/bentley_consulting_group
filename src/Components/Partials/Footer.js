@@ -65,6 +65,4 @@ function Footer(props) {
   );
 }
 
-//TODO fix footer cc overlap on small screens
-
 export default withStyles(styles)(Footer);
