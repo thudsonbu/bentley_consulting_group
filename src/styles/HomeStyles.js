@@ -1,5 +1,6 @@
 import sizes from "./Sizes";
 import shared from "./Shared";
+import boxShadows from "./BoxShadows";
 
 import logo from "../images/Logo.png";
 import projects from "../images/presentation.jpg";
@@ -18,6 +19,20 @@ import tableau from "../images/tableau.jpg";
 import salesforce from "../images/salesforce.jpg";
 import clickup from "../images/clickup.png";
 import airtable from "../images/airtable.png";
+
+const logoBlockDefaults = {
+  height: "175px",
+  width: "175px",
+  margin: "50px",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  transition: "box-shadow .25s",
+  borderRadius: "10px",
+  "&:hover": {
+    cursor: "pointer",
+    boxShadow: boxShadows.default
+  }
+};
 
 export default {
   ...shared,
@@ -71,33 +86,29 @@ export default {
 
   Block: {
     width: "300px",
-    height: "400px",
     margin: "60px",
     transition: "box-shadow .15s",
     "&:hover": {
-      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
+      boxShadow: boxShadows.default,
     },
     [sizes.down("md")]: {
       margin: "50px",
       width: "350px",
-      boxShadow: "0 7px 12px rgba(0,0,0,0.28)",
+      boxShadow: boxShadows.default,
     },
   },
 
   ClickableBlock: {
     width: "300px",
-    height: "450px",
     margin: "60px",
-    transition: "box-shadow .25s",
-    boxShadow: "0px 0px 20px 6px rgba(194,194,194,1)",
+    transition: "box-shadow .15s",
     "&:hover": {
-      cursor: "pointer",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: boxShadows.default,
     },
     [sizes.down("md")]: {
       margin: "50px",
       width: "350px",
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+      boxShadow: boxShadows.default,
     },
   },
 
@@ -134,197 +145,72 @@ export default {
   },
 
   BlockContent: {
+    height: "200px",
+    padding: "10px 0 10px 0",
     width: "100%",
-    marginTop: "-19px",
     color: "#ffffff",
     backgroundColor: "#064cd5",
   },
 
   BlockTitle: {
-    paddingTop: "20px",
     width: "100%",
     textAlign: "center",
   },
 
   BlockText: {
     padding: "0px 20px 10px 20px",
+    textAlign: "center"
   },
 
   LogoBlockEY: {
-    margin: "50px",
-    height: "150px",
-    width: "150px",
+    ...logoBlockDefaults,
     backgroundImage: `url(${EY})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    transition: "box-shadow .25s",
-    borderRadius: "50%",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "25px",
-      height: "200px",
-      width: "200px",
-    },
   },
 
   LogoBlockRSM: {
-    margin: "40px",
-    height: "175px",
-    width: "175px",
-    backgroundImage: `url(${RSM})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    transition: "box-shadow .25s",
-    borderRadius: "50%",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "15px",
-      height: "250px",
-      width: "250px",
-    },
+    ...logoBlockDefaults,
+    backgroundImage: `url(${RSM})`
   },
 
   LogoBlockDeloitte: {
-    margin: "40px",
-    height: "150px",
-    width: "150px",
-    backgroundImage: `url(${Deloitte})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "15px",
-      height: "200px",
-      width: "200px",
-    },
+    ...logoBlockDefaults,
+    backgroundImage: `url(${Deloitte})`
   },
 
   LogoBlockMassaro: {
-    margin: "40px",
-    height: "150px",
+    ...logoBlockDefaults,
     width: "300px",
-    backgroundImage: `url(${Massaro})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "25px",
-    },
+    backgroundImage: `url(${Massaro})`
   },
 
   LogoBlockPWC: {
-    margin: "40px",
-    height: "150px",
-    width: "150px",
-    backgroundImage: `url(${PWC})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "15px",
-      height: "200px",
-      width: "200px",
-    },
+    ...logoBlockDefaults,
+    backgroundImage: `url(${PWC})`
   },
 
   LogoBlockTableau: {
-    margin: "40px",
-    height: "175px",
-    width: "400px",
-    backgroundImage: `url(${tableau})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "25px",
-      height: "150px",
-      width: "400px",
-    },
+    ...logoBlockDefaults,
+    width: "375px",
+    backgroundImage: `url(${tableau})`
   },
 
   LogoBlockSalesForce: {
-    margin: "15px",
-    height: "200px",
-    width: "200px",
-    backgroundImage: `url(${salesforce})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "10px",
-      marginLeft: "90px",
-      height: "250px",
-      width: "250px",
-    },
+    ...logoBlockDefaults,
+    backgroundImage: `url(${salesforce})`
   },
 
   LogoBlockClickup: {
-    margin: "50px",
-    height: "200px",
-    width: "220px",
-    backgroundImage: `url(${clickup})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "25px",
-      marginBottom: "0px",
-    },
+    ...logoBlockDefaults,
+    width: "200px",
+    backgroundImage: `url(${clickup})`
   },
 
+  //TODO fix clickup styles on mobile
+
   LogoBlockAirtable: {
-    margin: "25px",
-    height: "200px",
-    width: "250px",
+    ...logoBlockDefaults,
+    width: "220px",
     backgroundImage: `url(${airtable})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    borderRadius: "50%",
-    transition: "box-shadow .25s",
-    "&:hover": {
-      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
-      cursor: "pointer",
-    },
-    [sizes.down("sm")]: {
-      margin: "25px",
-      marginLeft: "50px",
-    },
   },
 
   BlockImageJoin: {

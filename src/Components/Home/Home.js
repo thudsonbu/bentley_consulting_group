@@ -11,6 +11,8 @@ import Footer from "../Partials/Footer";
 
 import { Link } from "react-router-dom";
 
+//TODO make sure that what we do cards are the same height
+
 const Home = ( props ) => {
   const { classes } = props;
 
@@ -52,8 +54,8 @@ const Home = ( props ) => {
           <div className={classes.BlockContent}>
             <h2 className={classes.BlockTitle}>Bootcamps</h2>
             <p className={classes.BlockText}>
-              Beginning this semester, the BCG now offers a consulting boocamp
-              designed to prepare students for the world of consulting.
+              The BCG offers a consulting bootcamp designed to prepare students
+              for the world of consulting.
             </p>
           </div>
         </div>

@@ -60,18 +60,20 @@ class ContactUs extends Component {
   }
 
   handleSubmit() {
-    let service_id = "gmail";
-    let template_id = "template_hkYYtvcK_clone";
-    let user_id = "user_9gwe93oXhYXzPs26jpMqw";
-    let templateParams = {
+    const service_id = "gmail";
+    const template_id = "template_hkYYtvcK_clone";
+    const user_id = "user_9gwe93oXhYXzPs26jpMqw";
+
+    const templateParams = {
       FirstName: this.state.FirstName,
-      Lastname: this.state.LastName,
+      LastName: this.state.LastName,
       Organization: this.state.Organization,
       Position: this.state.Position,
       Email: this.state.Email,
       Inquiry: this.state.Inquiry,
       Subscribe: this.state.Subscribe,
     };
+
     emailjs.send(service_id, template_id, templateParams, user_id).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
@@ -80,6 +82,7 @@ class ContactUs extends Component {
         console.log("FAILED...", error);
       }
     );
+
     this.setState({
       FirstName: "",
       LastName: "",

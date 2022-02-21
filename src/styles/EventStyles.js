@@ -24,22 +24,12 @@ export default {
     }
   },
 
-  EventInfo: {
-    height: "700px",
-  },
-
   EventTitle: {
     fontSize: "24px",
     padding: "30px 0px",
     width: "100%",
     textAlign: "center",
     margin: "0",
-  },
-
-  InfoIcon: {
-    fontSize: "36px",
-    marginLeft: "85%",
-    marginBottom: "2%",
   },
 
   EventDrawer: {

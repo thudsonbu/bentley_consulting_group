@@ -34,6 +34,7 @@ export default {
     alignItems: "center",
     justifyContent: "center",
     paddingBottom: "10px",
+    paddingTop: "30xp"
   },
 
   button: {

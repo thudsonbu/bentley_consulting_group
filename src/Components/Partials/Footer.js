@@ -58,11 +58,13 @@ function Footer(props) {
       <div className={props.classes.FooterCC}>
         <div className={props.classes.miniLogo} />
         <div className={props.classes.CC}>
-          <p>Copyright Thomas Hudson 2022</p>
+          <p>© 2022 Thomas Hudson All Rights Reserved</p>
         </div>
       </div>
     </div>
   );
 }
+
+//TODO fix footer cc overlap on small screens
 
 export default withStyles(styles)(Footer);

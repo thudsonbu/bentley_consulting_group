@@ -1,4 +1,5 @@
 import colors from './Colors';
+import sizes from './Sizes';
 export default {
   SectionTitleBlock: {
     marginTop: "50px",
@@ -26,7 +27,11 @@ export default {
     justifyContent: "center",
     alignItems: "center",
     "& p": {
-      fontSize: "16px"
+      textAlign: "center",
+      fontSize: "16px",
+      [sizes.down('md')]: {
+        width: "80%"
+      }
     }
   },
 
