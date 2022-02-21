@@ -1,9 +1,9 @@
-import GroupAddIcon from "@material-ui/icons/GroupAdd";
-import BuildIcon from "@material-ui/icons/Build";
-import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
-import DataUsageIcon from "@material-ui/icons/DataUsage";
-import HowToRegIcon from "@material-ui/icons/HowToReg";
-import SuperVisorAccountIcon from "@material-ui/icons/SupervisorAccount";
+import GroupAddIcon          from "@mui/icons-material/GroupAdd";
+import BuildIcon             from "@mui/icons-material/Build";
+import DoubleArrowIcon       from "@mui/icons-material/DoubleArrow";
+import DataUsageIcon         from "@mui/icons-material/DataUsage";
+import HowToRegIcon          from "@mui/icons-material/HowToReg";
+import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
 const seed = [
   {

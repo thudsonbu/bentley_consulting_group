@@ -1,12 +1,12 @@
 import React from "react";
 
-import { withStyles } from "@material-ui/core";
-import styles from "../../styles/MemberStyles.js";
-
 import { Link } from "react-router-dom";
 
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon    from "@mui/icons-material/Email";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/MemberStyles.js";
 
 const Member = (props) => {
   const { headshot, name, position, linkedin, info, classes } = props;

@@ -1,27 +1,28 @@
 import React, { Component } from "react";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/NavStyles";
-
 import { Link } from "react-router-dom";
 
 import classNames from "classnames";
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import HomeIcon from "@material-ui/icons/Home";
-import EventAvailableIcon from "@material-ui/icons/EventAvailable";
-import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
-import GroupIcon from "@material-ui/icons/Group";
-import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
+import AppBar       from "@mui/material/AppBar";
+import Toolbar      from "@mui/material/Toolbar";
+import Button       from "@mui/material/Button";
+import IconButton   from "@mui/material/IconButton";
+import Drawer       from "@mui/material/Drawer";
+import List         from "@mui/material/List";
+import ListItem     from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+
+import MenuIcon           from "@mui/icons-material/Menu";
+import HomeIcon           from "@mui/icons-material/Home";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import FlightTakeoffIcon  from "@mui/icons-material/FlightTakeoff";
+import GroupIcon          from "@mui/icons-material/Group";
+import PhoneIphoneIcon    from "@mui/icons-material/PhoneIphone";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/NavStyles";
 
 class Nav extends Component {
   constructor(props) {
@@ -55,20 +56,28 @@ class Nav extends Component {
   render() {
     const { classes, currentLocation } = this.props;
     const { drawerOpen } = this.state;
+
     const list = () => (
       <div
-        className={classes.list}
         role="presentation"
         onClick={this.openDrawer}
         onKeyDown={this.openDrawer}
       >
         <List>
-          <Link to={"/"} className={classes.link}>
+          <Link
+            to={"/"}
+            className={classes.link}
+          >
             <ListItem button key={"about"}>
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
-              <ListItemText primary={"About"} />
+              <ListItemText
+                primary={"About"}
+                sx={{
+                  textDecoration: 'none'
+                }}
+              />
             </ListItem>
           </Link>
           <Link to={"/Bootcamp"} className={classes.link}>
@@ -176,7 +185,12 @@ class Nav extends Component {
             </Link>
           </div>
         </Toolbar>
-        <Drawer anchor={"left"} open={drawerOpen} onClose={this.closeDrawer}>
+        <Drawer
+          anchor={"left"}
+          open={drawerOpen}
+          onClose={this.closeDrawer}
+          className={styles.drawer}
+        >
           {list("left")}
         </Drawer>
       </AppBar>

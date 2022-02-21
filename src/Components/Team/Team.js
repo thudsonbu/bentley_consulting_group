@@ -1,13 +1,13 @@
 import React from "react";
 
 import Member from "./Member";
-import Nav from "../Partials/Nav";
+import Nav    from "../Partials/Nav";
 import Footer from "../Partials/Footer";
 
 import teamseed from "./TeamSeed";
 
-import { withStyles } from "@material-ui/core";
-import styles from "../../styles/TeamStyles.js";
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/TeamStyles.js";
 
 const Team = ( props ) => {
   const { classes } = props;

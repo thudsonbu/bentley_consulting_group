@@ -1,6 +1,8 @@
 import React from "react";
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/JumbotronStyles";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/JumbotronStyles";
+
 const Jumbotron = (props) => {
   return (
     <div className={props.classes.Jumbotron}>

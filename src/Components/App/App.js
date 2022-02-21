@@ -3,13 +3,14 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import Home from "../Home/Home";
-import Events from "../Event/Events";
-import Bootcamp from "../Bootcamp/Bootcamp";
-import Team from "../Team/Team";
-import JoinUs from "../Form/JoinUs";
+import Home      from "../Home/Home";
+import Events    from "../Event/Events";
+import Bootcamp  from "../Bootcamp/Bootcamp";
+import Team      from "../Team/Team";
+import JoinUs    from "../Form/JoinUs";
 import ContactUs from "../Form/ContactUs";
-import Page from "./Page";
+import Page      from "./Page";
+
 import "../../styles/Page.css";
 
 const App = (props) => {

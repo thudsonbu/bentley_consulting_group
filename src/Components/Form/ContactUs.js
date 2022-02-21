@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 
-import Nav from "../Partials/Nav";
+import Nav    from "../Partials/Nav";
 import Footer from "../Partials/Footer";
 
-import { Redirect } from "react-router-dom";
+import { Redirect }      from "react-router-dom";
+import { ValidatorForm } from "react-material-ui-form-validator";
+import { TextValidator } from "react-material-ui-form-validator";
+import emailjs           from "emailjs-com";
 
-import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
-import TextField from "@material-ui/core/TextField/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox/Checkbox";
-import Button from "@material-ui/core/Button";
-import Dialog from "@material-ui/core/Dialog/Dialog";
-import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
-import DialogActions from "@material-ui/core/DialogActions/DialogActions";
+import TextField        from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox         from "@mui/material/Checkbox";
+import Button           from "@mui/material/Button";
+import Dialog           from "@mui/material/Dialog";
+import DialogTitle      from "@mui/material/DialogTitle";
+import DialogActions    from "@mui/material/DialogActions";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/ContactUsStyles";
-
-import emailjs from "emailjs-com";
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/ContactUsStyles";
 
 class ContactUs extends Component {
   constructor(props) {
@@ -38,6 +38,8 @@ class ContactUs extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.renderRedirect = this.renderRedirect.bind(this);
+
+    //TODO validate that it is a bentley email
   }
 
   handleChange(evt) {

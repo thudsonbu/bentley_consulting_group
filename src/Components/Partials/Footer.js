@@ -1,14 +1,15 @@
-import React from "react";
+import React    from "react";
 import { Link } from "react-router-dom";
-import EventAvailableIcon from "@material-ui/icons/EventAvailable";
-import GroupIcon from "@material-ui/icons/Group";
-import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
-import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/FooterStyles";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import GroupIcon          from "@mui/icons-material/Group";
+import PhoneIphoneIcon    from "@mui/icons-material/PhoneIphone";
+import FlightTakeoffIcon  from "@mui/icons-material/FlightTakeoff";
 
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/FooterStyles";
 
 function Footer(props) {
   return (

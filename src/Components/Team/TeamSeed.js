@@ -1,14 +1,14 @@
-import sandhya from "../../images/headshots/sandhya_sangappa.jpg";
-import brenna from "../../images/headshots/brenna_masterson.jpg";
-import celia from "../../images/headshots/celia_schurman.jfif";
-import alex from "../../images/headshots/alex_oneil.jfif";
-import alon from "../../images/headshots/alon_yacovi.jpg";
+import sandhya   from "../../images/headshots/sandhya_sangappa.jpg";
+import brenna    from "../../images/headshots/brenna_masterson.jpg";
+import celia     from "../../images/headshots/celia_schurman.jfif";
+import alex      from "../../images/headshots/alex_oneil.jfif";
+import alon      from "../../images/headshots/alon_yacovi.jpg";
 import christian from "../../images/headshots/christian_zarka.jpg";
-import david from "../../images/headshots/david_daniels.jpg";
-import connor from "../../images/headshots/connor_martins.jpg";
-import ethan from "../../images/headshots/ethan_bouyea.jpg";
-import liam from "../../images/headshots/liam_hardstone.jpg";
-import luke from "../../images/headshots/luke_stabile.jpg";
+import david     from "../../images/headshots/david_daniels.jpg";
+import connor    from "../../images/headshots/connor_martins.jpg";
+import ethan     from "../../images/headshots/ethan_bouyea.jpg";
+import liam      from "../../images/headshots/liam_hardstone.jpg";
+import luke      from "../../images/headshots/luke_stabile.jpg";
 
 export default [
   {

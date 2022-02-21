@@ -1,13 +1,13 @@
 import React from "react";
 
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/HomeStyles";
-
-import Nav from "../Partials/Nav";
+import Nav       from "../Partials/Nav";
 import Jumbotron from "./Jumbotron";
-import Footer from "../Partials/Footer";
+import Footer    from "../Partials/Footer";
+
+import { withStyles } from "@mui/styles";
+import styles from "../../styles/HomeStyles";
 
 import { Link } from "react-router-dom";
 

@@ -1,26 +1,27 @@
 import React, { Component } from "react";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/JoinUsStyles";
+import { Redirect }      from "react-router-dom";
+import { ValidatorForm } from "react-material-ui-form-validator";
+import { TextValidator } from "react-material-ui-form-validator";
+import emailjs           from "emailjs-com";
 
-import { Redirect } from "react-router-dom";
-
-import Button from "@material-ui/core/Button";
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import TextField from "@material-ui/core/TextField";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogTitle from "@material-ui/core/DialogTitle";
-
-import emailjs from "emailjs-com";
-
-import Nav from "../Partials/Nav";
+import Nav    from "../Partials/Nav";
 import Footer from "../Partials/Footer";
+
+import InputLabel       from "@mui/material/InputLabel";
+import MenuItem         from "@mui/material/MenuItem";
+import Select           from "@mui/material/Select";
+import TextField        from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox         from "@mui/material/Checkbox";
+import Button           from "@mui/material/Button";
+import Dialog           from "@mui/material/Dialog";
+import DialogTitle      from "@mui/material/DialogTitle";
+import DialogActions    from "@mui/material/DialogActions";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/JoinUsStyles";
+
 
 class JoinUs extends Component {
   constructor(props) {

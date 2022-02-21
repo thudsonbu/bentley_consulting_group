@@ -1,9 +1,10 @@
 import React from "react";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/BootcampTilesStyles";
-
 import bootcampSeed from "./BootcampSeed";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/BootcampTilesStyles";
+
 
 const BootcampTiles = (props) => {
   const { classes } = props;

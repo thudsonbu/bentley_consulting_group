@@ -1,15 +1,10 @@
-import sizes from "./Sizes";
-import logo from "../images/Logo.png";
+import sizes  from "./Sizes";
+import logo   from "../images/Logo.png";
 import colors from "./Colors";
 
-export default {
+const styles = {
   Nav: {
     height: "10vh",
-  },
-
-  AppBar: {
-    width: "100%",
-    backgroundColor: colors.lightBackground,
   },
 
   ToolBar: {
@@ -78,6 +73,12 @@ export default {
 
   link: {
     textDecoration: "none",
-    color: "black",
+    color: colors.blue,
   },
+
+  drawer: {
+    
+  }
 };
+
+export default styles;

@@ -1,13 +1,13 @@
 import React from "react";
 
-import Nav from "../Partials/Nav";
-import Event from "./Event";
+import Nav    from "../Partials/Nav";
+import Event  from "./Event";
+import events from "./EventsSeed";
 import Footer from "../Partials/Footer";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/EventsStyles";
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/EventsStyles";
 
-import events from "./EventsSeed";
 
 const Events = (props) => {
   const { classes } = props;

@@ -1,11 +1,13 @@
 import React from "react";
-import Nav from "../Partials/Nav";
-import Tiles from "./BootcampTiles";
-import Footer from "../Partials/Footer";
-import Button from "@material-ui/core/Button";
 
-import { withStyles } from "@material-ui/styles";
-import styles from "../../styles/BootcampStyles";
+import Nav    from "../Partials/Nav";
+import Tiles  from "./BootcampTiles";
+import Footer from "../Partials/Footer";
+
+import Button from "@mui/material/Button";
+
+import { withStyles } from "@mui/styles";
+import styles         from "../../styles/BootcampStyles";
 
 const Bootcamp = (props) => {
   const { classes } = props;
