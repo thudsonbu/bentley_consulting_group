@@ -12,13 +12,13 @@ export default {
     maxWidth: "1000px",
     paddingTop: "50px",
     [sizes.down("md")]: {
-      paddingTop: "120px",
+      paddingTop: "50px",
       width: "80%",
     },
   },
 
   BootcampTile: {
-    margin: "30px",
+    margin: "0px 30px 30px 30px",
     width: "200px",
     height: "200px",
     backgroundColor: colors.blue,

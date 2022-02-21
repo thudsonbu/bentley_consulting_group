@@ -93,30 +93,44 @@ export default {
 
   Block: {
     width: "300px",
-    margin: "60px",
     transition: "box-shadow .15s",
     "&:hover": {
       boxShadow: boxShadows.default,
     },
     [sizes.down("md")]: {
-      margin: "50px",
       width: "320px",
       boxShadow: boxShadows.default,
     },
   },
 
   ClickableBlock: {
-    width: "300px",
-    margin: "60px",
     transition: "box-shadow .15s",
     "&:hover": {
       boxShadow: boxShadows.default,
     },
     [sizes.down("md")]: {
-      margin: "50px",
       width: "320px",
       boxShadow: boxShadows.default,
     },
+  },
+
+  Link: {
+    textDecoration: "none",
+    margin: "60px",
+    [sizes.down("md")]: {
+      margin: "50px"
+    }
+  },
+
+   ArrowIcon: {
+    fontSize: "25px",
+    color: "#ffffff",
+    marginLeft: "260px",
+    marginTop: "25px",
+    [sizes.down("md")]: {
+      marginLeft: "270px",
+    },
+    transition: "margin 0.1s ease-in-out",
   },
 
   BlockContainer: {
@@ -148,6 +162,10 @@ export default {
     width: "100%",
     color: "#ffffff",
     backgroundColor: "#064cd5",
+    "&:hover svg": {
+      marginLeft: "265px",
+      transition: "margin 0.1s ease-in-out",
+    },
   },
 
   BlockTitle: {
@@ -245,17 +263,6 @@ export default {
     backgroundPosition: "center",
   },
 
-  Link: {
-    textDecoration: "none",
-  },
 
-  InfoIcon: {
-    fontSize: "30px",
-    color: "#ffffff",
-    marginLeft: "260px",
-    marginTop: "25px",
-    [sizes.down("md")]: {
-      marginLeft: "270px",
-    },
-  },
+
 };

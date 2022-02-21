@@ -1,6 +1,6 @@
 import React from "react";
 
-import InfoIcon from "@material-ui/icons/Info";
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import { withStyles } from "@material-ui/styles";
 import styles from "../../styles/HomeStyles";
@@ -124,7 +124,7 @@ const Home = ( props ) => {
           <h1 className={classes.SectionTitle}>Learn More</h1>
         </div>
         <div className={classes.SectionSubTitle}>
-          <h1>Reach out to or Join the BCG</h1>
+          <h1>Reach Out To or Join the BCG</h1>
           <p>
             Would you like to become a consultant? Are you a business owner or
             representative that would like to contact us?
@@ -140,7 +140,7 @@ const Home = ( props ) => {
                   Interested in joining the BCG or being added to our email
                   list?
                 </p>
-                <InfoIcon className={classes.InfoIcon} />
+                <ArrowForwardIcon className={classes.ArrowIcon} />
               </div>
             </div>
           </Link>
@@ -152,16 +152,15 @@ const Home = ( props ) => {
                 <p className={classes.BlockText}>
                   Would you like to work with the BCG or schedule an event?
                 </p>
-                <InfoIcon className={classes.InfoIcon} />
+                <ArrowForwardIcon className={classes.ArrowIcon} />
               </div>
             </div>
           </Link>
         </div>
         <div className={classes.SectionSubTitle}>
-          <h1>Find events or meet our team.</h1>
+          <h1>Find Events or Meet Our Team.</h1>
           <p>
-            Would you like to become a consultant? Are you a business owner or
-            representative that would like to contact us?
+            Take a look at our upcoming events and meet our team.
           </p>
         </div>
         <div className={classes.BlockContainer}>
@@ -173,7 +172,7 @@ const Home = ( props ) => {
                 <p className={classes.BlockText}>
                   See what events the BCG have planned this semester.
                 </p>
-                <InfoIcon className={classes.InfoIcon} />
+                <ArrowForwardIcon className={classes.ArrowIcon} />
               </div>
             </div>
           </Link>
@@ -186,7 +185,7 @@ const Home = ( props ) => {
                   Meet our executive board and consultants or reach out
                   directly.
                 </p>
-                <InfoIcon className={classes.InfoIcon} />
+                <ArrowForwardIcon className={classes.ArrowIcon} />
               </div>
             </div>
           </Link>

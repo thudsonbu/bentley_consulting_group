@@ -51,6 +51,7 @@ export default {
     display: "flex",
     color: colors.lightText,
     backgroundColor: colors.blue,
+    textAlign: "center",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",

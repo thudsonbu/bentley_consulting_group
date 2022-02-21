@@ -12,6 +12,9 @@ export default {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    [sizes.down("md")]: {
+      marginTop: "80px"
+    }
   },
 
   FooterLinks: {
