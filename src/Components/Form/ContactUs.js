@@ -1,23 +1,20 @@
 import React, { Component } from "react";
-
-import Nav    from "../Partials/Nav";
-import Footer from "../Partials/Footer";
-
-import { Redirect }      from "react-router-dom";
-import { ValidatorForm } from "react-material-ui-form-validator";
-import { TextValidator } from "react-material-ui-form-validator";
-import emailjs           from "emailjs-com";
-
-import TextField        from "@mui/material/TextField";
+import Nav from "../Layout/Nav";
+import Footer from "../Layout/Footer";
+import { Redirect } from "react-router-dom";
+import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
+import emailjs from "emailjs-com";
+import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox         from "@mui/material/Checkbox";
-import Button           from "@mui/material/Button";
-import Dialog           from "@mui/material/Dialog";
-import DialogTitle      from "@mui/material/DialogTitle";
-import DialogActions    from "@mui/material/DialogActions";
-
+import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogActions from "@mui/material/DialogActions";
 import { withStyles } from "@mui/styles";
-import styles         from "../../styles/ContactUsStyles";
+import sizes from "../../styles/Sizes";
+import shared from "../../styles/Shared";
+import colors from "../../styles/Colors";
 
 class ContactUs extends Component {
   constructor(props) {
@@ -37,8 +34,6 @@ class ContactUs extends Component {
     this.handleCheck = this.handleCheck.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    this.renderRedirect = this.renderRedirect.bind(this);
-
     //TODO validate that it is a bentley email
   }
 
@@ -97,12 +92,6 @@ class ContactUs extends Component {
     });
   }
 
-  renderRedirect() {
-    if (this.state.Redirect) {
-      return <Redirect to="/" />;
-    }
-  }
-
   render() {
     const { classes } = this.props;
     const {
@@ -117,12 +106,11 @@ class ContactUs extends Component {
     } = this.state;
     return (
       <div className={ContactUs}>
-        {this.renderRedirect()}
         <Nav currentLocation={"ContactUs"} />
         <div className={classes.ContactUsContent}>
-        <div className={classes.SectionTitleBlock}>
-          <h1 className={classes.SectionTitle}>Contact Us</h1>
-        </div>
+          <div className={classes.SectionTitleBlock}>
+            <h1 className={classes.SectionTitle}>Contact Us</h1>
+          </div>
           <div className={classes.ContactUsForm}>
             <div className={classes.SectionSubTitle}>
               <h1>Contact Us Form</h1>
@@ -260,5 +248,148 @@ class ContactUs extends Component {
     );
   }
 }
+
+const styles = {
+  ...shared,
+  ContactUsContent: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+  },
+
+  ContactUsForm: {
+    margin: "100px 0px 100px 0px",
+    width: "60%",
+    transition: "box-shadow .25s",
+    "&:hover": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    "&:focus": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    "&:active": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    [sizes.down("md")]: {
+      width: "90%",
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+  },
+
+  SectionTitleBlock: {
+    marginTop: "50px",
+    backgroundColor: colors.blue,
+    height: "200px",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  SectionTitle: {
+    color: colors.lightText,
+    fontSize: "48px",
+    padding: "20px",
+  },
+
+  SectionSubTitle: {
+    width: "100%",
+    display: "flex",
+    color: colors.lightText,
+    backgroundColor: colors.blue,
+    textAlign: "center",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    "& h1": {
+      textAlign: "center",
+      color: colors.lightText,
+      marginBottom: "0px",
+    },
+    "& p": {
+      marginTop: "0px",
+    },
+  },
+
+  inputFieldContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px",
+  },
+
+  FirstNameFieldContainer: {
+    width: "40%",
+    paddingTop: "20px",
+  },
+
+  FirstNameField: {
+    width: "100%",
+  },
+  LastNameFieldContainer: {
+    width: "40%",
+    paddingTop: "20px",
+  },
+  LastNameField: {
+    width: "100%",
+  },
+
+  OrganizationContainer: {
+    width: "40%",
+    paddingTop: "30px",
+  },
+  OrganizationField: {
+    width: "100%",
+  },
+
+  PositionContainer: {
+    width: "40%",
+    paddingTop: "30px",
+  },
+
+  PositionField: {
+    width: "100%",
+  },
+
+  EmailFieldContainer: {
+    width: "100%",
+    paddingTop: "20px",
+  },
+
+  EmailField: {
+    width: "100%",
+  },
+
+  InquiryFieldContainer: {
+    width: "100%",
+    padding: "40px 0px 20px 0px",
+  },
+
+  InquiryField: {
+    width: "100%",
+  },
+
+  CheckBoxContainer: {
+    width: "50%",
+  },
+
+  CheckBox: {
+    width: "100%",
+  },
+
+  SubmitButtonContainer: {
+    width: "20%",
+    display: "flex",
+    justifyContent: "content-end",
+  },
+
+  SubmitButton: {
+    width: "100%",
+    borderRadius: "0px",
+    backgroundColor: colors.blue,
+  },
+};
 
 export default withStyles(styles)(ContactUs);

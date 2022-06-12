@@ -1,6 +1,7 @@
-import colors from './Colors';
-import sizes from './Sizes';
-export default {
+import colors from "./Colors";
+import sizes from "./Sizes";
+
+const styles = {
   SectionTitleBlock: {
     marginTop: "50px",
     backgroundColor: colors.blue,
@@ -30,10 +31,10 @@ export default {
     "& p": {
       textAlign: "center",
       fontSize: "16px",
-      [sizes.down('md')]: {
-        width: "80%"
-      }
-    }
+      [sizes.down("md")]: {
+        width: "80%",
+      },
+    },
   },
 
   SectionSubTitleText: {
@@ -46,3 +47,5 @@ export default {
     alignItems: "center",
   },
 };
+
+export default styles;

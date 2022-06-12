@@ -1,6 +1,6 @@
 import projectmanagement from "../../images/ProjectManagement.png";
 
-export default [
+const seed = [
   {
     image: projectmanagement,
     title: "BCG Bootcamp",
@@ -9,5 +9,7 @@ export default [
     location: "Zoom",
     description:
       "Learn more about Bentley Consulting Group's consulting bootcamp. Get inside tips and advice about the application process and learn more about the consulting space.",
-  }
+  },
 ];
+
+export default seed;

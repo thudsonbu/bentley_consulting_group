@@ -1,27 +1,30 @@
 import React, { Component } from "react";
 
-import { Redirect }      from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { ValidatorForm } from "react-material-ui-form-validator";
 import { TextValidator } from "react-material-ui-form-validator";
-import emailjs           from "emailjs-com";
 
-import Nav    from "../Partials/Nav";
-import Footer from "../Partials/Footer";
+import emailjs from "emailjs-com";
 
-import InputLabel       from "@mui/material/InputLabel";
-import MenuItem         from "@mui/material/MenuItem";
-import Select           from "@mui/material/Select";
-import TextField        from "@mui/material/TextField";
+import Nav from "../Layout/Nav";
+import Footer from "../Layout/Footer";
+
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox         from "@mui/material/Checkbox";
-import Button           from "@mui/material/Button";
-import Dialog           from "@mui/material/Dialog";
-import DialogTitle      from "@mui/material/DialogTitle";
-import DialogActions    from "@mui/material/DialogActions";
+import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogActions from "@mui/material/DialogActions";
+
+import sizes from "../../styles/Sizes";
+import shared from "../../styles/Shared";
+import colors from "../../styles/Colors";
 
 import { withStyles } from "@mui/styles";
-import styles         from "../../styles/JoinUsStyles";
-
 
 class JoinUs extends Component {
   constructor(props) {
@@ -41,7 +44,6 @@ class JoinUs extends Component {
     this.handleCheck = this.handleCheck.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    this.renderRedirect = this.renderRedirect.bind(this);
   }
 
   handleChange(evt) {
@@ -96,12 +98,6 @@ class JoinUs extends Component {
     });
   }
 
-  renderRedirect() {
-    if (this.state.Redirect) {
-      return <Redirect to="/" />;
-    }
-  }
-
   render() {
     const { classes } = this.props;
     const {
@@ -116,12 +112,11 @@ class JoinUs extends Component {
     } = this.state;
     return (
       <div className={JoinUs}>
-        {this.renderRedirect()}
         <Nav currentLocation={"JoinUs"} />
         <div className={classes.JoinUsContent}>
-        <div className={classes.SectionTitleBlock}>
-          <h1 className={classes.SectionTitle}>Join Us</h1>
-        </div>
+          <div className={classes.SectionTitleBlock}>
+            <h1 className={classes.SectionTitle}>Join Us</h1>
+          </div>
           <div className={classes.JoinUsForm}>
             <div className={classes.FormTitle}>
               <h1>Become a Consultant</h1>
@@ -277,5 +272,131 @@ class JoinUs extends Component {
     );
   }
 }
+
+const styles = {
+  ...shared,
+
+  JoinUsContent: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+  },
+
+  JoinUsForm: {
+    margin: "100px 0px 100px 0px",
+    width: "60%",
+    transition: "box-shadow .25s",
+    "&:hover": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    "&:focus": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    "&:active": {
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+    [sizes.down("md")]: {
+      width: "90%",
+      boxShadow: "0px 0px 41px 12px rgba(194,194,194,1)",
+    },
+  },
+
+  inputFieldContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px",
+  },
+
+  FormTitle: {
+    width: "100%",
+    display: "flex",
+    color: colors.lightText,
+    backgroundColor: colors.blue,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    "& h1": {
+      padding: "0px 10px 0px 10px",
+      textAlign: "center",
+    },
+  },
+
+  FirstNameFieldContainer: {
+    width: "40%",
+    paddingTop: "20px",
+  },
+
+  FirstNameField: {
+    width: "100%",
+  },
+
+  LastNameFieldContainer: {
+    width: "40%",
+    paddingTop: "20px",
+  },
+
+  LastNameField: {
+    width: "100%",
+  },
+
+  MajorFieldContainer: {
+    width: "40%",
+    paddingTop: "30px",
+  },
+
+  MajorField: {
+    width: "100%",
+  },
+
+  YearFieldContainer: {
+    width: "40%",
+    paddingTop: "30px",
+  },
+
+  YearField: {
+    width: "100%",
+  },
+
+  EmailFieldContainer: {
+    width: "100%",
+    paddingTop: "20px",
+  },
+
+  EmailField: {
+    width: "100%",
+  },
+
+  InquiryFieldContainer: {
+    width: "100%",
+    padding: "40px 0px 20px 0px",
+  },
+
+  InquiryField: {
+    width: "100%",
+  },
+
+  CheckBoxContainer: {
+    width: "50%",
+  },
+
+  CheckBox: {
+    width: "100%",
+  },
+
+  SubmitButtonContainer: {
+    width: "20%",
+    display: "flex",
+    justifyContent: "content-end",
+  },
+
+  SubmitButton: {
+    width: "100%",
+    borderRadius: "0px",
+    backgroundColor: colors.blue,
+  },
+};
 
 export default withStyles(styles)(JoinUs);

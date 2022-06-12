@@ -1,15 +1,15 @@
 import React from "react";
-
 import Member from "./Member";
-import Nav    from "../Partials/Nav";
-import Footer from "../Partials/Footer";
-
+import Nav from "../Layout/Nav";
+import Footer from "../Layout/Footer";
 import teamseed from "./TeamSeed";
 
-import { withStyles } from "@mui/styles";
-import styles         from "../../styles/TeamStyles.js";
+import shared from "../../styles/Shared";
+import colors from "../../styles/Colors";
 
-const Team = ( props ) => {
+import { withStyles } from "@mui/styles";
+
+const Team = (props) => {
   const { classes } = props;
 
   const team = teamseed.map((member) => (
@@ -24,7 +24,6 @@ const Team = ( props ) => {
 
   return (
     <div className={classes.Team}>
-      <Nav currentLocation={"Team"} />
       <div className={classes.SectionTitleBlock}>
         <h1 className={classes.SectionTitle}>Executive Board</h1>
       </div>
@@ -36,9 +35,22 @@ const Team = ( props ) => {
         </p>
       </div>
       {team}
-      <Footer />
     </div>
   );
+};
+
+const styles = {
+  ...shared,
+  Team: {
+    display: "Flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: colors.lightBackground,
+    backgroundSize: "cover",
+    minHeight: "96vh",
+    marginBottom: "250px",
+  },
 };
 
 export default withStyles(styles)(Team);
